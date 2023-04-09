@@ -1,0 +1,561 @@
+author;author_type;link;city;deal_type;accommodation_type;floor;floors_count;rooms_count;total_meters;price_per_m2;price;year_of_construction;living_meters;kitchen_meters;phone;district;street;underground;residential_complex
+Группа Эталон;developer;https://spb.cian.ru/sale/flat/284002656/;Sankt-Peterburg;sale;flat;9;10;5;149.6;288765;43199307;2022;83.0;25.0;+78124269983;Primorskij;Beloostrovskaja;Chernaja rechka;Domino
+RBI;developer;https://spb.cian.ru/sale/flat/279235781/;Sankt-Peterburg;sale;flat;6;9;5;135.9;472353;64192843;2025;67.0;27.0;+78122136849;Tsentral'nyj;Mirgorodskaja;Ploschad' Aleksandra Nevskogo;Mir'
+ЦАН - Центральное Агентство Недвижимости;real_estate_agent;https://spb.cian.ru/sale/flat/283550396/;Sankt-Peterburg;sale;flat;5;5;5;110.6;144665;16000000;1895;64.0;16.0;+79817205663;Tsentral'nyj;5-ja Sovetskaja;Ploschad' Vosstanija;
+ЦАН - Центральное Агентство Недвижимости;real_estate_agent;https://spb.cian.ru/sale/flat/282974919/;Sankt-Peterburg;sale;flat;7;7;5;151.5;110891;16800000;1911;94.0;16.0;+79817205663;Admiraltejskij;Kolomna;Baltijskaja;
+ЦАН - Центральное Агентство Недвижимости;real_estate_agent;https://spb.cian.ru/sale/flat/282975203/;Sankt-Peterburg;sale;flat;2;7;5;176.7;254668;45000000;2014;100.0;25.0;+79817205663;Vasileostrovskij;2-ja Vasil'evskogo ostrova linija;Vasileostrovskaja;
+NF GROUP  St Petersburg;real_estate_agent;https://spb.cian.ru/sale/flat/273009413/;Sankt-Peterburg;sale;flat;2;6;5;342.0;1081871;370000000;2007;146.0;79.0;+79112793140;Petrogradskij;Chkalovskoe;Krestovskij ostrov;
+Россита Габриелян;realtor;https://spb.cian.ru/sale/flat/285401617/;Sankt-Peterburg;sale;flat;6;6;5;161.1;111731;18000000;1903;102.0;22.0;+79818975255;Tsentral'nyj;Sadovaja;Sennaja ploschad';
+Дом на Ленсовета;developer;https://spb.cian.ru/sale/flat/285604104/;Sankt-Peterburg;sale;flat;9;23;5;156.8;246811;38700000;2020;-1;-1;+78122181062;Moskovskij;Zvezdnoe;Zvezdnaja;Barselona ZhK
+Балтийская коммерция;developer;https://spb.cian.ru/sale/flat/273852798/;Sankt-Peterburg;sale;flat;7;9;5;195.93;380000;74453400;2025;-1;-1;+78122132248;Petrogradskij;Malaja Zelenina;Chkalovskaja;Kvadrija
+BEYOND. ex-Engel  Volkers;real_estate_agent;https://spb.cian.ru/sale/flat/280462437/;Sankt-Peterburg;sale;flat;10;10;5;300.0;443333;133000000;2017;96.0;82.0;+79112509861;Petrogradskij;Zhdanovskaja;Chkalovskaja;Leont'evskij mys
+Экотон;real_estate_agent;https://spb.cian.ru/sale/flat/282680809/;Sankt-Peterburg;sale;flat;7;7;5;184.0;176630;32500000;1917;109.0;28.0;+79681896099;Admiraltejskij;Kolomna;Sadovaja;
+NF GROUP  St Petersburg;real_estate_agent;https://spb.cian.ru/sale/flat/280730053/;Sankt-Peterburg;sale;flat;7;7;5;363.0;1377410;500000000;2005;243.0;35.0;+79111088317;Petrogradskij;Dinamovskaja;Krestovskij ostrov;
+ПРАЙМ недвижимость - Пушкинская;real_estate_agent;https://spb.cian.ru/sale/flat/280750526/;Sankt-Peterburg;sale;flat;2;4;5;133.5;129588;17300000;1826;92.0;16.0;+79818613253;Admiraltejskij;Kolomna;Baltijskaja;
+NF GROUP  St Petersburg;real_estate_agent;https://spb.cian.ru/sale/flat/283682004/;Sankt-Peterburg;sale;flat;9;9;5;218.0;688073;150000000;2003;125.0;13.0;+79111088317;Tsentral'nyj;8-ja Sovetskaja;Ploschad' Vosstanija;Rozhdestvenskij
+Clever Grad Premium;real_estate_agent;https://spb.cian.ru/sale/flat/281850880/;Sankt-Peterburg;sale;flat;7;8;5;220.1;436165;96000000;2001;-1;-1;+79811797450;Petrogradskij;Chkalovskoe;Krestovskij ostrov;
+ID 1075540;unknown;https://spb.cian.ru/sale/flat/282289231/;Sankt-Peterburg;sale;flat;5;5;5;201.0;109452;22000000;1882;134.0;20.0;+79052645096;Tsentral'nyj;Dostoevskogo;Vladimirskaja;
+Запстрой недвижимость;real_estate_agent;https://spb.cian.ru/sale/flat/282218714/;Sankt-Peterburg;sale;flat;2;5;5;230.2;212858;49000000;1910;149.0;27.0;+79117307614;Petrogradskij;Kronverkskoe;Petrogradskaja;
+Группа Аквилон;developer;https://spb.cian.ru/sale/flat/270186581/;Sankt-Peterburg;sale;flat;9;9;5;158.32;466128;73797459;2023;76.0;27.0;+78123892921;Petrogradskij;Lodejnopol'skaja;Chkalovskaja;Avtorskij dom Tesoro by Akvilon
+BEYOND. ex-Engel  Volkers;real_estate_agent;https://spb.cian.ru/sale/flat/282201782/;Sankt-Peterburg;sale;flat;4;6;5;194.0;355670;69000000;1876;125.0;30.0;+79112509861;Tsentral'nyj;Dvortsovyj;Nevskij prospekt;
+МИР КВАРТИР;real_estate_agent;https://spb.cian.ru/sale/flat/270612953/;Sankt-Peterburg;sale;flat;7;7;5;260.0;476923;124000000;1828;173.0;26.0;+79681890629;Tsentral'nyj;Bol'shaja Konjushennaja;Admiraltejskaja;
+NF GROUP  St Petersburg;real_estate_agent;https://spb.cian.ru/sale/flat/276107672/;Sankt-Peterburg;sale;flat;8;9;5;286.3;663290;189900000;2015;167.0;23.0;+79819213291;Tsentral'nyj;Vladimirskij;Zvenigorodskaja;Fontanka 76
+NF GROUP  St Petersburg;real_estate_agent;https://spb.cian.ru/sale/flat/278188732/;Sankt-Peterburg;sale;flat;4;4;5;229.1;982103;225000000;2004;118.0;17.0;+79112793140;Petrogradskij;Chkalovskoe;Krestovskij ostrov;
+МИР КВАРТИР;real_estate_agent;https://spb.cian.ru/sale/flat/281335061/;Sankt-Peterburg;sale;flat;4;5;5;381.5;191349;73000000;1912;264.0;38.0;+79681890629;Petrogradskij;Kronverkskoe;Gor'kovskaja;
+МИР КВАРТИР;real_estate_agent;https://spb.cian.ru/sale/flat/279475117/;Sankt-Peterburg;sale;flat;4;7;5;195.5;664961;130000000;2007;119.0;19.0;+79681890629;Petrogradskij;Aptekarskij ostrov;Petrogradskaja;
+МК-Элит;real_estate_agent;https://spb.cian.ru/sale/flat/278969787/;Sankt-Peterburg;sale;flat;4;7;5;164.0;417682;68500000;2006;100.0;8.0;+79681896579;Petrogradskij;Kemskaja;Krestovskij ostrov;
+МК-Элит;real_estate_agent;https://spb.cian.ru/sale/flat/282688114/;Sankt-Peterburg;sale;flat;5;6;5;202.3;326248;66000000;1903;124.0;18.0;+79681896579;Petrogradskij;Posadskij;Gor'kovskaja;
+МК-Элит;real_estate_agent;https://spb.cian.ru/sale/flat/275603519/;Sankt-Peterburg;sale;flat;12;12;5;198.9;346907;69000000;2013;125.0;21.0;+79681896579;Tsentral'nyj;Novgorodskaja;Chernyshevskaja;Aleksandrija
+МК-Элит;real_estate_agent;https://spb.cian.ru/sale/flat/264558459/;Sankt-Peterburg;sale;flat;4;5;5;202.0;262376;53000000;1834;137.0;34.0;+79681896579;Admiraltejskij;Gorohovaja;Admiraltejskaja;
+МК-Элит;real_estate_agent;https://spb.cian.ru/sale/flat/279931119/;Sankt-Peterburg;sale;flat;3;3;5;180.0;327222;58900000;2008;110.0;19.0;+79681896579;Kurortnyj;Dubkovskoe shosse;Begovaja;
+МК-Элит;real_estate_agent;https://spb.cian.ru/sale/flat/281434982/;Sankt-Peterburg;sale;flat;15;17;5;159.0;246540;39200000;2004;91.0;14.0;+79681896579;Vasileostrovskij;Gavan';Primorskaja;Galernyj proezd
+МК-Элит;real_estate_agent;https://spb.cian.ru/sale/flat/270802166/;Sankt-Peterburg;sale;flat;23;23;5;425.0;588235;250000000;2008;153.0;107.0;+79681896579;Vyborgskij;Sampsonievskoe;Ploschad' Lenina;
+DealEstate;real_estate_agent;https://spb.cian.ru/sale/flat/284480910/;Sankt-Peterburg;sale;flat;4;4;5;169.0;212426;35900000;2002;82.0;19.0;+79118414173;Primorskij;1-ja Polevaja;Udel'naja;
+МК-Элит;real_estate_agent;https://spb.cian.ru/sale/flat/284663498/;Sankt-Peterburg;sale;flat;5;5;5;311.8;384862;120000000;1913;169.0;31.0;+79681896579;Tsentral'nyj;Vladimirskij;Dostoevskaja;
+МК-Элит;real_estate_agent;https://spb.cian.ru/sale/flat/284090422/;Sankt-Peterburg;sale;flat;4;4;5;300.0;416666;125000000;2000;144.0;32.0;+79681896579;Petrogradskij;Chkalovskoe;Krestovskij ostrov;
+МК-Элит;real_estate_agent;https://spb.cian.ru/sale/flat/284951615/;Sankt-Peterburg;sale;flat;22;22;5;162.2;184895;29990000;2013;77.0;32.0;+79681896579;Nevskij;Voroshilova;Prospekt Bol'shevikov;Ladozhskij park
+МК-Элит;real_estate_agent;https://spb.cian.ru/sale/flat/274202485/;Sankt-Peterburg;sale;flat;11;16;5;141.7;176429;25000000;1996;86.0;20.0;+79681896579;Vasileostrovskij;Ostrov Dekabristov;Primorskaja;
+МК-Элит;real_estate_agent;https://spb.cian.ru/sale/flat/274462530/;Sankt-Peterburg;sale;flat;6;6;5;282.59;339007;95800000;1953;132.0;10.0;+79681896579;Petrogradskij;Aptekarskij ostrov;Petrogradskaja;
+МК-Элит;real_estate_agent;https://spb.cian.ru/sale/flat/280427402/;Sankt-Peterburg;sale;flat;3;3;5;324.0;265432;86000000;2003;234.0;35.0;+79681896579;Primorskij;1-ja Polevaja;Udel'naja;
+МК-Элит;real_estate_agent;https://spb.cian.ru/sale/flat/284799586/;Sankt-Peterburg;sale;flat;4;5;5;158.4;346590;54900000;1828;94.0;21.0;+79681896579;Tsentral'nyj;Dvortsovyj;Gostinyj dvor;
+NF GROUP  St Petersburg;real_estate_agent;https://spb.cian.ru/sale/flat/273007529/;Sankt-Peterburg;sale;flat;2;5;5;218.0;316513;69000000;1952;144.0;18.0;+79675376503;Petrogradskij;Aptekarskij ostrov;Petrogradskaja;
+NF GROUP  St Petersburg;real_estate_agent;https://spb.cian.ru/sale/flat/285614543/;Sankt-Peterburg;sale;flat;3;3;5;250.0;1000000;250000000;2010;65.0;44.0;+79111703716;Petrogradskij;Barochnaja;Chkalovskaja;
+BEYOND. ex-Engel  Volkers;real_estate_agent;https://spb.cian.ru/sale/flat/277280337/;Sankt-Peterburg;sale;flat;8;8;5;230.0;391304;90000000;2001;132.0;65.0;+79112509861;Tsentral'nyj;Zahar'evskaja;Chernyshevskaja;
+BEYOND. ex-Engel  Volkers;real_estate_agent;https://spb.cian.ru/sale/flat/284064673/;Sankt-Peterburg;sale;flat;8;9;5;286.3;662940;189800000;2017;152.0;23.0;+79112509861;Tsentral'nyj;Vladimirskij;Zvenigorodskaja;Fontanka 76
+Richness Realty;real_estate_agent;https://spb.cian.ru/sale/flat/275383020/;Sankt-Peterburg;sale;flat;8;9;5;249.7;1601922;400000000;2009;119.0;54.0;+79818604894;Tsentral'nyj;Tverskaja;Chernyshevskaja;
+РАД;real_estate_agent;https://spb.cian.ru/sale/flat/281236799/;Sankt-Peterburg;sale;flat;9;9;5;172.6;172363;29750000;1960;-1;30.0;+79819379075;Moskovskij;Pulkovskij meridian;Moskovskaja;
+М16;real_estate_agent;https://spb.cian.ru/sale/flat/277543531/;Sankt-Peterburg;sale;flat;10;11;5;256.0;1250000;320000000;2009;124.0;65.0;+79119405773;Tsentral'nyj;Paradnaja;Chernyshevskaja;Paradnyj kvartal
+Фабрика Недвижимости;real_estate_agent;https://spb.cian.ru/sale/flat/280411839/;Sankt-Peterburg;sale;flat;1;7;5;185.4;148867;27600000;1951;103.0;36.0;+79681898658;Moskovskij;Sveaborgskaja;Elektrosila;
+ГОРОБМЕН;real_estate_agent;https://spb.cian.ru/sale/flat/284867285/;Sankt-Peterburg;sale;flat;4;5;5;120.1;133139;15990000;1850;91.0;10.0;+79816901623;Tsentral'nyj;Vladimirskij;Ligovskij prospekt;
+Ваш Адрес;real_estate_agent;https://spb.cian.ru/sale/flat/285379178/;Sankt-Peterburg;sale;flat;4;5;5;196.3;175751;34500000;2009;94.0;13.0;+79692035638;Kurortnyj;Nikolaja Sokolova;;
+Владис Центральный;real_estate_agent;https://spb.cian.ru/sale/flat/285301551/;Sankt-Peterburg;sale;flat;8;16;5;89.4;163310;14600000;1969;64.0;9.0;+79062418157;Vasileostrovskij;Nalichnaja;Primorskaja;
+BE HOME;real_estate_agent;https://spb.cian.ru/sale/flat/275889079/;Sankt-Peterburg;sale;flat;6;6;5;282.59;339007;95800000;1953;132.0;10.0;+79681933625;Petrogradskij;Aptekarskij ostrov;Petrogradskaja;
+ТРЕНД;real_estate_agent;https://spb.cian.ru/sale/flat/281604663/;Sankt-Peterburg;sale;flat;3;5;5;90.4;132743;12000000;1963;67.0;8.0;+79675375848;Kirovskij;Tankista Hrustitskogo;Prospekt Veteranov;
+Century 21 Гарант;real_estate_agent;https://spb.cian.ru/sale/flat/284534973/;Sankt-Peterburg;sale;flat;11;24;5;141.8;246755;34990000;2018;89.0;20.0;+79818616443;Krasnosel'skij;Juzhno-Primorskij;Leninskij prospekt;Parusa
+АРИН;real_estate_agent;https://spb.cian.ru/sale/flat/260996995/;Sankt-Peterburg;sale;flat;2;5;5;108.0;175925;19000000;1879;75.0;10.0;+79812268161;Admiraltejskij;Admiraltejskij;Admiraltejskaja;
+Аркада;real_estate_agent;https://spb.cian.ru/sale/flat/280554160/;Sankt-Peterburg;sale;flat;6;7;5;160.0;148750;23800000;1846;110.0;20.0;+79681879841;Admiraltejskij;12-ja Krasnoarmejskaja;Baltijskaja;
+VEREN GROUP;developer;https://spb.cian.ru/sale/flat/285685098/;Sankt-Peterburg;sale;flat;2;3;5;100.7;239400;24107580;2022;-1;-1;+78122134107;Petrodvortsovyj;Krasnosel'skoe shosse;Avtovo;Veren Village Strel'na
+Юлия Кравчук;realtor;https://spb.cian.ru/sale/flat/283048826/;Sankt-Peterburg;sale;flat;3;5;5;385.0;709064;272990000;2015;-1;-1;+79163327366;Tsentral'nyj;Gagarinskaja;Chernyshevskaja;
+Группа Аквилон;developer;https://spb.cian.ru/sale/flat/283167230/;Sankt-Peterburg;sale;flat;4;12;5;103.51;211400;21882014;2024;55.0;22.0;+78122136059;Moskovskij;Zvezdnoe;Zvezdnaja;Triumf Park ZhK
+Петербургская Недвижимость;representative_developer;https://spb.cian.ru/sale/flat/280038517/;Sankt-Peterburg;sale;flat;7;7;5;222.4;324000;72057600;2017;117.0;30.0;+78126029480;Primorskij;Primorskij prospekt;;Stockholm
+Петербургская Недвижимость;representative_developer;https://spb.cian.ru/sale/flat/281939977/;Sankt-Peterburg;sale;flat;6;6;5;232.3;585000;135895500;2022;137.0;33.0;+78124583532;Moskovskij;Gastello;Moskovskaja;Victory Plaza
+Группа Эталон;developer;https://spb.cian.ru/sale/flat/284638099/;Sankt-Peterburg;sale;flat;2;9;5;138.5;362289;50177080;2022;83.0;15.0;+78122132259;Petrogradskij;Petrovskij;Krestovskij ostrov;Petrovskaja Dominanta
+ID 97386417;unknown;https://spb.cian.ru/sale/flat/280406923/;Sankt-Peterburg;sale;flat;3;3;5;116.9;178785;20900000;1756;87.0;14.0;+79110846539;Admiraltejskij;Sennoj;Sennaja ploschad';
+Максим Игнатов;realtor;https://spb.cian.ru/sale/flat/283896427/;Sankt-Peterburg;sale;flat;6;6;5;127.8;101643;12990000;1874;18.0;9.0;+79817625756;Tsentral'nyj;pereulok Apraksin;Sennaja ploschad';
+МК-Элит;real_estate_agent;https://spb.cian.ru/sale/flat/277236566/;Sankt-Peterburg;sale;flat;6;6;5;140.0;192857;27000000;1906;102.0;15.0;+79681896579;Tsentral'nyj;Radischeva;Chernyshevskaja;
+МИР КВАРТИР;real_estate_agent;https://spb.cian.ru/sale/flat/284500759/;Sankt-Peterburg;sale;flat;2;6;5;207.0;169082;35000000;1904;166.0;13.0;+79681890629;Tsentral'nyj;Majakovskogo;Ploschad' Vosstanija;
+МК-Элит;real_estate_agent;https://spb.cian.ru/sale/flat/279023903/;Sankt-Peterburg;sale;flat;4;4;5;201.1;631526;127000000;1871;125.0;18.0;+79681896579;Admiraltejskij;Bol'shaja Morskaja;Admiraltejskaja;
+Матвеев Дом;real_estate_agent;https://spb.cian.ru/sale/flat/276418331/;Sankt-Peterburg;sale;flat;5;5;5;144.8;131215;19000000;1902;107.0;15.0;+79818772638;Admiraltejskij;8-ja Krasnoarmejskaja;;
+МК-Элит;real_estate_agent;https://spb.cian.ru/sale/flat/284488966/;Sankt-Peterburg;sale;flat;15;16;5;305.0;377049;115000000;2018;157.0;27.0;+79681896579;Vasileostrovskij;Nalichnaja;Primorskaja;Vasil'evskij Kvartal
+Мир Квартир офис Санкт-Петербург;real_estate_agent;https://spb.cian.ru/sale/flat/282786322/;Sankt-Peterburg;sale;flat;1;6;5;196.0;600000;117600000;2020;102.0;20.0;+79110967960;Petrogradskij;Esperova;Krestovskij ostrov;ESPER CLUB
+МК-Элит;real_estate_agent;https://spb.cian.ru/sale/flat/264558634/;Sankt-Peterburg;sale;flat;2;7;5;165.2;201573;33300000;1877;97.0;14.0;+79681896579;Tsentral'nyj;Pushkinskaja;Ploschad' Vosstanija;
+МИР КВАРТИР;real_estate_agent;https://spb.cian.ru/sale/flat/275630331/;Sankt-Peterburg;sale;flat;4;5;5;231.8;379637;88000000;2001;146.0;43.0;+79681890629;Petrogradskij;Chkalovskoe;Sportivnaja;
+МИР КВАРТИР;real_estate_agent;https://spb.cian.ru/sale/flat/284950919/;Sankt-Peterburg;sale;flat;3;6;5;154.0;253181;38990000;1911;89.0;17.0;+79681890629;Vasileostrovskij;Vasil'evskij;Vasileostrovskaja;
+ID 62577002;unknown;https://spb.cian.ru/sale/flat/283838408/;Sankt-Peterburg;sale;flat;2;5;5;237.0;480590;113900000;2013;176.0;22.0;+79052202274;Tsentral'nyj;Litejnyj;Ploschad' Vosstanija;Kovenskij 5
+ID 97399065;homeowner;https://spb.cian.ru/sale/flat/280468193/;Sankt-Peterburg;sale;flat;2;6;5;153.3;188519;28900000;1900;102.0;9.0;+79110245593;Tsentral'nyj;Litejnyj;Chernyshevskaja;
+ID 95636090;homeowner;https://spb.cian.ru/sale/flat/279881597/;Sankt-Peterburg;sale;flat;1;6;5;100.8;333333;33600000;2018;70.0;12.0;+79111213559;Kurortnyj;doroga Tamozhennaja;Begovaja;
+Лидер Групп;developer;https://spb.cian.ru/sale/flat/273620042/;Sankt-Peterburg;sale;flat;17;23;5;211.78;270000;57180600;2025;103.0;47.0;+78122134152;Moskovskij;Gagarinskoe;Moskovskaja;Defans ZhK
+ЛСР. Недвижимость;developer;https://spb.cian.ru/sale/flat/251029569/;Sankt-Peterburg;sale;flat;2;9;5;200.1;440900;88224090;2022;128.0;20.0;+78122134218;Petrogradskij;Petrovskij;Krestovskij ostrov;NEVA HAUS
+Лидер Групп;developer;https://spb.cian.ru/sale/flat/273620050/;Sankt-Peterburg;sale;flat;18;23;5;211.07;297000;62687790;2025;103.0;46.0;+78122134152;Moskovskij;Gagarinskoe;Moskovskaja;Defans ZhK
+ЛСР. Недвижимость;developer;https://spb.cian.ru/sale/flat/272357285/;Sankt-Peterburg;sale;flat;9;9;5;164.4;437400;71908560;2021;81.0;13.0;+78122134218;Petrogradskij;Petrovskij;Krestovskij ostrov;NEVA HAUS
+ЛСР. Недвижимость;developer;https://spb.cian.ru/sale/flat/272166360/;Sankt-Peterburg;sale;flat;7;7;5;201.8;562000;113411600;2022;131.0;17.0;+78122134218;Petrogradskij;Petrovskij;Krestovskij ostrov;Neva Haus ZhK
+ЛСР. Недвижимость;developer;https://spb.cian.ru/sale/flat/272166356/;Sankt-Peterburg;sale;flat;5;7;5;212.0;486000;103032000;2022;138.0;20.0;+78122134218;Petrogradskij;Petrovskij;Krestovskij ostrov;Neva Haus ZhK
+ЛСР. Недвижимость;developer;https://spb.cian.ru/sale/flat/266904433/;Sankt-Peterburg;sale;flat;9;9;5;201.4;440800;88777120;2021;125.0;21.0;+78122134218;Petrogradskij;Petrovskij;Krestovskij ostrov;NEVA HAUS
+ЛСР. Недвижимость;developer;https://spb.cian.ru/sale/flat/272166351/;Sankt-Peterburg;sale;flat;2;7;5;215.0;410000;88150000;2022;142.0;20.0;+78122134218;Petrogradskij;Petrovskij;Krestovskij ostrov;Neva Haus ZhK
+ТРЕНД;real_estate_agent;https://spb.cian.ru/sale/flat/285703561/;Sankt-Peterburg;sale;flat;4;4;5;157.9;231158;36500000;1830;99.0;30.0;+79675375848;Admiraltejskij;Bol'shaja Morskaja;Admiraltejskaja;
+АЛЕКСАНДР-НЕДВИЖИМОСТЬ;real_estate_agent;https://spb.cian.ru/sale/flat/282248822/;Sankt-Peterburg;sale;flat;15;15;5;111.2;107913;12000000;1981;60.0;12.0;+79110017931;Vyborgskij;prospekt Prosveschenija;Prospekt Prosveschenija;
+ID 94326651;homeowner;https://spb.cian.ru/sale/flat/282679305/;Sankt-Peterburg;sale;flat;7;10;5;187.6;479744;90000000;2007;150.0;20.0;+79812268744;Petrogradskij;Rjuhina;Krestovskij ostrov;
+МИР КВАРТИР;real_estate_agent;https://spb.cian.ru/sale/flat/274437415/;Sankt-Peterburg;sale;flat;5;6;5;128.8;134316;17300000;1880;72.0;14.0;+79681890629;Admiraltejskij;Jakubovicha;Admiraltejskaja;
+АЛЕКСАНДР-НЕДВИЖИМОСТЬ;real_estate_agent;https://spb.cian.ru/sale/flat/275742815/;Sankt-Peterburg;sale;flat;3;5;5;84.0;167857;14100000;1924;55.0;15.0;+79110017931;Vyborgskij;Sampsonievskoe;Vyborgskaja;
+АЛЕКСАНДР-НЕДВИЖИМОСТЬ;real_estate_agent;https://spb.cian.ru/sale/flat/285288426/;Sankt-Peterburg;sale;flat;3;5;5;125.1;151079;18900000;1900;95.0;9.0;+79110017931;Tsentral'nyj;Ligovka-Jamskaja;Ploschad' Aleksandra Nevskogo;
+МК-Элит;real_estate_agent;https://spb.cian.ru/sale/flat/278967458/;Sankt-Peterburg;sale;flat;4;4;5;105.7;274361;29000000;1822;72.0;11.0;+79681896579;Tsentral'nyj;naberezhnaja Kanala Griboedova;Nevskij prospekt;
+АЛЕКСАНДР-НЕДВИЖИМОСТЬ;real_estate_agent;https://spb.cian.ru/sale/flat/284252407/;Sankt-Peterburg;sale;flat;3;5;5;126.0;138888;17500000;1909;90.0;12.0;+79110017931;Vasileostrovskij;Vasil'evskij;Vasileostrovskaja;
+АЛЕКСАНДР-НЕДВИЖИМОСТЬ;real_estate_agent;https://spb.cian.ru/sale/flat/262743361/;Sankt-Peterburg;sale;flat;6;7;5;150.7;169873;25600000;1883;96.0;13.0;+79110017931;Admiraltejskij;Dekabristov;Sadovaja;
+МК-Элит;real_estate_agent;https://spb.cian.ru/sale/flat/273545707/;Sankt-Peterburg;sale;flat;3;5;5;147.0;158503;23300000;1908;99.0;18.0;+79681896579;Petrogradskij;Vvedenskij;Sportivnaja;
+АЛЕКСАНДР-НЕДВИЖИМОСТЬ;real_estate_agent;https://spb.cian.ru/sale/flat/283661711/;Sankt-Peterburg;sale;flat;3;5;5;138.1;112237;15500000;1858;95.0;13.0;+79110017931;Admiraltejskij;Sennoj;Tehnologicheskij institut;
+АЛЕКСАНДР-НЕДВИЖИМОСТЬ;real_estate_agent;https://spb.cian.ru/sale/flat/284192794/;Sankt-Peterburg;sale;flat;2;2;5;345.4;138274;47760000;2014;93.0;41.0;+79110017931;Krasnosel'skij;Juzhno-Primorskij;Prospekt Veteranov;
+АЛЕКСАНДР-НЕДВИЖИМОСТЬ;real_estate_agent;https://spb.cian.ru/sale/flat/277895780/;Sankt-Peterburg;sale;flat;12;16;5;87.9;155858;13700000;1969;64.0;8.0;+79110017931;Vasileostrovskij;Nalichnaja;Primorskaja;
+АЛЕКСАНДР-НЕДВИЖИМОСТЬ;real_estate_agent;https://spb.cian.ru/sale/flat/271072624/;Sankt-Peterburg;sale;flat;2;5;5;180.0;166666;30000000;1908;131.0;20.0;+79110017931;Tsentral'nyj;6-ja Sovetskaja;Ploschad' Vosstanija;
+ТРЕНД;real_estate_agent;https://spb.cian.ru/sale/flat/285041451/;Sankt-Peterburg;sale;flat;1;3;5;184.4;189804;35000000;1806;140.0;18.0;+79675375848;Vasileostrovskij;7-ja Vasil'evskogo ostrova linija;Vasileostrovskaja;
+Владис Центральный;real_estate_agent;https://spb.cian.ru/sale/flat/283972053/;Sankt-Peterburg;sale;flat;20;24;5;135.0;185185;25000000;2011;101.0;13.0;+79062418157;Primorskij;Ozero Dolgoe;Komendantskij prospekt;
+МК-Элит;real_estate_agent;https://spb.cian.ru/sale/flat/276067220/;Sankt-Peterburg;sale;flat;5;6;5;196.1;254462;49900000;1910;109.0;15.0;+79681896579;Tsentral'nyj;Ryleeva;Chernyshevskaja;
+Владис Центральный;real_estate_agent;https://spb.cian.ru/sale/flat/285606820/;Sankt-Peterburg;sale;flat;2;6;5;153.3;188519;28900000;1900;102.0;9.0;+79062418157;Tsentral'nyj;Litejnyj;Chernyshevskaja;
+МК-Элит;real_estate_agent;https://spb.cian.ru/sale/flat/266120948/;Sankt-Peterburg;sale;flat;8;10;5;205.0;194634;39900000;2000;123.0;15.0;+79681896579;Vyborgskij;Kurchatova;Politehnicheskaja;
+МК-Элит;real_estate_agent;https://spb.cian.ru/sale/flat/274942846/;Sankt-Peterburg;sale;flat;2;6;5;117.2;142064;16650000;1847;67.0;16.0;+79681896579;Tsentral'nyj;Borovaja;Ligovskij prospekt;
+Невский простор;real_estate_agent;https://spb.cian.ru/sale/flat/283208643/;Sankt-Peterburg;sale;flat;3;5;5;104.9;161105;16900000;1949;78.0;8.0;+79112809644;Krasnogvardejskij;Stahanovtsev;Novocherkasskaja;
+МИР КВАРТИР;real_estate_agent;https://spb.cian.ru/sale/flat/278956127/;Sankt-Peterburg;sale;flat;6;6;5;342.0;277777;95000000;1905;302.0;16.0;+79681890629;Tsentral'nyj;Smol'ninskoe;Chernyshevskaja;
+МК-Элит;real_estate_agent;https://spb.cian.ru/sale/flat/274956877/;Sankt-Peterburg;sale;flat;8;10;5;184.6;411700;76000000;2007;100.0;20.0;+79681896579;Petrogradskij;Petrovskij;Sportivnaja;
+АЛЕКСАНДР-НЕДВИЖИМОСТЬ;real_estate_agent;https://spb.cian.ru/sale/flat/274795416/;Sankt-Peterburg;sale;flat;5;5;5;123.4;153160;18900000;1832;82.0;12.0;+79110017931;Admiraltejskij;Sennoj;Sadovaja;
+АЛЕКСАНДР-НЕДВИЖИМОСТЬ;real_estate_agent;https://spb.cian.ru/sale/flat/269997280/;Sankt-Peterburg;sale;flat;20;21;5;146.1;225838;32995000;2021;86.0;14.0;+79110017931;Primorskij;Komendantskij aerodrom;Pionerskaja;Primorskij kvartal
+NF GROUP  St Petersburg;real_estate_agent;https://spb.cian.ru/sale/flat/279362909/;Sankt-Peterburg;sale;flat;5;5;5;209.0;472727;98800000;1907;122.0;28.0;+79111088317;Tsentral'nyj;Tverskaja;Chernyshevskaja;
+МК-Элит;real_estate_agent;https://spb.cian.ru/sale/flat/274934581/;Sankt-Peterburg;sale;flat;5;8;5;202.3;400395;81000000;2021;111.0;15.0;+79681896579;Petrogradskij;Petrovskij;Krestovskij ostrov;NEVA HAUS
+Время Инвест;real_estate_agent;https://spb.cian.ru/sale/flat/279421240/;Sankt-Peterburg;sale;flat;2;5;5;137.5;144727;19900000;1881;-1;19.0;+79119917810;Tsentral'nyj;Smol'ninskoe;Ploschad' Vosstanija;
+МК-Элит;real_estate_agent;https://spb.cian.ru/sale/flat/277652598/;Sankt-Peterburg;sale;flat;8;8;5;269.6;593471;160000000;2015;132.0;30.0;+79681896579;Tsentral'nyj;Orlovskaja;Chernyshevskaja;Smol'nyj park
+МИР КВАРТИР;real_estate_agent;https://spb.cian.ru/sale/flat/264572679/;Sankt-Peterburg;sale;flat;1;6;5;109.8;181238;19900000;1910;68.0;11.0;+79681890629;Vasileostrovskij;Vasil'evskij;Vasileostrovskaja;
+МК-Элит;real_estate_agent;https://spb.cian.ru/sale/flat/281948940/;Sankt-Peterburg;sale;flat;11;12;5;247.9;601048;149000000;2009;143.0;17.0;+79681896579;Tsentral'nyj;Kirochnaja;Chernyshevskaja;Rezidentsija na Suvorovskom
+ESTO;real_estate_agent;https://spb.cian.ru/sale/flat/279881003/;Sankt-Peterburg;sale;flat;3;5;5;197.3;126710;25000000;1899;112.0;19.0;+79119663012;Tsentral'nyj;Mohovaja;Chernyshevskaja;
+МИР КВАРТИР;real_estate_agent;https://spb.cian.ru/sale/flat/265566740/;Sankt-Peterburg;sale;flat;3;3;5;425.7;232558;99000000;1828;165.0;20.0;+79681890629;Tsentral'nyj;Dvortsovyj;Admiraltejskaja;
+Этажи Санкт-Петербург;real_estate_agent;https://spb.cian.ru/sale/flat/285285841/;Sankt-Peterburg;sale;flat;1;5;5;118.0;135593;16000000;1916;78.0;9.0;+79679912145;Tsentral'nyj;Kolomenskaja;;
+МИР КВАРТИР;real_estate_agent;https://spb.cian.ru/sale/flat/284761612/;Sankt-Peterburg;sale;flat;2;4;5;75.3;261620;19700000;1917;60.0;10.0;+79681890629;Tsentral'nyj;Aleksandra Nevskogo;Ploschad' Aleksandra Nevskogo;
+ДомИн;real_estate_agent;https://spb.cian.ru/sale/flat/285244175/;Sankt-Peterburg;sale;flat;4;5;5;117.9;145038;17100000;1901;81.0;16.0;+79819217320;Admiraltejskij;Verejskaja;Tehnologicheskij institut;
+МК-Элит;real_estate_agent;https://spb.cian.ru/sale/flat/284053967/;Sankt-Peterburg;sale;flat;6;6;5;163.6;163202;26700000;1914;96.0;16.0;+79681896579;Petrogradskij;Kronverkskaja;Petrogradskaja;
+Ольга Данилевская;realtor;https://spb.cian.ru/sale/flat/277017759/;Sankt-Peterburg;sale;flat;13;26;5;118.5;103797;12300000;2018;73.0;13.0;+79111712708;Pushkinskij;prospekt Novgorodskij;Kupchino;Shushary
+АН Знаменское;real_estate_agent;https://spb.cian.ru/sale/flat/266220997/;Sankt-Peterburg;sale;flat;4;5;5;116.2;179862;20900000;1893;76.0;21.0;+79819194017;Admiraltejskij;7-ja Krasnoarmejskaja;Tehnologicheskij institut;
+АЛЕКСАНДР-НЕДВИЖИМОСТЬ;real_estate_agent;https://spb.cian.ru/sale/flat/262743511/;Sankt-Peterburg;sale;flat;2;2;5;374.8;397545;149000000;2000;94.0;47.0;+79110017931;Pushkinskij;Dvortsovaja;Zvezdnaja;
+Этажи Санкт-Петербург;real_estate_agent;https://spb.cian.ru/sale/flat/254353888/;Sankt-Peterburg;sale;flat;5;10;5;100.7;160377;16150000;1988;62.0;15.0;+79819385507;Primorskij;Juntolovo;Komendantskij prospekt;
+FisherGroup;real_estate_agent;https://spb.cian.ru/sale/flat/285378368/;Sankt-Peterburg;sale;flat;3;5;5;162.0;187654;30400000;1917;101.0;21.0;+79818763154;Tsentral'nyj;Malaja Morskaja;Admiraltejskaja;
+ТРЕНД;real_estate_agent;https://spb.cian.ru/sale/flat/283920497/;Sankt-Peterburg;sale;flat;3;4;5;170.0;647058;110000000;1863;114.0;24.0;+79675375848;Admiraltejskij;Galernaja;Admiraltejskaja;
+МИР КВАРТИР;real_estate_agent;https://spb.cian.ru/sale/flat/284761621/;Sankt-Peterburg;sale;flat;2;6;5;97.4;170431;16600000;1911;68.0;10.0;+79681890629;Tsentral'nyj;9-ja Sovetskaja;Ploschad' Vosstanija;
+МК-Элит;real_estate_agent;https://spb.cian.ru/sale/flat/277628593/;Sankt-Peterburg;sale;flat;9;10;5;169.8;258539;43900000;2006;108.0;18.0;+79681896579;Vyborgskij;Sampsonievskoe;Vyborgskaja;Nejshlotskaja krepost'
+МИР КВАРТИР;real_estate_agent;https://spb.cian.ru/sale/flat/277872532/;Sankt-Peterburg;sale;flat;15;17;5;207.0;241062;49900000;2008;131.0;40.0;+79681890629;Nevskij;Shelgunova;Proletarskaja;
+Алмаз Басыров;realtor;https://spb.cian.ru/sale/flat/277793245/;Sankt-Peterburg;sale;flat;13;13;5;176.0;312500;55000000;2017;83.0;41.0;+79817808894;Primorskij;Primorskij prospekt;Begovaja;Tri vetra
+Remiz;real_estate_agent;https://spb.cian.ru/sale/flat/257007319/;Sankt-Peterburg;sale;flat;1;17;5;103.4;142166;14700000;1994;68.0;11.0;+79111943667;Primorskij;Jahtennaja;Komendantskij prospekt;
+МАСТЕР-ГРУПП Реал Эстейт;representative_developer;https://spb.cian.ru/sale/flat/284846373/;Sankt-Peterburg;sale;flat;1;7;5;196.0;600000;117600000;2020;-1;-1;+78122181195;Petrogradskij;Esperova;Krestovskij ostrov;ESPER CLUB
+МК-Элит;real_estate_agent;https://spb.cian.ru/sale/flat/284640642/;Sankt-Peterburg;sale;flat;7;7;5;237.0;569620;135000000;2022;118.0;26.0;+79681896579;Petrogradskij;Petrovskij;Krestovskij ostrov;Petrovskaja Dominanta
+МИР КВАРТИР;real_estate_agent;https://spb.cian.ru/sale/flat/275374873/;Sankt-Peterburg;sale;flat;2;4;5;112.5;186666;21000000;1905;56.0;27.0;+79681890629;Tsentral'nyj;Bol'shaja Moskovskaja;Vladimirskaja;
+Remiz;real_estate_agent;https://spb.cian.ru/sale/flat/277911429/;Sankt-Peterburg;sale;flat;3;6;5;158.9;176211;28000000;1756;107.0;13.0;+79692015624;Admiraltejskij;Sennoj;Sadovaja;
+BR Group;real_estate_agent;https://spb.cian.ru/sale/flat/284942670/;Sankt-Peterburg;sale;flat;4;6;5;134.5;141189;18990000;1903;81.0;15.0;+79812324654;Vasileostrovskij;10-ja Vasil'evskogo ostrova linija;Vasileostrovskaja;
+МИР КВАРТИР;real_estate_agent;https://spb.cian.ru/sale/flat/279742330/;Sankt-Peterburg;sale;flat;4;5;5;142.3;330288;47000000;1909;84.0;27.0;+79681890629;Tsentral'nyj;Vladimirskij;Vladimirskaja;
+МК-Элит;real_estate_agent;https://spb.cian.ru/sale/flat/281765449/;Sankt-Peterburg;sale;flat;6;6;5;123.6;161812;20000000;1880;80.0;14.0;+79681896579;Admiraltejskij;Sadovaja;Sennaja ploschad';
+МИР КВАРТИР;real_estate_agent;https://spb.cian.ru/sale/flat/279284982/;Sankt-Peterburg;sale;flat;4;4;5;145.2;294765;42800000;1849;66.0;17.0;+79681890629;Admiraltejskij;Malaja Morskaja;Admiraltejskaja;
+BE HOME;real_estate_agent;https://spb.cian.ru/sale/flat/283277372/;Sankt-Peterburg;sale;flat;2;5;5;242.6;247320;60000000;1913;180.0;21.0;+79681933625;Tsentral'nyj;Litejnyj;Ploschad' Vosstanija;
+АЛЕКСАНДР-НЕДВИЖИМОСТЬ;real_estate_agent;https://spb.cian.ru/sale/flat/284010780/;Sankt-Peterburg;sale;flat;14;24;5;110.5;131221;14500000;2018;60.0;16.0;+79110017931;Krasnogvardejskij;Poljustrovo;Devjatkino;Tsvetnoj Gorod
+МИР КВАРТИР;real_estate_agent;https://spb.cian.ru/sale/flat/283164113/;Sankt-Peterburg;sale;flat;4;6;5;146.0;191780;28000000;1912;85.0;15.0;+79681890629;Admiraltejskij;Kolomna;Sadovaja;
+Этажи Санкт-Петербург;real_estate_agent;https://spb.cian.ru/sale/flat/284896122/;Sankt-Peterburg;sale;flat;17;20;5;149.0;191275;28500000;2011;84.0;14.0;+79811630021;Krasnosel'skij;Juzhno-Primorskij;Leninskij prospekt;Admiral
+Этажи Санкт-Петербург;real_estate_agent;https://spb.cian.ru/sale/flat/283434545/;Sankt-Peterburg;sale;flat;2;6;5;153.3;188519;28900000;1900;102.0;9.0;+79111795007;Tsentral'nyj;Litejnyj;Chernyshevskaja;
+Владис Аврора;real_estate_agent;https://spb.cian.ru/sale/flat/268910660/;Sankt-Peterburg;sale;flat;4;5;5;206.6;188770;39000000;2013;90.0;77.0;+79692028856;Primorskij;1-ja Alekseevskaja;Prospekt Prosveschenija;Nikitinskaja usad'ba
+МИР КВАРТИР;real_estate_agent;https://spb.cian.ru/sale/flat/284232801/;Sankt-Peterburg;sale;flat;1;5;5;131.6;109422;14400000;1930;70.0;24.0;+79681890629;Kalininskij;Finljandskij;Ploschad' Lenina;
+МИР КВАРТИР;real_estate_agent;https://spb.cian.ru/sale/flat/264573876/;Sankt-Peterburg;sale;flat;5;5;5;208.8;473180;98800000;1907;122.0;27.0;+79681890629;Tsentral'nyj;Tverskaja;Chernyshevskaja;
+МК-Элит;real_estate_agent;https://spb.cian.ru/sale/flat/273536749/;Sankt-Peterburg;sale;flat;3;3;5;250.0;1000000;250000000;2011;112.0;44.0;+79681896579;Petrogradskij;Barochnaja;Chkalovskaja;
+BONAVA;developer;https://spb.cian.ru/sale/flat/282552010/;Sankt-Peterburg;sale;flat;14;14;5;176.1;354039;62346358;2023;-1;-1;+78122181164;Krasnogvardejskij;Magnitogorskaja;Novocherkasskaja;Magnifika Lifestyle
+BR Group;real_estate_agent;https://spb.cian.ru/sale/flat/284506339/;Sankt-Peterburg;sale;flat;4;4;5;119.8;188647;22600000;1880;64.0;18.0;+79119523402;Tsentral'nyj;Vladimirskij;Majakovskaja;
+Этажи Санкт-Петербург;real_estate_agent;https://spb.cian.ru/sale/flat/254347586/;Sankt-Peterburg;sale;flat;3;7;5;131.6;133358;17550000;1911;89.0;11.0;+79118419628;Tsentral'nyj;Kolomenskaja;Vladimirskaja;
+ТРЕНД;real_estate_agent;https://spb.cian.ru/sale/flat/279838549/;Sankt-Peterburg;sale;flat;3;5;5;94.1;116896;11000000;1961;60.0;10.0;+79675375848;Nevskij;Obuhovskij;Obuhovo;
+ТРЕНД;real_estate_agent;https://spb.cian.ru/sale/flat/278055743/;Sankt-Peterburg;sale;flat;2;5;5;136.2;142437;19400000;1956;89.0;8.0;+79675375848;Tsentral'nyj;5-ja Sovetskaja;Ploschad' Vosstanija;
+МИР КВАРТИР;real_estate_agent;https://spb.cian.ru/sale/flat/277315186/;Sankt-Peterburg;sale;flat;1;4;5;117.6;214710;25250000;2015;70.0;20.0;+79681890629;Primorskij;Novaja;Begovaja;Kvartal Lahta Park
+Агентство недвижимости Сергея Галлера;real_estate_agent;https://spb.cian.ru/sale/flat/280284141/;Sankt-Peterburg;sale;flat;6;6;5;161.0;201863;32500000;1863;-1;-1;+79675373372;Admiraltejskij;Izmajlovskoe;Baltijskaja;
+МК-Элит;real_estate_agent;https://spb.cian.ru/sale/flat/282904609/;Sankt-Peterburg;sale;flat;4;4;5;340.0;151470;51500000;1850;263.0;57.0;+79681896579;Tsentral'nyj;Mohovaja;Chernyshevskaja;
+СЕВЕР;real_estate_agent;https://spb.cian.ru/sale/flat/276919668/;Sankt-Peterburg;sale;flat;5;5;5;190.0;314736;59800000;-1;140.0;-1;+79111266422;Tsentral'nyj;Vladimirskij;Dostoevskaja;
+МИР КВАРТИР;real_estate_agent;https://spb.cian.ru/sale/flat/281918479/;Sankt-Peterburg;sale;flat;5;5;5;250.3;259288;64900000;1877;168.0;14.0;+79681890629;Tsentral'nyj;Vladimirskij;Majakovskaja;
+NF GROUP  St Petersburg;real_estate_agent;https://spb.cian.ru/sale/flat/277151954/;Sankt-Peterburg;sale;flat;4;6;5;390.3;384319;150000000;1914;250.0;32.0;+79819213291;Petrogradskij;Kronverkskoe;Petrogradskaja;
+ДомИн;real_estate_agent;https://spb.cian.ru/sale/flat/285245192/;Sankt-Peterburg;sale;flat;5;6;5;201.4;292949;59000000;2011;136.0;23.0;+79112795305;Petrogradskij;Barmaleeva;Petrogradskaja;
+Этажи Санкт-Петербург;real_estate_agent;https://spb.cian.ru/sale/flat/254351007/;Sankt-Peterburg;sale;flat;2;6;5;143.0;181818;26000000;1910;93.0;20.0;+79681865119;Tsentral'nyj;Smol'ninskoe;;
+Этажи Санкт-Петербург;real_estate_agent;https://spb.cian.ru/sale/flat/269674042/;Sankt-Peterburg;sale;flat;2;6;5;182.1;176771;32190000;1910;123.0;14.0;+79118229746;Tsentral'nyj;Rubinshtejna;Dostoevskaja;
+Владис Аврора;real_estate_agent;https://spb.cian.ru/sale/flat/281650768/;Sankt-Peterburg;sale;flat;3;6;5;147.3;196877;29000000;1916;57.0;48.0;+79692028856;Tsentral'nyj;Vladimirskij;Pushkinskaja;
+АЛЕКСАНДР-НЕДВИЖИМОСТЬ;real_estate_agent;https://spb.cian.ru/sale/flat/266913579/;Sankt-Peterburg;sale;flat;2;5;5;159.0;377358;60000000;1907;103.0;14.0;+79110017931;Tsentral'nyj;Chajkovskogo;Chernyshevskaja;
+FisherGroup;real_estate_agent;https://spb.cian.ru/sale/flat/279508939/;Sankt-Peterburg;sale;flat;2;5;5;109.1;259395;28300000;1878;63.0;14.0;+79818763154;Tsentral'nyj;Ligovka-Jamskaja;Ploschad' Vosstanija;
+Этажи Санкт-Петербург;real_estate_agent;https://spb.cian.ru/sale/flat/283044339/;Sankt-Peterburg;sale;flat;4;5;5;238.0;156722;37300000;2011;180.0;20.0;+79675371504;Vyborgskij;Bol'shaja Ozernaja;Ozerki;
+Этажи Санкт-Петербург;real_estate_agent;https://spb.cian.ru/sale/flat/284213112/;Sankt-Peterburg;sale;flat;1;4;5;153.8;331924;51050000;2005;95.0;31.0;+79111932568;Kirovskij;Ul'janka;Prospekt Veteranov;
+АЛЕКСАНДР-НЕДВИЖИМОСТЬ;real_estate_agent;https://spb.cian.ru/sale/flat/285537665/;Sankt-Peterburg;sale;flat;4;5;5;136.8;182017;24900000;1907;94.0;19.0;+79110017931;Admiraltejskij;6-ja Krasnoarmejskaja;Tehnologicheskij institut;
+АЛЕКСАНДР-НЕДВИЖИМОСТЬ;real_estate_agent;https://spb.cian.ru/sale/flat/274380229/;Sankt-Peterburg;sale;flat;3;4;5;262.0;190076;49800000;1905;149.0;29.0;+79110017931;Tsentral'nyj;Litejnyj;Majakovskaja;
+МАСТЕР-ГРУПП Реал Эстейт;representative_developer;https://spb.cian.ru/sale/flat/284847961/;Sankt-Peterburg;sale;flat;7;8;5;183.49;660000;121103400;2023;-1;-1;+78122181224;Petrogradskij;Aptekarskij ostrov;Petrogradskaja;Klubnyj dom MELTZER HALL
+Группа Эталон;developer;https://spb.cian.ru/sale/flat/283802056/;Sankt-Peterburg;sale;flat;5;7;5;243.9;587108;143195782;2022;121.0;27.0;+78122132259;Petrogradskij;Petrovskij;Krestovskij ostrov;Petrovskaja Dominanta
+Матвеев Дом;real_estate_agent;https://spb.cian.ru/sale/flat/282365974/;Sankt-Peterburg;sale;flat;1;5;5;66.5;109022;7250000;1968;52.0;7.0;+79819716263;Kolpinskij;Proletarskaja;Kupchino;
+АБСОЛЮТ;real_estate_agent;https://spb.cian.ru/sale/flat/277148161/;Sankt-Peterburg;sale;flat;5;9;5;71.5;160699;11490000;1969;54.0;6.0;+79819021778;Frunzenskij;Buharestskaja;Mezhdunarodnaja;
+ТРЕНД;real_estate_agent;https://spb.cian.ru/sale/flat/280848779/;Sankt-Peterburg;sale;flat;1;5;5;91.4;164004;14990000;1874;76.0;7.0;+79675375848;Admiraltejskij;Efimova;Sennaja ploschad';
+Этажи Санкт-Петербург;real_estate_agent;https://spb.cian.ru/sale/flat/266926199/;Sankt-Peterburg;sale;flat;9;9;5;100.9;177799;17940000;1989;61.0;15.0;+79819385507;Primorskij;Juntolovo;Komendantskij prospekt;
+Этажи Санкт-Петербург;real_estate_agent;https://spb.cian.ru/sale/flat/283521701/;Sankt-Peterburg;sale;flat;3;6;5;135.0;138518;18700000;1880;111.0;19.0;+79819695729;Tsentral'nyj;2-ja Sovetskaja;Ploschad' Vosstanija;
+Ю Питер;real_estate_agent;https://spb.cian.ru/sale/flat/278481448/;Sankt-Peterburg;sale;flat;4;4;5;121.0;164462;19900000;1884;81.0;15.0;+79052051217;Kalininskij;Komsomola;Ploschad' Lenina;
+АУРУМ;real_estate_agent;https://spb.cian.ru/sale/flat/276723012/;Sankt-Peterburg;sale;flat;3;5;5;130.6;191424;25000000;1952;86.0;11.0;+79117025189;Kirovskij;Narvskij;Narvskaja;
+Группа Эталон;developer;https://spb.cian.ru/sale/flat/283802225/;Sankt-Peterburg;sale;flat;3;9;5;138.0;367317;50689836;2022;82.0;14.0;+78122132259;Petrogradskij;Petrovskij;Krestovskij ostrov;Petrovskaja Dominanta
+Active Group - Арендафон. Штаб Квартир;real_estate_agent;https://spb.cian.ru/sale/flat/281439184/;Sankt-Peterburg;sale;flat;4;5;5;182.0;313186;57000000;1952;112.0;14.0;+79819217172;Tsentral'nyj;Smol'ninskoe;Ploschad' Vosstanija;
+Этажи Санкт-Петербург;real_estate_agent;https://spb.cian.ru/sale/flat/284496587/;Sankt-Peterburg;sale;flat;15;16;5;298.3;385517;115000000;2014;163.0;27.0;+79812268079;Vasileostrovskij;Nalichnaja;Primorskaja;Vasil'evskij Kvartal
+МИР КВАРТИР;real_estate_agent;https://spb.cian.ru/sale/flat/264573873/;Sankt-Peterburg;sale;flat;6;6;5;235.0;361702;85000000;1914;166.0;13.0;+79681890629;Vasileostrovskij;11-ja Vasil'evskogo ostrova linija;Vasileostrovskaja;
+АЛЕКСАНДР-НЕДВИЖИМОСТЬ;real_estate_agent;https://spb.cian.ru/sale/flat/273951420/;Sankt-Peterburg;sale;flat;2;5;5;164.7;236794;39000000;1875;98.0;9.0;+79110017931;Tsentral'nyj;Litejnyj;Chernyshevskaja;
+МК-Элит;real_estate_agent;https://spb.cian.ru/sale/flat/279735376/;Sankt-Peterburg;sale;flat;1;5;5;76.8;271484;20850000;1905;59.0;10.0;+79681896579;Tsentral'nyj;Mytninskaja;Ploschad' Vosstanija;
+Огни Города;real_estate_agent;https://spb.cian.ru/sale/flat/266791249/;Sankt-Peterburg;sale;flat;1;4;5;172.3;261172;45000000;1878;111.0;14.0;+79819519568;Tsentral'nyj;Majakovskogo;Chernyshevskaja;
+Владис Северо-Запад;real_estate_agent;https://spb.cian.ru/sale/flat/281704726/;Sankt-Peterburg;sale;flat;9;9;5;101.0;177227;17900000;1989;61.0;15.0;+79117911458;Primorskij;Juntolovo;Komendantskij prospekt;
+Союз;real_estate_agent;https://spb.cian.ru/sale/flat/274016477/;Sankt-Peterburg;sale;flat;4;4;5;223.6;187835;42000000;1843;154.0;13.0;+79110408784;Admiraltejskij;Admiraltejskij;Sadovaja;
+АН Знаменское;real_estate_agent;https://spb.cian.ru/sale/flat/284474213/;Sankt-Peterburg;sale;flat;1;4;5;120.0;191666;23000000;1900;70.0;38.0;+79117510086;Tsentral'nyj;Ligovka-Jamskaja;Ploschad' Vosstanija;
+МИР КВАРТИР;real_estate_agent;https://spb.cian.ru/sale/flat/281885244/;Sankt-Peterburg;sale;flat;2;3;5;118.3;200000;23660000;2022;73.0;11.0;+79681890629;Pushkinskij;Gospital'naja;Kupchino;
+МИР КВАРТИР;real_estate_agent;https://spb.cian.ru/sale/flat/281885233/;Sankt-Peterburg;sale;flat;2;3;5;142.1;220000;31262000;2022;84.0;12.0;+79681890629;Pushkinskij;Gospital'naja;Kupchino;
+МИР КВАРТИР;real_estate_agent;https://spb.cian.ru/sale/flat/264573872/;Sankt-Peterburg;sale;flat;5;6;5;248.0;383064;95000000;1914;134.0;21.0;+79681890629;Vasileostrovskij;11-ja Vasil'evskogo ostrova linija;Vasileostrovskaja;
+;;https://spb.cian.ru/sale/flat/285584334/;Sankt-Peterburg;sale;flat;15;18;5;166.7;200000;33340000;2023;78.0;30.0;+78127201217;Vasileostrovskij;Gavan';Primorskaja;Nahimov (Gavan' Kapitanov)
+Константин Новицкий;realtor;https://spb.cian.ru/sale/flat/285727425/;Sankt-Peterburg;sale;flat;2;4;5;134.3;189128;25400000;1828;98.0;11.0;+79812467794;Vasileostrovskij;7-ja Vasil'evskogo ostrova linija;Vasileostrovskaja;
+Никита Лабецкий;realtor;https://spb.cian.ru/sale/flat/285672039/;Sankt-Peterburg;sale;flat;4;6;5;246.3;203004;49999999;1822;149.0;27.0;+79812268205;Tsentral'nyj;Mohovaja;Gostinyj dvor;
+Любовь Михайлова;realtor;https://spb.cian.ru/sale/flat/283591034/;Sankt-Peterburg;sale;flat;13;23;5;193.0;357512;69000000;2008;106.0;24.0;+79670317414;Kirovskij;Dachnoe;Prospekt Veteranov;
+НЕВА Недвижимость;real_estate_agent;https://spb.cian.ru/sale/flat/279682854/;Sankt-Peterburg;sale;flat;4;6;5;152.3;131319;20000000;1909;97.0;23.0;+79110287754;Tsentral'nyj;Majakovskogo;Majakovskaja;
+Бюро Недвижимости;real_estate_agent;https://spb.cian.ru/sale/flat/285391986/;Sankt-Peterburg;sale;flat;6;6;5;260.0;1115384;290000000;2016;161.0;17.0;+79811310813;Tsentral'nyj;Smol'ninskoe;Chernyshevskaja;Smol'nyj park
+Адвекс;real_estate_agent;https://spb.cian.ru/sale/flat/275932912/;Sankt-Peterburg;sale;flat;4;4;5;243.3;1191944;290000000;1881;99.0;33.0;+79819011864;Admiraltejskij;Admiraltejskij;Admiraltejskaja;
+АРЕНДАПОИСК;real_estate_agent;https://spb.cian.ru/sale/flat/275000896/;Sankt-Peterburg;sale;flat;10;15;5;110.0;127272;14000000;1976;-1;12.0;+79675377050;Primorskij;Komendantskij aerodrom;Pionerskaja;
+Дом мечты;real_estate_agent;https://spb.cian.ru/sale/flat/277650318/;Sankt-Peterburg;sale;flat;6;6;5;400.0;175000;70000000;2017;120.0;65.0;+79118211396;Primorskij;Primorskij prospekt;Staraja Derevnja;Stockholm
+Адвекс;real_estate_agent;https://spb.cian.ru/sale/flat/282815005/;Sankt-Peterburg;sale;flat;4;4;5;115.7;172860;20000000;1863;91.0;13.0;+79117236215;Admiraltejskij;Galernaja;Admiraltejskaja;
+Exclusive Estate;real_estate_agent;https://spb.cian.ru/sale/flat/281538569/;Sankt-Peterburg;sale;flat;2;3;5;165.1;320000;52832000;1902;140.0;20.0;+79681890154;Tsentral'nyj;Furshtatskaja;Chernyshevskaja;
+Риэлторские Услуги;real_estate_agent;https://spb.cian.ru/sale/flat/270278369/;Sankt-Peterburg;sale;flat;6;6;5;115.0;130434;15000000;1881;80.0;15.0;+79675369790;Tsentral'nyj;Sotsialisticheskaja;Zvenigorodskaja;
+МАКРОМИР НЕДВИЖИМОСТЬ;real_estate_agent;https://spb.cian.ru/sale/flat/277222593/;Sankt-Peterburg;sale;flat;6;7;5;140.8;134943;18999999;1878;90.0;13.0;+79811496228;Tsentral'nyj;Pushkinskaja;Majakovskaja;
+Адвекс;real_estate_agent;https://spb.cian.ru/sale/flat/281569526/;Sankt-Peterburg;sale;flat;2;3;5;104.7;109837;11500000;1879;73.0;17.0;+79111720098;Tsentral'nyj;Marata;Zvenigorodskaja;
+Жилфонд - Калининский;real_estate_agent;https://spb.cian.ru/sale/flat/268938754/;Sankt-Peterburg;sale;flat;3;7;5;137.7;152498;20999000;1911;102.0;16.0;+79119323173;Petrogradskij;Monchegorskaja;Chkalovskaja;
+Торговый дом недвижимости;real_estate_agent;https://spb.cian.ru/sale/flat/279193995/;Sankt-Peterburg;sale;flat;4;5;5;112.6;159857;18000000;1823;-1;10.0;+79118160876;Tsentral'nyj;Litejnyj;Chernyshevskaja;
+Панорама;real_estate_agent;https://spb.cian.ru/sale/flat/275939183/;Sankt-Peterburg;sale;flat;2;4;5;163.8;103785;17000000;1917;94.0;12.0;+79816839976;Admiraltejskij;Semenovskij;Tehnologicheskij institut;
+Бекар;real_estate_agent;https://spb.cian.ru/sale/flat/278330935/;Sankt-Peterburg;sale;flat;2;6;5;160.0;186875;29900000;1900;105.0;12.0;+79819680370;Tsentral'nyj;Litejnyj;Chernyshevskaja;
+ЮСОН;real_estate_agent;https://spb.cian.ru/sale/flat/265260551/;Sankt-Peterburg;sale;flat;7;11;5;420.1;678409;285000000;2009;148.0;34.0;+79819802243;Tsentral'nyj;Paradnaja;Chernyshevskaja;Paradnyj kvartal
+Школа Недвижимости;real_estate_agent;https://spb.cian.ru/sale/flat/278248379/;Sankt-Peterburg;sale;flat;2;5;5;159.4;136762;21800000;1907;105.0;17.0;+79681894845;Admiraltejskij;Mozhajskaja;Pushkinskaja;
+ЭСТЭЙТ-КОНСАЛТИНГ;real_estate_agent;https://spb.cian.ru/sale/flat/261821226/;Sankt-Peterburg;sale;flat;2;5;5;110.6;135623;15000000;1954;82.0;9.0;+79111522113;Kirovskij;Narvskij;Kirovskij zavod;
+Елизавета Уварова;realtor;https://spb.cian.ru/sale/flat/284544899/;Sankt-Peterburg;sale;flat;5;11;5;166.4;276442;46000000;2001;93.0;33.0;+79111539461;Vyborgskij;Novorossijskaja;Lesnaja;
+Петербургская Недвижимость;real_estate_agent;https://spb.cian.ru/sale/flat/280280205/;Sankt-Peterburg;sale;flat;5;6;5;160.3;115408;18500000;1910;100.0;20.0;+79117119516;Petrogradskij;Aptekarskij ostrov;Petrogradskaja;
+НЕВА Недвижимость;real_estate_agent;https://spb.cian.ru/sale/flat/274316810/;Sankt-Peterburg;sale;flat;5;5;5;174.0;124137;21600000;1909;100.0;21.0;+79119564776;Admiraltejskij;Sadovaja;Baltijskaja;
+ЮСОН;real_estate_agent;https://spb.cian.ru/sale/flat/277506441/;Sankt-Peterburg;sale;flat;5;6;5;153.0;104568;15999000;1847;83.0;18.0;+79117994837;Tsentral'nyj;Borovaja;Ligovskij prospekt;
+Адвекс;real_estate_agent;https://spb.cian.ru/sale/flat/277958468/;Sankt-Peterburg;sale;flat;3;6;5;232.6;245055;57000000;1901;166.0;28.0;+79119642108;Tsentral'nyj;Vosstanija;Chernyshevskaja;
+Дом мечты;real_estate_agent;https://spb.cian.ru/sale/flat/284059189/;Sankt-Peterburg;sale;flat;2;9;5;135.7;194546;26400000;2008;85.0;13.0;+79819813961;Primorskij;1-ja Utinaja;Ozerki;
+Итака;real_estate_agent;https://spb.cian.ru/sale/flat/279056668/;Sankt-Peterburg;sale;flat;2;3;5;110.0;195454;21500000;1846;78.0;17.0;+79681930570;Admiraltejskij;Jakubovicha;Admiraltejskaja;
+Дом мечты;real_estate_agent;https://spb.cian.ru/sale/flat/284862132/;Sankt-Peterburg;sale;flat;2;6;5;138.5;148014;20500000;-1;97.0;10.0;+79819813961;Tsentral'nyj;Nekrasova;Ploschad' Vosstanija;
+Адвекс;real_estate_agent;https://spb.cian.ru/sale/flat/274206518/;Sankt-Peterburg;sale;flat;2;9;5;205.0;240975;49400000;2006;112.0;30.0;+79819021384;Vasileostrovskij;Nahimova;Primorskaja;
+Консенсус;real_estate_agent;https://spb.cian.ru/sale/flat/284437770/;Sankt-Peterburg;sale;flat;3;3;5;100.0;235000;23500000;1780;74.0;8.0;+79818226414;Vasileostrovskij;Repina;Sportivnaja;
+Century 21 Гарант;real_estate_agent;https://spb.cian.ru/sale/flat/284827815/;Sankt-Peterburg;sale;flat;2;4;5;282.6;115003;32500000;2016;151.0;72.0;+79052317645;Primorskij;Rjabinovaja;Udel'naja;
+Центр Жилищного Кредитования;real_estate_agent;https://spb.cian.ru/sale/flat/283338266/;Sankt-Peterburg;sale;flat;6;7;5;116.3;138865;16150000;1917;75.0;11.0;+79052338810;Tsentral'nyj;Starorusskaja;Ploschad' Aleksandra Nevskogo;
+Никита Лабецкий;realtor;https://spb.cian.ru/sale/flat/277274321/;Sankt-Peterburg;sale;flat;8;20;5;118.2;122673;14499999;2014;76.0;11.0;+79819803126;Krasnosel'skij;Marshala Kazakova;Avtovo;
+АНТАРЕС трейд;real_estate_agent;https://spb.cian.ru/sale/flat/277986608/;Sankt-Peterburg;sale;flat;3;6;5;164.0;162804;26700000;1910;105.0;23.0;+79681897407;Petrogradskij;Aptekarskij ostrov;Petrogradskaja;
+А и Б Агентство Недвижимости и Бизнес партнёры;real_estate_agent;https://spb.cian.ru/sale/flat/275338838/;Sankt-Peterburg;sale;flat;4;21;5;130.0;192307;25000000;2004;-1;13.0;+79811602072;Vyborgskij;prospekt Prosveschenija;Prospekt Prosveschenija;
+Ваш Адрес;real_estate_agent;https://spb.cian.ru/sale/flat/278471121/;Sankt-Peterburg;sale;flat;5;6;5;309.0;333333;103000000;1872;255.0;28.0;+79681968347;Admiraltejskij;Jakubovicha;Admiraltejskaja;
+ПетербургНедвижимость;real_estate_agent;https://spb.cian.ru/sale/flat/284969656/;Sankt-Peterburg;sale;flat;5;6;5;178.2;179573;32000000;1892;96.0;13.0;+79817414847;Tsentral'nyj;Mohovaja;Chernyshevskaja;
+Li3;real_estate_agent;https://spb.cian.ru/sale/flat/284350902/;Sankt-Peterburg;sale;flat;9;21;5;125.8;182750;22990000;2004;82.0;13.0;+79112652041;Vyborgskij;prospekt Prosveschenija;;
+Адвекс;real_estate_agent;https://spb.cian.ru/sale/flat/279621245/;Sankt-Peterburg;sale;flat;2;5;5;117.0;187179;21900000;1900;82.0;13.0;+79681877130;Admiraltejskij;Kolomna;Sadovaja;
+ПРОСПЕКТ;real_estate_agent;https://spb.cian.ru/sale/flat/282912968/;Sankt-Peterburg;sale;flat;5;9;5;71.2;165028;11750000;1969;54.0;6.0;+79812324326;Kirovskij;Leni Golikova;Prospekt Veteranov;
+МАКРОМИР НЕДВИЖИМОСТЬ;real_estate_agent;https://spb.cian.ru/sale/flat/274374753/;Sankt-Peterburg;sale;flat;4;5;5;93.7;109925;10300000;1961;60.0;10.0;+79811789834;Nevskij;Obuhovskij;Obuhovo;
+Городское агентство недвижимости;real_estate_agent;https://spb.cian.ru/sale/flat/283514190/;Sankt-Peterburg;sale;flat;5;10;5;159.2;168969;26900000;1996;78.0;60.0;+79681893345;Vyborgskij;Enotaevskaja;Udel'naja;
+Панорама;real_estate_agent;https://spb.cian.ru/sale/flat/266381161/;Sankt-Peterburg;sale;flat;3;5;5;155.0;161290;25000000;1956;106.0;24.0;+79681964843;Vyborgskij;Gdan'skaja;Udel'naja;
+Эрмитаж Галерея Недвижимости;real_estate_agent;https://spb.cian.ru/sale/flat/275148297/;Sankt-Peterburg;sale;flat;3;4;5;213.0;150234;32000000;1994;105.0;24.0;+79681896437;Tsentral'nyj;6-ja Sovetskaja;Ploschad' Vosstanija;
+Андрей Александрович Васин;realtor;https://spb.cian.ru/sale/flat/267166254/;Sankt-Peterburg;sale;flat;7;8;5;229.0;244541;56000000;2007;118.0;28.0;+79811675615;Petrogradskij;Graftio;Petrogradskaja;
+Петербургская Риэлторская Компания;real_estate_agent;https://spb.cian.ru/sale/flat/277796852/;Sankt-Peterburg;sale;flat;5;6;5;185.0;129729;24000000;1910;117.0;21.0;+79111867114;Petrogradskij;Bol'shaja Monetnaja;Gor'kovskaja;
+Адвекс;real_estate_agent;https://spb.cian.ru/sale/flat/274206844/;Sankt-Peterburg;sale;flat;4;6;5;155.0;160967;24950000;1914;102.0;23.0;+79681869723;Tsentral'nyj;Nekrasova;Ploschad' Vosstanija;
+Адвекс;real_estate_agent;https://spb.cian.ru/sale/flat/274206612/;Sankt-Peterburg;sale;flat;2;3;5;136.7;217995;29800000;1857;87.0;20.0;+79812512479;Admiraltejskij;Admiraltejskij;Admiraltejskaja;
+Ваш Дом;real_estate_agent;https://spb.cian.ru/sale/flat/283142924/;Sankt-Peterburg;sale;flat;16;16;5;174.3;154331;26900000;2003;92.0;10.0;+79819375458;Moskovskij;Zvezdnoe;Zvezdnaja;
+АТЛАНТА;real_estate_agent;https://spb.cian.ru/sale/flat/260154223/;Sankt-Peterburg;sale;flat;4;7;5;112.0;147321;16500000;1912;70.0;13.0;+79119306641;Kalininskij;Akademika Lebedeva;Ploschad' Lenina;
+Школа Недвижимости;real_estate_agent;https://spb.cian.ru/sale/flat/282425099/;Sankt-Peterburg;sale;flat;3;7;5;142.0;211197;29990000;1911;96.0;17.0;+79681894845;Tsentral'nyj;Ligovka-Jamskaja;Ploschad' Vosstanija;
+Оксана Карпова;realtor;https://spb.cian.ru/sale/flat/281569804/;Sankt-Peterburg;sale;flat;4;7;5;160.2;185393;29700000;1912;103.0;11.0;+79692039162;Petrogradskij;Aptekarskij ostrov;Petrogradskaja;
+Дом мечты;real_estate_agent;https://spb.cian.ru/sale/flat/277658321/;Sankt-Peterburg;sale;flat;7;8;5;392.0;178545;69990000;2017;132.0;32.0;+79118211396;Primorskij;Primorskij prospekt;Staraja Derevnja;Stockholm
+Первое Красносельское;real_estate_agent;https://spb.cian.ru/sale/flat/279559289/;Sankt-Peterburg;sale;flat;4;5;5;166.5;126126;21000000;1914;87.0;20.0;+79119392700;Admiraltejskij;Dekabristov;Baltijskaja;
+Невский простор;real_estate_agent;https://spb.cian.ru/sale/flat/284187516/;Sankt-Peterburg;sale;flat;5;5;5;125.1;104716;13100000;1900;93.0;15.0;+79118163258;Frunzenskij;Tambovskaja;Obvodnyj kanal;
+8 ЭТАЖ;real_estate_agent;https://spb.cian.ru/sale/flat/267082106/;Sankt-Peterburg;sale;flat;3;5;5;137.4;152838;21000000;1908;94.0;11.0;+79119320010;Tsentral'nyj;Litejnyj;Chernyshevskaja;
+НЕВА Недвижимость;real_estate_agent;https://spb.cian.ru/sale/flat/274316868/;Sankt-Peterburg;sale;flat;4;7;5;134.0;123134;16500000;1910;82.0;18.0;+79675382472;Petrogradskij;Aptekarskij ostrov;Petrogradskaja;
+АДРЕС ПЛЮС;real_estate_agent;https://spb.cian.ru/sale/flat/271821050/;Sankt-Peterburg;sale;flat;2;7;5;113.6;149559;16990000;1912;80.0;11.0;+79812268182;Admiraltejskij;Kolomna;Baltijskaja;
+Будь первым;real_estate_agent;https://spb.cian.ru/sale/flat/262806792/;Sankt-Peterburg;sale;flat;1;4;5;334.0;140718;47000000;2003;102.0;35.0;+79119031448;Vyborgskij;Svetlanovskoe;Udel'naja;
+Риэлторские Услуги;real_estate_agent;https://spb.cian.ru/sale/flat/282564054/;Sankt-Peterburg;sale;flat;8;9;5;100.9;145688;14700000;1988;61.0;15.0;+79681966203;Frunzenskij;Dimitrova;Prospekt Slavy;
+Городской Центр Недвижимости;real_estate_agent;https://spb.cian.ru/sale/flat/279024955/;Sankt-Peterburg;sale;flat;3;5;5;206.4;1196705;247000000;1872;120.0;33.0;+79052140805;Tsentral'nyj;Millionnaja;Admiraltejskaja;
+MASTER-GROUP Real Estate;real_estate_agent;https://spb.cian.ru/sale/flat/241207698/;Sankt-Peterburg;sale;flat;3;4;5;169.0;136094;23000000;1877;99.0;12.0;+79052312161;Tsentral'nyj;Zvenigorodskaja;Zvenigorodskaja;
+Дом мечты;real_estate_agent;https://spb.cian.ru/sale/flat/277649315/;Sankt-Peterburg;sale;flat;9;15;5;180.0;366666;66000000;2017;84.0;68.0;+79118211396;Petrogradskij;Zhdanovskaja;Chkalovskaja;Leont'evskij mys
+Дом мечты;real_estate_agent;https://spb.cian.ru/sale/flat/277650195/;Sankt-Peterburg;sale;flat;6;15;5;300.0;356666;107000000;2017;107.0;100.0;+79118211396;Petrogradskij;Zhdanovskaja;Krestovskij ostrov;Leont'evskij mys
+Владис Аврора;real_estate_agent;https://spb.cian.ru/sale/flat/282592650/;Sankt-Peterburg;sale;flat;3;5;5;173.0;213294;36900000;1911;105.0;14.0;+79692028856;Tsentral'nyj;Rubinshtejna;Dostoevskaja;
+Адвекс;real_estate_agent;https://spb.cian.ru/sale/flat/274206524/;Sankt-Peterburg;sale;flat;1;7;5;150.0;250000;37500000;1914;99.0;14.0;+79052305701;Tsentral'nyj;Rubinshtejna;Vladimirskaja;
+Анастасия Рахлина;realtor;https://spb.cian.ru/sale/flat/285538363/;Sankt-Peterburg;sale;flat;34;35;5;148.0;155405;23000000;2009;108.0;35.0;+79681885682;Nevskij;Rybatskoe;Obuhovo;Knjaz' Aleksandr Nevskij
+Казанская площадь;real_estate_agent;https://spb.cian.ru/sale/flat/279283847/;Sankt-Peterburg;sale;flat;3;7;5;146.0;188013;27450000;1904;102.0;15.0;+79117861496;Admiraltejskij;Sennoj;Sadovaja;
+Никита Лабецкий;realtor;https://spb.cian.ru/sale/flat/284247029/;Sankt-Peterburg;sale;flat;5;5;5;88.7;146561;12999999;1963;65.0;9.0;+79817214493;Primorskij;Omskaja;;
+Адвекс;real_estate_agent;https://spb.cian.ru/sale/flat/281286099/;Sankt-Peterburg;sale;flat;2;3;5;165.0;254545;42000000;1951;75.0;23.0;+79681865134;Primorskij;Oskalenko;Chernaja rechka;
+Адвекс;real_estate_agent;https://spb.cian.ru/sale/flat/278764291/;Sankt-Peterburg;sale;flat;5;6;5;94.1;173751;16350000;1910;68.0;10.0;+79817512217;Petrogradskij;Zverinskaja;Sportivnaja;
+Арбат-недвижимость;real_estate_agent;https://spb.cian.ru/sale/flat/280810873/;Sankt-Peterburg;sale;flat;2;8;5;143.0;223776;32000000;1910;102.0;12.0;+79817414331;Petrogradskij;Kronverkskoe;Petrogradskaja;
+Дом мечты;real_estate_agent;https://spb.cian.ru/sale/flat/277668998/;Sankt-Peterburg;sale;flat;9;11;5;160.0;331250;53000000;2006;-1;37.0;+79118211396;Petrogradskij;Chkalovskoe;Petrogradskaja;Pesochnaja nab. 18
+Русский Дом;real_estate_agent;https://spb.cian.ru/sale/flat/260800932/;Sankt-Peterburg;sale;flat;2;5;5;146.0;156164;22800000;1903;100.0;15.0;+79817627819;Tsentral'nyj;Vladimirskij;Vladimirskaja;
+РОСЛЕКС;real_estate_agent;https://spb.cian.ru/sale/flat/277468705/;Sankt-Peterburg;sale;flat;2;6;5;192.0;211197;40550000;1905;170.0;20.0;+79110866799;Petrogradskij;Zverinskaja;Sportivnaja;
+Петербургская Недвижимость;real_estate_agent;https://spb.cian.ru/sale/flat/285542233/;Sankt-Peterburg;sale;flat;1;6;5;100.5;149253;15000000;1898;57.0;17.0;+79679911237;Tsentral'nyj;Hersonskaja;Ploschad' Aleksandra Nevskogo;
+МЕЗОН;real_estate_agent;https://spb.cian.ru/sale/flat/273191540/;Sankt-Peterburg;sale;flat;5;6;5;295.0;220338;65000000;1828;-1;-1;+79851825136;Tsentral'nyj;Litejnyj;Chernyshevskaja;
+HOUSEHUNTERS;real_estate_agent;https://spb.cian.ru/sale/flat/273003021/;Sankt-Peterburg;sale;flat;2;5;5;243.0;374897;91100000;1899;149.0;34.0;+79681881627;Admiraltejskij;Sennoj;Sennaja ploschad';
+Владис Аврора;real_estate_agent;https://spb.cian.ru/sale/flat/285593295/;Sankt-Peterburg;sale;flat;4;4;5;157.9;231792;36600000;1830;100.0;30.0;+79692028856;Admiraltejskij;Bol'shaja Morskaja;Admiraltejskaja;
+Динас;real_estate_agent;https://spb.cian.ru/sale/flat/284653995/;Sankt-Peterburg;sale;flat;3;4;5;146.0;256849;37500000;1890;90.0;12.0;+79818499725;Tsentral'nyj;Smol'ninskoe;Ploschad' Vosstanija;
+Адвекс;real_estate_agent;https://spb.cian.ru/sale/flat/274206978/;Sankt-Peterburg;sale;flat;4;5;5;121.8;194581;23700000;1845;88.0;20.0;+79812466520;Tsentral'nyj;Majakovskogo;Ploschad' Vosstanija;
+Versailles LLC;real_estate_agent;https://spb.cian.ru/sale/flat/284244140/;Sankt-Peterburg;sale;flat;3;3;5;217.3;276111;59999000;2008;-1;-1;+79675374260;Kurortnyj;Dubkovskoe shosse;;
+MASTER-GROUP Real Estate;real_estate_agent;https://spb.cian.ru/sale/flat/273115255/;Sankt-Peterburg;sale;flat;3;10;5;101.5;121182;12300000;1988;62.0;15.0;+79681883644;Primorskij;Juntolovo;Komendantskij prospekt;
+Торговый дом недвижимости;real_estate_agent;https://spb.cian.ru/sale/flat/277237274/;Sankt-Peterburg;sale;flat;4;4;5;159.3;156936;25000000;1780;112.0;17.0;+79692032169;Admiraltejskij;Gorohovaja;Sadovaja;
+Адвекс;real_estate_agent;https://spb.cian.ru/sale/flat/274207632/;Sankt-Peterburg;sale;flat;5;6;5;168.0;160714;27000000;1911;112.0;22.0;+79681892851;Petrogradskij;Bol'shaja Zelenina;Chkalovskaja;
+Home estate;real_estate_agent;https://spb.cian.ru/sale/flat/283542273/;Sankt-Peterburg;sale;flat;3;5;5;130.0;196153;25500000;1901;92.0;10.0;+79119326674;Tsentral'nyj;5-ja Sovetskaja;Ploschad' Vosstanija;
+Александр Рогов;realtor;https://spb.cian.ru/sale/flat/274247322/;Sankt-Peterburg;sale;flat;5;6;5;121.0;180991;21900000;1905;78.0;13.0;+79816893061;Tsentral'nyj;Ligovka-Jamskaja;Ploschad' Aleksandra Nevskogo;
+NEWдвижимость;real_estate_agent;https://spb.cian.ru/sale/flat/282460875/;Sankt-Peterburg;sale;flat;6;8;5;142.7;280238;39990000;2004;89.0;18.0;+79679911949;Vyborgskij;Botkinskaja;Ploschad' Lenina;
+Ostrov;real_estate_agent;https://spb.cian.ru/sale/flat/275245383/;Sankt-Peterburg;sale;flat;9;13;5;322.0;422360;136000000;2017;-1;113.0;+79818766300;Petrogradskij;Zhdanovskaja;Chkalovskaja;Leont'evskij mys
+Малахит;real_estate_agent;https://spb.cian.ru/sale/flat/266855760/;Sankt-Peterburg;sale;flat;7;24;5;139.05;222725;30970000;2021;61.0;33.0;+79052332016;Moskovskij;Tipanova;Moskovskaja;
+РУСКОЛ;real_estate_agent;https://spb.cian.ru/sale/flat/285458232/;Sankt-Peterburg;sale;flat;1;10;5;196.0;600000;117600000;2020;-1;20.0;+79819515373;Petrogradskij;Esperova;Krestovskij ostrov;ESPER CLUB
+Prestige;real_estate_agent;https://spb.cian.ru/sale/flat/262180804/;Sankt-Peterburg;sale;flat;4;4;5;105.7;282876;29900000;1822;70.0;11.0;+79681897053;Tsentral'nyj;naberezhnaja Kanala Griboedova;Nevskij prospekt;
+ПетербургЪ Недвижимость;real_estate_agent;https://spb.cian.ru/sale/flat/281701740/;Sankt-Peterburg;sale;flat;1;5;5;124.5;136546;17000000;1901;85.0;20.0;+79819323944;Admiraltejskij;Ruzovskaja;Pushkinskaja;
+Фабрика Недвижимости;real_estate_agent;https://spb.cian.ru/sale/flat/276335534/;Sankt-Peterburg;sale;flat;5;6;5;166.7;233953;39000000;1998;106.0;17.0;+79119517470;Admiraltejskij;Bol'shaja Pod'jacheskaja;Sadovaja;
+Адвекс;real_estate_agent;https://spb.cian.ru/sale/flat/275351029/;Sankt-Peterburg;sale;flat;6;6;5;135.3;141315;19120000;1914;85.0;14.0;+79119739497;Admiraltejskij;Kanonerskaja;Sadovaja;
+Смарт Инновации;real_estate_agent;https://spb.cian.ru/sale/flat/277453508/;Sankt-Peterburg;sale;flat;5;6;5;120.2;249584;30000000;1912;81.0;14.0;+79816885462;Petrogradskij;Pionerskaja;Chkalovskaja;
+Арбат-недвижимость;real_estate_agent;https://spb.cian.ru/sale/flat/285489841/;Sankt-Peterburg;sale;flat;17;17;5;135.0;140740;19000000;2006;-1;-1;+79681891619;Vyborgskij;Sosnovskoe;Ozerki;Poema u treh ozer
+Жилфонд - Калининский;real_estate_agent;https://spb.cian.ru/sale/flat/285226850/;Sankt-Peterburg;sale;flat;3;5;5;180.3;122013;21999000;1917;117.0;15.0;+79119323173;Tsentral'nyj;Marata;Ligovskij prospekt;
+ЮСОН;real_estate_agent;https://spb.cian.ru/sale/flat/272037976/;Sankt-Peterburg;sale;flat;17;17;5;230.0;172173;39600000;2001;128.0;21.0;+79117223537;Vyborgskij;Shuvalovo-Ozerki;Ozerki;
+БЕСТ на Проспекте Мира;real_estate_agent;https://spb.cian.ru/sale/flat/277134757/;Sankt-Peterburg;sale;flat;7;9;5;191.15;496991;95000000;2007;86.0;44.0;+79653838233;Petrogradskij;Kemskaja;Krestovskij ostrov;
+Адвекс;real_estate_agent;https://spb.cian.ru/sale/flat/276521662/;Sankt-Peterburg;sale;flat;5;5;5;108.0;179629;19400000;1917;74.0;13.0;+79117457263;Admiraltejskij;Gorohovaja;Pushkinskaja;
+Дом мечты;real_estate_agent;https://spb.cian.ru/sale/flat/281294645/;Sankt-Peterburg;sale;flat;4;4;5;120.0;165833;19900000;1841;77.0;13.0;+79681903187;Tsentral'nyj;Vladimirskij;Dostoevskaja;
+CENTURY 21 Capital Petersburg;real_estate_agent;https://spb.cian.ru/sale/flat/283860702/;Sankt-Peterburg;sale;flat;3;6;5;153.7;247234;38000000;2011;78.0;46.0;+79818429426;Kalininskij;Komsomola;Ploschad' Lenina;
+Дом мечты;real_estate_agent;https://spb.cian.ru/sale/flat/280950844/;Sankt-Peterburg;sale;flat;2;9;5;155.0;272258;42200000;2022;91.0;22.0;+79118211396;Petrogradskij;Petrovskij;Krestovskij ostrov;NEVA HAUS
+NF GROUP  St Petersburg;real_estate_agent;https://spb.cian.ru/sale/flat/282505246/;Sankt-Peterburg;sale;flat;6;9;5;190.5;280000;53340000;2021;87.0;54.0;+79819213291;Vyborgskij;Aleksandra Matrosova;Lesnaja;Pritjazhenie
+NF GROUP  St Petersburg;real_estate_agent;https://spb.cian.ru/sale/flat/272542692/;Sankt-Peterburg;sale;flat;16;16;5;180.0;367777;66200000;2014;-1;19.0;+79675376503;Krasnogvardejskij;Bol'shaja Ohta;Novocherkasskaja;Platinum
+Адвекс;real_estate_agent;https://spb.cian.ru/sale/flat/285311228/;Sankt-Peterburg;sale;flat;1;5;5;107.1;158730;17000000;1917;81.0;8.0;+79811687952;Petrogradskij;Bol'shaja Monetnaja;Gor'kovskaja;
+A-estate;real_estate_agent;https://spb.cian.ru/sale/flat/269316699/;Sankt-Peterburg;sale;flat;3;4;5;107.8;153061;16500000;1908;83.0;10.0;+79811312613;Vasileostrovskij;Gavanskaja;Primorskaja;
+Никита Лабецкий;realtor;https://spb.cian.ru/sale/flat/284116212/;Sankt-Peterburg;sale;flat;9;15;5;141.3;162774;22999999;2012;63.0;36.0;+79817724357;Krasnosel'skij;Jugo-Zapad;Leninskij prospekt;
+НЕВА Недвижимость;real_estate_agent;https://spb.cian.ru/sale/flat/274593593/;Sankt-Peterburg;sale;flat;3;4;5;180.0;133333;24000000;1912;113.0;17.0;+79119811253;Admiraltejskij;Kanonerskaja;Sadovaja;
+Никита Лабецкий;realtor;https://spb.cian.ru/sale/flat/280381168/;Sankt-Peterburg;sale;flat;7;15;5;147.0;182312;26799999;1995;83.0;16.0;+79052061989;Vyborgskij;Svetlanovskoe;Udel'naja;
+Адвекс;real_estate_agent;https://spb.cian.ru/sale/flat/274206576/;Sankt-Peterburg;sale;flat;5;5;5;148.8;322513;47990000;1902;102.0;19.0;+79811391328;Petrogradskij;Vvedenskij;Sportivnaja;
+Century 21 Гарант;real_estate_agent;https://spb.cian.ru/sale/flat/282213298/;Sankt-Peterburg;sale;flat;3;5;5;162.0;191358;31000000;1867;98.0;50.0;+79052266253;Admiraltejskij;Masterskaja;Sadovaja;
+Адвекс;real_estate_agent;https://spb.cian.ru/sale/flat/274206522/;Sankt-Peterburg;sale;flat;2;7;5;138.6;180375;25000000;1911;97.0;20.0;+79818607901;Petrogradskij;Bol'shaja Monetnaja;Petrogradskaja;
+ПИА Недвижимость;real_estate_agent;https://spb.cian.ru/sale/flat/284064888/;Sankt-Peterburg;sale;flat;2;2;5;175.4;250855;44000000;1917;119.0;34.0;+79681932119;Pushkinskij;Glinki;;
+ЮСОН;real_estate_agent;https://spb.cian.ru/sale/flat/283028715/;Sankt-Peterburg;sale;flat;2;10;5;101.0;127722;12900000;1988;62.0;15.0;+79681871151;Primorskij;Juntolovo;Komendantskij prospekt;
+ЮСОН;real_estate_agent;https://spb.cian.ru/sale/flat/270004625/;Sankt-Peterburg;sale;flat;4;4;5;142.0;176049;24999000;1952;85.0;16.0;+79110326242;Vyborgskij;Gdan'skaja;Udel'naja;
+НЕВА Недвижимость;real_estate_agent;https://spb.cian.ru/sale/flat/275094773/;Sankt-Peterburg;sale;flat;1;3;5;175.2;73630;12900000;2003;97.0;36.0;+79681935913;Krasnosel'skij;Ogorodnaja;Prospekt Veteranov;
+ЮСОН;real_estate_agent;https://spb.cian.ru/sale/flat/275000689/;Sankt-Peterburg;sale;flat;4;5;5;113.7;364995;41500000;1828;81.0;24.0;+79117081184;Tsentral'nyj;Sadovaja;Gostinyj dvor;
+Петербургская Недвижимость;real_estate_agent;https://spb.cian.ru/sale/flat/282669597/;Sankt-Peterburg;sale;flat;3;5;5;206.4;250000;51600000;1873;126.0;12.0;+79818961800;Tsentral'nyj;Rubinshtejna;Dostoevskaja;
+ЖИЛФОНД Санкт-Петербург;real_estate_agent;https://spb.cian.ru/sale/flat/283392640/;Sankt-Peterburg;sale;flat;4;4;5;98.9;197168;19500000;1798;66.0;11.0;+79681885944;Admiraltejskij;Sadovaja;Sadovaja;
+Никита Лабецкий;realtor;https://spb.cian.ru/sale/flat/284434619/;Sankt-Peterburg;sale;flat;6;6;5;158.3;157927;24999999;1908;93.0;23.0;+79117842232;Tsentral'nyj;Mytninskaja;Ploschad' Vosstanija;
+Владис Аврора;real_estate_agent;https://spb.cian.ru/sale/flat/283705605/;Sankt-Peterburg;sale;flat;2;6;5;160.8;158582;25500000;1901;85.0;22.0;+79692028856;Admiraltejskij;7-ja Krasnoarmejskaja;Frunzenskaja;
+Будь первым;real_estate_agent;https://spb.cian.ru/sale/flat/280951965/;Sankt-Peterburg;sale;flat;9;10;5;140.0;200714;28100000;2022;73.0;25.0;+79111007973;Krasnosel'skij;Juzhno-Primorskij;Leninskij prospekt;Zhemchuzhnaja gavan'
+Торговый дом недвижимости;real_estate_agent;https://spb.cian.ru/sale/flat/277142271/;Sankt-Peterburg;sale;flat;2;3;5;250.0;140000;35000000;2021;180.0;50.0;+79681920529;Primorskij;Nikolaevskaja;Begovaja;
+ЭЦН;real_estate_agent;https://spb.cian.ru/sale/flat/284371275/;Sankt-Peterburg;sale;flat;3;17;5;181.0;198895;36000000;2003;110.0;17.0;+79692002077;Moskovskij;Zvezdnoe;Zvezdnaja;
+МЕЗОН;real_estate_agent;https://spb.cian.ru/sale/flat/279646378/;Sankt-Peterburg;sale;flat;4;5;5;202.5;384943;77950999;1904;-1;-1;+79851825136;Admiraltejskij;Gorohovaja;Admiraltejskaja;
+Адвекс;real_estate_agent;https://spb.cian.ru/sale/flat/276117917/;Sankt-Peterburg;sale;flat;1;5;5;66.5;195488;13000000;1965;50.0;7.0;+79112819026;Kirovskij;Knjazhevo;Prospekt Veteranov;
+Адвекс;real_estate_agent;https://spb.cian.ru/sale/flat/277539251/;Sankt-Peterburg;sale;flat;3;5;5;113.3;194174;22000000;1905;75.0;10.0;+79110973581;Admiraltejskij;7-ja Krasnoarmejskaja;Tehnologicheskij institut;
+Адвекс;real_estate_agent;https://spb.cian.ru/sale/flat/279894905/;Sankt-Peterburg;sale;flat;5;5;5;124.0;191129;23700000;1912;85.0;21.0;+79117911371;Tsentral'nyj;8-ja Sovetskaja;Ploschad' Vosstanija;
+Студия 78;real_estate_agent;https://spb.cian.ru/sale/flat/284027039/;Sankt-Peterburg;sale;flat;3;6;5;141.4;169731;24000000;1911;82.0;12.0;+79817626515;Tsentral'nyj;Smol'ninskoe;Chernyshevskaja;
+Адвекс;real_estate_agent;https://spb.cian.ru/sale/flat/279521151/;Sankt-Peterburg;sale;flat;2;3;5;127.3;216025;27500000;1916;83.0;22.0;+79052058751;Tsentral'nyj;Smol'ninskoe;Ploschad' Vosstanija;
+Адвекс;real_estate_agent;https://spb.cian.ru/sale/flat/283819530/;Sankt-Peterburg;sale;flat;1;3;5;283.3;155312;44000000;1999;90.0;53.0;+79811392204;Primorskij;Kolomjagi;Udel'naja;
+Елисеевский квартал;real_estate_agent;https://spb.cian.ru/sale/flat/278679648/;Sankt-Peterburg;sale;flat;2;3;5;300.0;180000;54000000;2003;-1;30.0;+79110326261;Primorskij;Gluharskaja;;
+Century 21 Гарант;real_estate_agent;https://spb.cian.ru/sale/flat/276571874/;Sankt-Peterburg;sale;flat;2;15;5;101.3;128232;12990000;1975;57.0;10.0;+79681883800;Krasnosel'skij;Zdorovtseva;Prospekt Veteranov;
+Петербургский Риэлтор;real_estate_agent;https://spb.cian.ru/sale/flat/280036165/;Sankt-Peterburg;sale;flat;1;6;5;164.8;318567;52500000;2015;65.0;57.0;+79681868489;Tsentral'nyj;Smol'ninskoe;Novocherkasskaja;Smol'nyj prospekt
+Панорама;real_estate_agent;https://spb.cian.ru/sale/flat/282623513/;Sankt-Peterburg;sale;flat;6;6;5;96.2;161122;15500000;1904;58.0;15.0;+79692040198;Tsentral'nyj;3-ja Sovetskaja;Ploschad' Vosstanija;
+Панорама;real_estate_agent;https://spb.cian.ru/sale/flat/284896844/;Sankt-Peterburg;sale;flat;4;5;5;115.2;131944;15200000;1904;-1;8.0;+79117615851;Tsentral'nyj;Aleksandra Nevskogo;Ploschad' Aleksandra Nevskogo;
+Будь первым;real_estate_agent;https://spb.cian.ru/sale/flat/283318791/;Sankt-Peterburg;sale;flat;3;6;5;152.8;149869;22900000;-1;108.0;-1;+79819683925;Tsentral'nyj;Konnaja;Ploschad' Aleksandra Nevskogo;
+Будь первым;real_estate_agent;https://spb.cian.ru/sale/flat/284326321/;Sankt-Peterburg;sale;flat;9;10;5;150.0;233333;35000000;2004;-1;40.0;+79681940292;Kirovskij;Tankista Hrustitskogo;Prospekt Veteranov;
+ID 23937100;realtor;https://spb.cian.ru/sale/flat/283248074/;Sankt-Peterburg;sale;flat;10;10;5;230.0;478260;110000000;2022;84.0;47.0;+79679911758;Vasileostrovskij;Ostrov Dekabristov;Primorskaja;Docklands 2
+ЮСОН;real_estate_agent;https://spb.cian.ru/sale/flat/282752477/;Sankt-Peterburg;sale;flat;4;4;5;201.1;631526;127000000;1872;-1;18.0;+79681964913;Admiraltejskij;Bol'shaja Morskaja;Admiraltejskaja;
+Дом мечты;real_estate_agent;https://spb.cian.ru/sale/flat/278940365/;Sankt-Peterburg;sale;flat;9;10;5;466.0;429184;200000000;2017;135.0;116.0;+79118211396;Petrogradskij;Zhdanovskaja;Krestovskij ostrov;Leont'evskij mys
+МЕЙСОН;real_estate_agent;https://spb.cian.ru/sale/flat/266825001/;Sankt-Peterburg;sale;flat;4;5;5;195.9;91883;18000000;2013;84.0;38.0;+79817123440;Kurortnyj;Nikolaja Sokolova;Begovaja;
+НЕВА Недвижимость;real_estate_agent;https://spb.cian.ru/sale/flat/284851884/;Sankt-Peterburg;sale;flat;1;12;5;102.0;143137;14600000;1987;62.0;15.0;+79811678177;Primorskij;Ozero Dolgoe;Komendantskij prospekt;
+Итака;real_estate_agent;https://spb.cian.ru/sale/flat/285248715/;Sankt-Peterburg;sale;flat;11;13;5;127.0;177952;22600000;1998;88.0;10.0;+79681930570;Kalininskij;Politehnicheskaja;Ploschad' Muzhestva;
+Paradise Land;real_estate_agent;https://spb.cian.ru/sale/flat/267824855/;Sankt-Peterburg;sale;flat;5;5;5;380.0;631578;240000000;2001;-1;-1;+79811629746;Tsentral'nyj;Ital'janskaja;Gostinyj dvor;
+Алена Фролова;realtor;https://spb.cian.ru/sale/flat/270046576/;Sankt-Peterburg;sale;flat;5;9;5;71.5;166433;11900000;1970;54.0;6.0;+79819013489;Frunzenskij;Turku;Mezhdunarodnaja;
+Адвекс;real_estate_agent;https://spb.cian.ru/sale/flat/283764482/;Sankt-Peterburg;sale;flat;7;26;5;118.9;103027;12250000;2018;72.0;13.0;+79681899064;Pushkinskij;prospekt Novgorodskij;;Shushary
+ЮСОН;real_estate_agent;https://spb.cian.ru/sale/flat/273293945/;Sankt-Peterburg;sale;flat;1;12;5;100.0;130000;13000000;1991;69.0;10.0;+79818601148;Primorskij;Staroderevenskaja;Staraja Derevnja;
+Адвекс;real_estate_agent;https://spb.cian.ru/sale/flat/274206719/;Sankt-Peterburg;sale;flat;5;6;5;151.0;206622;31200000;1876;105.0;15.0;+79681874581;Tsentral'nyj;Pushkinskaja;Ploschad' Vosstanija;
+КАПИТАЛ;real_estate_agent;https://spb.cian.ru/sale/flat/278760598/;Sankt-Peterburg;sale;flat;2;4;5;260.5;325911;84900000;1838;133.0;41.0;+79119310400;Tsentral'nyj;Chajkovskogo;Chernyshevskaja;
+ЮСОН;real_estate_agent;https://spb.cian.ru/sale/flat/270352387/;Sankt-Peterburg;sale;flat;3;3;5;142.4;153792;21900000;1902;94.0;13.0;+79819217190;Vasileostrovskij;Gavan';Vasileostrovskaja;
+Владис Аврора;real_estate_agent;https://spb.cian.ru/sale/flat/285615320/;Sankt-Peterburg;sale;flat;4;14;5;119.6;133779;16000000;2020;73.0;16.0;+79692028856;Vyborgskij;Tihookeanskaja;Parnas;v Pargolovo
+Сергей Тарасов;realtor;https://spb.cian.ru/sale/flat/271907489/;Sankt-Peterburg;sale;flat;3;8;5;247.0;728340;179900000;2008;122.0;35.0;+79812268835;Petrogradskij;Chkalovskoe;Krestovskij ostrov;Morskoj 33
+Масштаб Центр недвижимости;real_estate_agent;https://spb.cian.ru/sale/flat/273222095/;Sankt-Peterburg;sale;flat;3;3;5;233.0;120171;28000000;2009;127.0;23.0;+79675374622;Krasnosel'skij;Sosnovaja poljana;Leninskij prospekt;
+РУСКОЛ;real_estate_agent;https://spb.cian.ru/sale/flat/285108031/;Sankt-Peterburg;sale;flat;10;15;5;122.0;143442;17500000;1980;75.0;11.0;+79819515373;Frunzenskij;Budapeshtskaja;Dunajskaja;
+8 ЭТАЖ;real_estate_agent;https://spb.cian.ru/sale/flat/281007400/;Sankt-Peterburg;sale;flat;14;14;5;125.0;320000;40000000;2018;56.0;34.0;+79818975646;Krasnogvardejskij;Magnitogorskaja;Novocherkasskaja;Magnifika Lifestyle
+Панорама;real_estate_agent;https://spb.cian.ru/sale/flat/282509463/;Sankt-Peterburg;sale;flat;2;6;5;144.7;241879;35000000;1901;92.0;22.0;+79816812935;Vasileostrovskij;Vasil'evskij;Vasileostrovskaja;
+Свободный Дом;real_estate_agent;https://spb.cian.ru/sale/flat/273907943/;Sankt-Peterburg;sale;flat;2;5;5;174.0;339080;59000000;1903;110.0;30.0;+79818608293;Tsentral'nyj;Bonch-Bruevicha;Ploschad' Aleksandra Nevskogo;
+Мир Квартир офис Санкт-Петербург;real_estate_agent;https://spb.cian.ru/sale/flat/283146128/;Sankt-Peterburg;sale;flat;9;9;5;237.45;384923;91400000;-1;151.0;20.0;+79110967960;Petrogradskij;Petrovskij;Sportivnaja;NEVA HAUS
+Арго-недвижимость;real_estate_agent;https://spb.cian.ru/sale/flat/284710059/;Sankt-Peterburg;sale;flat;4;4;5;143.7;173973;24999999;1851;77.0;16.0;+79681924526;Tsentral'nyj;Vladimirskij;Ploschad' Vosstanija;
+БЮРО НЕДВИЖИМОСТИ No1;real_estate_agent;https://spb.cian.ru/sale/flat/281478737/;Sankt-Peterburg;sale;flat;3;4;5;100.0;109950;10995000;2008;72.0;8.0;+79111934836;Petrodvortsovyj;Krasnogo Flota;Avtovo;
+House Estate;real_estate_agent;https://spb.cian.ru/sale/flat/284786696/;Sankt-Peterburg;sale;flat;1;7;5;108.5;152073;16500000;1896;73.0;18.0;+79812324626;Tsentral'nyj;Kolomenskaja;Ligovskij prospekt;
+ЮркоН;real_estate_agent;https://spb.cian.ru/sale/flat/281629812/;Sankt-Peterburg;sale;flat;4;5;5;113.8;169595;19300000;1904;72.0;14.0;+79681966801;Tsentral'nyj;Kirochnaja;Chernyshevskaja;
+Петербургская Недвижимость;real_estate_agent;https://spb.cian.ru/sale/flat/278189216/;Sankt-Peterburg;sale;flat;3;7;5;158.9;138993;22086000;1911;107.0;14.0;+79681902641;Petrogradskij;Chkalovskoe;Petrogradskaja;
+CityRealty;real_estate_agent;https://spb.cian.ru/sale/flat/274643384/;Sankt-Peterburg;sale;flat;6;6;5;124.0;193467;23990000;1892;85.0;12.0;+79692033742;Admiraltejskij;Pochtamtskaja;Admiraltejskaja;
+Петербургская Недвижимость;real_estate_agent;https://spb.cian.ru/sale/flat/283967045/;Sankt-Peterburg;sale;flat;25;25;5;198.0;164141;32500000;2011;103.0;38.0;+79679912088;Vyborgskij;Esenina;Ozerki;
+Александр Рогов;realtor;https://spb.cian.ru/sale/flat/282345974/;Sankt-Peterburg;sale;flat;4;6;5;187.8;202342;38000000;1833;96.0;26.0;+79816893061;Admiraltejskij;Semenovskij;Pushkinskaja;
+ХочуКвартиру;real_estate_agent;https://spb.cian.ru/sale/flat/285283370/;Sankt-Peterburg;sale;flat;6;17;5;160.5;242990;39000000;2003;111.0;14.0;+79675375188;Vyborgskij;Svetlanovskoe;Ploschad' Muzhestva;
+ID 49550373;homeowner;https://spb.cian.ru/sale/flat/279363939/;Sankt-Peterburg;sale;flat;2;5;5;126.0;309523;39000000;1857;61.0;18.0;+79692028376;Admiraltejskij;Malaja Morskaja;Admiraltejskaja;
+Петроград;real_estate_agent;https://spb.cian.ru/sale/flat/271945940/;Sankt-Peterburg;sale;flat;3;9;5;179.3;379252;68000000;2011;-1;-1;+79816882509;Petrogradskij;Barochnaja;Chkalovskaja;
+Магазин Квартир;real_estate_agent;https://spb.cian.ru/sale/flat/281123691/;Sankt-Peterburg;sale;flat;9;9;5;177.3;397631;70500000;2017;103.0;23.0;+79119644738;Petrogradskij;Chkalovskoe;Sportivnaja;
+Домината;real_estate_agent;https://spb.cian.ru/sale/flat/278033442/;Sankt-Peterburg;sale;flat;13;25;5;118.0;133898;15800000;2012;76.0;11.0;+79681885396;Krasnosel'skij;Marshala Kazakova;Avtovo;
+Панорама;real_estate_agent;https://spb.cian.ru/sale/flat/285343008/;Sankt-Peterburg;sale;flat;2;4;5;130.2;138248;18000000;1894;97.0;13.0;+79675379092;Petrogradskij;Kujbysheva;Gor'kovskaja;
+Городское агентство недвижимости;real_estate_agent;https://spb.cian.ru/sale/flat/284550739/;Sankt-Peterburg;sale;flat;3;6;5;144.1;173490;25000000;1913;96.0;19.0;+79681894851;Admiraltejskij;Verejskaja;Tehnologicheskij institut;
+Русский Фонд Недвижимости;real_estate_agent;https://spb.cian.ru/sale/flat/277335961/;Sankt-Peterburg;sale;flat;5;5;5;153.5;166123;25500000;1880;96.0;11.0;+79811792342;Tsentral'nyj;Litejnyj;Chernyshevskaja;
+Русский Фонд Недвижимости;real_estate_agent;https://spb.cian.ru/sale/flat/269072749/;Sankt-Peterburg;sale;flat;4;5;5;150.3;169660;25500000;1917;109.0;17.0;+79811792342;Moskovskij;Moskovskaja zastava;Moskovskie vorota;
+ВАРИАНТ;real_estate_agent;https://spb.cian.ru/sale/flat/283325197/;Sankt-Peterburg;sale;flat;4;6;5;146.7;175528;25750000;1899;76.0;15.0;+79117308621;Vasileostrovskij;prospekt Bol'shoj Vasil'evskogo ostrova;Vasileostrovskaja;
+Городское Жилищное Агентство;real_estate_agent;https://spb.cian.ru/sale/flat/265001960/;Sankt-Peterburg;sale;flat;3;6;5;143.7;201113;28900000;1909;101.0;18.0;+79111006824;Petrogradskij;Lenina;Petrogradskaja;
+Магазин Квартир;real_estate_agent;https://spb.cian.ru/sale/flat/267541890/;Sankt-Peterburg;sale;flat;5;5;5;171.2;196261;33600000;1892;127.0;14.0;+79692006902;Tsentral'nyj;Mohovaja;Chernyshevskaja;
+Ostrov;real_estate_agent;https://spb.cian.ru/sale/flat/276369470/;Sankt-Peterburg;sale;flat;20;24;5;194.3;267627;52000000;2012;-1;-1;+79818766300;Vyborgskij;Svetlanovskoe;Udel'naja;Ilmarinen
+БЮРО НЕДВИЖИМОСТИ No1;real_estate_agent;https://spb.cian.ru/sale/flat/285315859/;Sankt-Peterburg;sale;flat;7;7;5;235.0;577872;135800000;2022;138.0;33.0;+79117983453;Moskovskij;Gastello;Moskovskaja;Victory Plaza
+BEYOND. ex-Engel  Volkers;real_estate_agent;https://spb.cian.ru/sale/flat/285288621/;Sankt-Peterburg;sale;flat;2;5;5;256.2;624512;160000000;1798;128.0;39.0;+79112509861;Tsentral'nyj;Karavannaja;Gostinyj dvor;
+BEYOND. ex-Engel  Volkers;real_estate_agent;https://spb.cian.ru/sale/flat/280297285/;Sankt-Peterburg;sale;flat;3;7;5;253.0;864387;218690160;2007;147.0;41.0;+79112509861;Petrogradskij;Chkalovskoe;Krestovskij ostrov;
+BEYOND. ex-Engel  Volkers;real_estate_agent;https://spb.cian.ru/sale/flat/281639556/;Sankt-Peterburg;sale;flat;1;2;5;9.7;28350515;275000000;-1;450.0;135.0;+79112509861;Petrogradskij;Chkalovskoe;Krestovskij ostrov;
+BEYOND. ex-Engel  Volkers;real_estate_agent;https://spb.cian.ru/sale/flat/274234935/;Sankt-Peterburg;sale;flat;8;9;5;571.0;700350;399900000;2007;150.0;60.0;+79112509861;Petrogradskij;Kemskaja;Krestovskij ostrov;
+ПИА Недвижимость;real_estate_agent;https://spb.cian.ru/sale/flat/283489110/;Sankt-Peterburg;sale;flat;1;9;5;202.8;342702;69500000;2022;134.0;20.0;+79681932119;Petrogradskij;Petrovskij;Krestovskij ostrov;NEVA HAUS
+Русский Дом;real_estate_agent;https://spb.cian.ru/sale/flat/236962127/;Sankt-Peterburg;sale;flat;1;5;5;124.0;223387;27700000;1878;81.0;16.0;+79817627819;Tsentral'nyj;Pushkinskaja;Ploschad' Vosstanija;
+СОФИЯ;real_estate_agent;https://spb.cian.ru/sale/flat/274248393/;Sankt-Peterburg;sale;flat;1;4;5;124.0;189516;23500000;1833;73.0;15.0;+79681900415;Tsentral'nyj;Vladimirskij;Zvenigorodskaja;
+Городской Центр Недвижимости;real_estate_agent;https://spb.cian.ru/sale/flat/276150172/;Sankt-Peterburg;sale;flat;1;4;5;136.4;200000;27280000;1874;106.0;11.0;+79052270832;Admiraltejskij;Efimova;Sennaja ploschad';
+Юнона;real_estate_agent;https://spb.cian.ru/sale/flat/266237884/;Sankt-Peterburg;sale;flat;4;5;5;117.8;148556;17500000;1917;85.0;11.0;+79681899312;Frunzenskij;Volkovskoe;Obvodnyj kanal;
+Панорама;real_estate_agent;https://spb.cian.ru/sale/flat/284086003/;Sankt-Peterburg;sale;flat;1;16;5;187.0;128336;23999000;1996;90.0;40.0;+79117223477;Vyborgskij;Shuvalovo-Ozerki;Prospekt Prosveschenija;
+Торговый дом недвижимости;real_estate_agent;https://spb.cian.ru/sale/flat/282783864/;Sankt-Peterburg;sale;flat;2;8;5;200.0;201000;40200000;1911;112.0;28.0;+79817921975;Vasileostrovskij;prospekt Bol'shoj Vasil'evskogo ostrova;Vasileostrovskaja;
+Магазин Квартир;real_estate_agent;https://spb.cian.ru/sale/flat/284926308/;Sankt-Peterburg;sale;flat;4;9;5;156.35;472337;73850000;2022;76.0;29.0;+79111528568;Petrogradskij;Barochnaja;Chkalovskaja;
+A-estate;real_estate_agent;https://spb.cian.ru/sale/flat/284488820/;Sankt-Peterburg;sale;flat;1;7;5;229.64;377237;86628864;2022;73.0;31.0;+79681886982;Vasileostrovskij;20-ja Vasil'evskogo ostrova linija;Gornyj institut;Malen'kaja Frantsija
+Адвекс;real_estate_agent;https://spb.cian.ru/sale/flat/280929806/;Sankt-Peterburg;sale;flat;5;7;5;116.6;162864;18990000;1914;70.0;10.0;+79052174067;Tsentral'nyj;Konstantina Zaslonova;Ligovskij prospekt;
+Никита Лабецкий;realtor;https://spb.cian.ru/sale/flat/272982053/;Sankt-Peterburg;sale;flat;4;6;5;148.9;153122;22799999;1879;87.0;10.0;+79811885060;Tsentral'nyj;Marata;Zvenigorodskaja;
+Адвекс;real_estate_agent;https://spb.cian.ru/sale/flat/278861224/;Sankt-Peterburg;sale;flat;4;4;5;142.0;185211;26300000;1952;100.0;15.0;+79681894868;Vyborgskij;Svetlanovskoe;Udel'naja;
+БЮРО НЕДВИЖИМОСТИ No1;real_estate_agent;https://spb.cian.ru/sale/flat/285318281/;Sankt-Peterburg;sale;flat;7;7;5;223.0;322869;72000000;2022;117.0;30.0;+79117983453;Primorskij;Primorskij prospekt;Staraja Derevnja;Stockholm
+АЗБУКА Недвижимости;real_estate_agent;https://spb.cian.ru/sale/flat/283521284/;Sankt-Peterburg;sale;flat;2;3;5;108.0;220000;23760000;2022;83.0;12.0;+79812457348;Pushkinskij;Gospital'naja;;
+МЁД;real_estate_agent;https://spb.cian.ru/sale/flat/282675436/;Sankt-Peterburg;sale;flat;5;8;5;135.9;316409;43000000;2022;56.0;27.0;+79692025104;Admiraltejskij;11-ja Krasnoarmejskaja;Baltijskaja;Bolkonskij
+Номер 1;real_estate_agent;https://spb.cian.ru/sale/flat/284616381/;Sankt-Peterburg;sale;flat;3;6;5;160.0;149687;23950000;1910;102.0;13.0;+79811629648;Petrogradskij;Aptekarskij ostrov;Petrogradskaja;
+Владимир Ромашко;realtor;https://spb.cian.ru/sale/flat/278573326/;Sankt-Peterburg;sale;flat;1;4;5;92.1;157437;14500000;1853;56.0;10.0;+79052052557;Tsentral'nyj;Borovaja;Ligovskij prospekt;
+Формула Недвижимости;real_estate_agent;https://spb.cian.ru/sale/flat/280606847/;Sankt-Peterburg;sale;flat;3;5;5;165.9;162748;27000000;-1;-1;-1;+79119512454;Vasileostrovskij;Vasil'evskij;Sportivnaja;
+Надежда Корецкая;realtor;https://spb.cian.ru/sale/flat/266051111/;Sankt-Peterburg;sale;flat;2;6;5;151.8;131686;19990000;1912;89.0;9.0;+79681909260;Tsentral'nyj;Litejnyj;Chernyshevskaja;
+Екатерина Голубенко;realtor;https://spb.cian.ru/sale/flat/284134117/;Sankt-Peterburg;sale;flat;5;5;5;126.0;156349;19700000;-1;92.0;14.0;+79681885764;Admiraltejskij;Semenovskij;Tehnologicheskij institut;
+Наталья Удалова;realtor;https://spb.cian.ru/sale/flat/280083147/;Sankt-Peterburg;sale;flat;1;6;5;185.0;149189;27600000;1999;150.0;30.0;+79692022317;Moskovskij;Sveaborgskaja;Elektrosila;
+ЦАРСКОСЕЛЬСКИЙ ДОМ;real_estate_agent;https://spb.cian.ru/sale/flat/283713754/;Sankt-Peterburg;sale;flat;4;15;5;124.1;167203;20750000;2000;62.0;30.0;+79681873100;Primorskij;Ozero Dolgoe;Komendantskij prospekt;
+Евгения Копкина;realtor;https://spb.cian.ru/sale/flat/279544424/;Sankt-Peterburg;sale;flat;14;16;5;145.0;257931;37400000;2020;72.0;24.0;+79811873438;Admiraltejskij;Izmajlovskoe;Frunzenskaja;Promenade
+Ольга Малова;realtor;https://spb.cian.ru/sale/flat/272930842/;Sankt-Peterburg;sale;flat;6;6;5;201.3;188276;37900000;1990;71.0;11.0;+79112399137;Tsentral'nyj;Smol'ninskoe;Chernyshevskaja;
+Недвижимость Двух Столиц;real_estate_agent;https://spb.cian.ru/sale/flat/280856416/;Sankt-Peterburg;sale;flat;6;6;5;174.2;144661;25200000;1913;107.0;15.0;+79117120246;Petrogradskij;S'ezzhinskaja;Sportivnaja;
+Номер 1;real_estate_agent;https://spb.cian.ru/sale/flat/283633563/;Sankt-Peterburg;sale;flat;19;24;5;135.0;185185;25000000;2018;74.0;15.0;+79681875224;Krasnosel'skij;Juzhno-Primorskij;Leninskij prospekt;Parusa
+Екатерина Владыка;realtor;https://spb.cian.ru/sale/flat/279143211/;Sankt-Peterburg;sale;flat;4;5;5;174.2;304247;53000000;1908;118.0;14.0;+79119608457;Petrogradskij;Lenina;Gor'kovskaja;
+Татьяна Ускова;realtor;https://spb.cian.ru/sale/flat/284958109/;Sankt-Peterburg;sale;flat;2;5;5;132.3;151095;19990000;1877;86.0;12.0;+79811882961;Tsentral'nyj;Litejnyj;Chernyshevskaja;
+Герман Николаев;realtor;https://spb.cian.ru/sale/flat/283806072/;Sankt-Peterburg;sale;flat;3;7;5;134.4;148735;19990000;1913;87.0;18.0;+79117507389;Tsentral'nyj;9-ja Sovetskaja;Ploschad' Vosstanija;
+Сергей Сомов;realtor;https://spb.cian.ru/sale/flat/284012191/;Sankt-Peterburg;sale;flat;10;24;5;142.9;209867;29990000;2004;111.0;9.0;+79119909491;Moskovskij;Varshavskaja;Moskovskaja;
+Валентина Забавина;realtor;https://spb.cian.ru/sale/flat/284004583/;Sankt-Peterburg;sale;flat;3;6;5;212.3;188412;40000000;1910;170.0;20.0;+79117992371;Petrogradskij;Bol'shaja Posadskaja;Gor'kovskaja;
+ИП Шутикова Е. С.;real_estate_agent;https://spb.cian.ru/sale/flat/275042176/;Sankt-Peterburg;sale;flat;12;16;5;204.7;337078;69000000;2008;-1;20.0;+79117004869;Vasileostrovskij;Gavan';Vasileostrovskaja;
+Аватерра;real_estate_agent;https://spb.cian.ru/sale/flat/281571095/;Sankt-Peterburg;sale;flat;5;8;5;195.0;358974;70000000;2007;114.0;22.0;+79679912159;Tsentral'nyj;Litejnyj;Majakovskaja;
+Россита Габриелян;realtor;https://spb.cian.ru/sale/flat/279784528/;Sankt-Peterburg;sale;flat;11;12;5;133.9;338312;45300000;2021;72.0;17.0;+79818975255;Nevskij;Nevskaja zastava;Elizarovskaja;
+Елена Гурьева;realtor;https://spb.cian.ru/sale/flat/283863984/;Sankt-Peterburg;sale;flat;5;26;5;117.0;132470;15499000;2013;77.0;11.0;+79111286560;Krasnosel'skij;Juzhno-Primorskij;;
+Татьяна Смельская;realtor;https://spb.cian.ru/sale/flat/258091088/;Sankt-Peterburg;sale;flat;1;5;5;65.9;189681;12500000;1962;50.0;7.0;+79681883362;Kirovskij;Podvodnika Kuz'mina;Leninskij prospekt;
+ID 93795738;unknown;https://spb.cian.ru/sale/flat/285740268/;Sankt-Peterburg;sale;flat;3;6;5;145.5;415807;60500000;1911;110.0;15.0;+79052048653;Tsentral'nyj;Smol'ninskoe;Chernyshevskaja;
+Ирина Прейс;realtor;https://spb.cian.ru/sale/flat/284906696/;Sankt-Peterburg;sale;flat;2;5;5;125.1;142286;17800000;1905;75.0;15.0;+79816897973;Tsentral'nyj;Litejnyj;Majakovskaja;
+ID 74343222;unknown;https://spb.cian.ru/sale/flat/284400449/;Sankt-Peterburg;sale;flat;3;5;5;187.0;171069;31990000;1903;97.0;35.0;+79118405341;Petrogradskij;Posadskij;Gor'kovskaja;
+ID 19705970;homeowner;https://spb.cian.ru/sale/flat/272560530/;Sankt-Peterburg;sale;flat;7;7;5;201.0;592039;119000000;2017;110.0;80.0;+79117097917;Petrogradskij;Chkalovskoe;Krestovskij ostrov;Verona
+Юлия Зенька;realtor;https://spb.cian.ru/sale/flat/284557649/;Sankt-Peterburg;sale;flat;3;4;5;197.0;126903;25000000;1899;-1;-1;+79817920097;Tsentral'nyj;Mohovaja;Chernyshevskaja;
+ID 60318100;unknown;https://spb.cian.ru/sale/flat/284186686/;Sankt-Peterburg;sale;flat;3;6;5;160.5;183800;29500000;1914;106.0;14.0;+79111202801;Petrogradskij;Professora Popova;Petrogradskaja;
+ID 94761228;unknown;https://spb.cian.ru/sale/flat/277271555/;Sankt-Peterburg;sale;flat;5;7;5;133.0;169172;22500000;1917;87.0;10.0;+79052218500;Admiraltejskij;Bronnitskaja;Tehnologicheskij institut;
+ID 71535321;unknown;https://spb.cian.ru/sale/flat/280614276/;Sankt-Peterburg;sale;flat;5;6;5;181.7;275178;50000000;2002;118.0;21.0;+79052189487;Petrogradskij;Barmaleeva;Petrogradskaja;
+ID 10525972;realtor;https://spb.cian.ru/sale/flat/284839890/;Sankt-Peterburg;sale;flat;3;4;5;164.3;180766;29700000;1877;112.0;15.0;+79811462648;Tsentral'nyj;Zvenigorodskaja;Zvenigorodskaja;
+АН Константина Федорова;real_estate_agent;https://spb.cian.ru/sale/flat/281920599/;Sankt-Peterburg;sale;flat;6;6;5;119.2;197147;23500000;1910;74.0;14.0;+79811874267;Petrogradskij;Petrovskij;Sportivnaja;
+ID 97577149;unknown;https://spb.cian.ru/sale/flat/284642922/;Sankt-Peterburg;sale;flat;1;3;5;179.3;220000;39446000;2023;118.0;45.0;+79111091292;Vasileostrovskij;Vasil'evskij;Vasileostrovskaja;Hal'kon
+ID 55422400;unknown;https://spb.cian.ru/sale/flat/284321571/;Sankt-Peterburg;sale;flat;2;6;5;178.9;142537;25500000;1912;119.0;12.0;+79111273507;Petrogradskij;Aptekarskij ostrov;Petrogradskaja;
+СТРАТЕГИЯ;real_estate_agent;https://spb.cian.ru/sale/flat/284060414/;Sankt-Peterburg;sale;flat;5;5;5;90.0;188555;16970000;1850;61.0;6.0;+79681935283;Admiraltejskij;Sennoj;Sadovaja;
+ID 78417073;realtor;https://spb.cian.ru/sale/flat/284213713/;Sankt-Peterburg;sale;flat;13;13;5;185.0;270270;50000000;2017;85.0;52.0;+79692011368;Primorskij;Primorskij prospekt;Begovaja;Tri vetra
+Пальмира;real_estate_agent;https://spb.cian.ru/sale/flat/251866540/;Sankt-Peterburg;sale;flat;11;14;5;196.7;238942;47000000;2006;102.0;22.0;+79681907588;Vasileostrovskij;Ostrov Dekabristov;Primorskaja;
+ID 6885490;realtor;https://spb.cian.ru/sale/flat/278393148/;Sankt-Peterburg;sale;flat;4;4;5;630.0;134126;84500000;2012;119.0;73.0;+79681872088;Primorskij;Kolomjagi;Pionerskaja;
+ID 12366428;realtor;https://spb.cian.ru/sale/flat/285369789/;Sankt-Peterburg;sale;flat;2;5;5;128.4;139096;17860000;1917;87.0;11.0;+79110948378;Tsentral'nyj;Starorusskaja;Ploschad' Aleksandra Nevskogo;
+ID 13636910;realtor;https://spb.cian.ru/sale/flat/285578831/;Sankt-Peterburg;sale;flat;11;12;5;127.0;150393;19100000;1987;86.0;10.0;+79819007379;Nevskij;Latyshskih Strelkov;Prospekt Bol'shevikov;
+ID 10628717;realtor;https://spb.cian.ru/sale/flat/280130643/;Sankt-Peterburg;sale;flat;4;4;5;113.0;141592;16000000;1861;82.0;11.0;+79670463258;Admiraltejskij;7-ja Krasnoarmejskaja;Tehnologicheskij institut;
+ID 13949110;unknown;https://spb.cian.ru/sale/flat/283584632/;Sankt-Peterburg;sale;flat;5;8;5;156.6;127713;20000000;1914;105.0;23.0;+79819702350;Moskovskij;Smolenskaja;Frunzenskaja;
+Северный модерн;real_estate_agent;https://spb.cian.ru/sale/flat/280593516/;Sankt-Peterburg;sale;flat;5;5;5;132.1;149129;19700000;1915;79.0;20.0;+79811392543;Vasileostrovskij;14-ja Vasil'evskogo ostrova linija;Vasileostrovskaja;
+ID 10479970;realtor;https://spb.cian.ru/sale/flat/285657989/;Sankt-Peterburg;sale;flat;3;4;5;101.0;197524;19950000;1917;63.0;12.0;+79111809752;Tsentral'nyj;Furshtatskaja;Chernyshevskaja;
+ID 78283354;realtor;https://spb.cian.ru/sale/flat/284746935/;Sankt-Peterburg;sale;flat;5;6;5;188.0;319148;60000000;1912;130.0;25.0;+79819906568;Tsentral'nyj;Vladimirskij;Dostoevskaja;
+ID 101245607;unknown;https://spb.cian.ru/sale/flat/285301878/;Sankt-Peterburg;sale;flat;1;6;5;110.0;166363;18300000;1914;68.0;14.0;+79052165614;Tsentral'nyj;10-ja Sovetskaja;Ploschad' Vosstanija;
+ID 6370744;realtor;https://spb.cian.ru/sale/flat/270170989/;Sankt-Peterburg;sale;flat;2;5;5;130.0;230000;29900000;1903;77.0;8.0;+79119923606;Tsentral'nyj;Rubinshtejna;Dostoevskaja;
+ID 15708419;realtor;https://spb.cian.ru/sale/flat/281143665/;Sankt-Peterburg;sale;flat;8;9;5;185.0;481081;89000000;2022;94.0;38.0;+79110913841;Petrogradskij;Petrovskij;Krestovskij ostrov;Petrovskaja Dominanta
+Елена Бушуева;realtor;https://spb.cian.ru/sale/flat/263463000/;Sankt-Peterburg;sale;flat;3;6;5;126.0;123015;15500000;1892;95.0;14.0;+79692029799;Kalininskij;Akademika Lebedeva;Ploschad' Lenina;
+ID 18885221;realtor;https://spb.cian.ru/sale/flat/264441051/;Sankt-Peterburg;sale;flat;2;5;5;141.2;140934;19900000;1876;102.0;14.0;+79052172314;Admiraltejskij;Kolomna;Baltijskaja;
+Олеся Спиридонова;realtor;https://spb.cian.ru/sale/flat/279595468/;Sankt-Peterburg;sale;flat;10;10;5;210.0;547619;115000000;2007;135.0;46.0;+79112996384;Petrogradskij;Petrovskij;Sportivnaja;
+ID 6885490;realtor;https://spb.cian.ru/sale/flat/281111191/;Sankt-Peterburg;sale;flat;3;4;5;280.0;214285;60000000;2012;97.0;50.0;+79681872088;Primorskij;Gornaja;Udel'naja;
+ID 91556233;realtor;https://spb.cian.ru/sale/flat/284369889/;Sankt-Peterburg;sale;flat;7;10;5;236.06;572994;135261000;2022;117.0;26.0;+79117607810;Petrogradskij;Petrovskij;Krestovskij ostrov;Petrovskaja Dominanta
+Дом на Ленсовета;developer;https://spb.cian.ru/sale/flat/285604107/;Sankt-Peterburg;sale;flat;13;23;5;159.0;267295;42500000;2020;-1;-1;+78122181062;Moskovskij;Zvezdnoe;Zvezdnaja;Barselona ZhK
+Альфа Фаберже;developer;https://spb.cian.ru/sale/flat/280459348/;Sankt-Peterburg;sale;flat;8;8;5;150.29;1000000;150290000;2023;-1;-1;+78122136050;Petrogradskij;Aptekarskij ostrov;Petrogradskaja;Klubnyj dom MELTZER HALL
+ID 11119974;realtor;https://spb.cian.ru/sale/flat/284689037/;Sankt-Peterburg;sale;flat;8;9;5;72.0;131944;9500000;1969;54.0;6.0;+79117396838;Kirovskij;Dachnoe;Prospekt Veteranov;
+ID 72166235;realtor;https://spb.cian.ru/sale/flat/282964828/;Sankt-Peterburg;sale;flat;1;5;5;84.6;117021;9900000;1964;-1;-1;+79819374990;Kirovskij;Tankista Hrustitskogo;Prospekt Veteranov;
+ID 90326088;realtor;https://spb.cian.ru/sale/flat/285309051/;Sankt-Peterburg;sale;flat;1;5;5;90.0;132222;11900000;1963;69.0;5.0;+79811873394;Moskovskij;Gagarinskoe;Park Pobedy;
+CITY LAND;real_estate_agent;https://spb.cian.ru/sale/flat/278916383/;Sankt-Peterburg;sale;flat;4;5;5;101.1;186943;18900000;1901;74.0;9.0;+79052327567;Petrogradskij;Krasnosel'skaja;Chkalovskaja;
+ID 71148938;unknown;https://spb.cian.ru/sale/flat/254636088/;Sankt-Peterburg;sale;flat;1;4;5;122.6;187601;23000000;1833;73.0;14.0;+79812451489;Tsentral'nyj;Vladimirskij;Zvenigorodskaja;
+ID 2329468;realtor;https://spb.cian.ru/sale/flat/279981517/;Sankt-Peterburg;sale;flat;5;6;5;190.0;210526;40000000;1902;107.0;10.0;+79819575604;Tsentral'nyj;Vladimirskij;Vladimirskaja;
+ID 23796159;unknown;https://spb.cian.ru/sale/flat/282720216/;Sankt-Peterburg;sale;flat;12;12;5;265.8;158013;42000000;2006;-1;-1;+79819213529;Vyborgskij;Sosnovskoe;Ozerki;Poema u treh ozer
+Зайнаб Хафизова;realtor;https://spb.cian.ru/sale/flat/278986559/;Sankt-Peterburg;sale;flat;6;6;5;175.0;257142;45000000;-1;100.0;52.0;+79675367802;Tsentral'nyj;Rubinshtejna;Dostoevskaja;
+ID 67995436;unknown;https://spb.cian.ru/sale/flat/265391361/;Sankt-Peterburg;sale;flat;5;5;5;418.0;110047;46000000;1901;147.0;15.0;+79681957464;Petrogradskij;Vvedenskij;Sportivnaja;
+Группа Эталон;developer;https://spb.cian.ru/sale/flat/283802230/;Sankt-Peterburg;sale;flat;4;9;5;139.5;372346;51942267;2022;83.0;14.0;+78122132259;Petrogradskij;Petrovskij;Krestovskij ostrov;Petrovskaja Dominanta
+ID 12813889;realtor;https://spb.cian.ru/sale/flat/284937024/;Sankt-Peterburg;sale;flat;9;9;5;325.0;199692;64900000;2002;250.0;27.0;+79111526715;Vasileostrovskij;7-ja Vasil'evskogo ostrova linija;Vasileostrovskaja;
+ID 5949226;unknown;https://spb.cian.ru/sale/flat/280457082/;Sankt-Peterburg;sale;flat;5;8;5;377.5;701986;265000000;2007;-1;86.0;+79681916822;Petrogradskij;Chkalovskoe;Krestovskij ostrov;
+Группа Эталон;developer;https://spb.cian.ru/sale/flat/283802142/;Sankt-Peterburg;sale;flat;2;9;5;204.1;413655;84427101;2022;94.0;37.0;+78122132259;Petrogradskij;Petrovskij;Krestovskij ostrov;Petrovskaja Dominanta
+ID 98623398;unknown;https://spb.cian.ru/sale/flat/283306975/;Sankt-Peterburg;sale;flat;3;5;5;179.2;502232;90000000;1877;120.0;15.0;+79119515003;Tsentral'nyj;Litejnyj;Chernyshevskaja;
+ID 89351093;realtor;https://spb.cian.ru/sale/flat/273070337/;Sankt-Peterburg;sale;flat;8;8;5;198.0;250000;49500000;2020;134.0;35.0;+79111873586;Moskovskij;Srednerogatskaja;Zvezdnaja;Triumf Park
+МАСТЕР-ГРУПП Реал Эстейт;representative_developer;https://spb.cian.ru/sale/flat/284847983/;Sankt-Peterburg;sale;flat;8;8;5;208.24;1200000;249888000;2023;-1;-1;+78122181224;Petrogradskij;Aptekarskij ostrov;Petrogradskaja;Klubnyj dom MELTZER HALL
+;;https://spb.cian.ru/sale/flat/285584330/;Sankt-Peterburg;sale;flat;14;18;5;214.99;200000;42998000;2023;78.0;30.0;+78127201217;Vasileostrovskij;Gavan';Primorskaja;Nahimov (Gavan' Kapitanov)
+Альфа Фаберже;developer;https://spb.cian.ru/sale/flat/280459359/;Sankt-Peterburg;sale;flat;8;8;5;189.0;1000000;189000000;2023;-1;-1;+78122136050;Petrogradskij;Aptekarskij ostrov;Petrogradskaja;Klubnyj dom MELTZER HALL
+Группа Эталон;developer;https://spb.cian.ru/sale/flat/283802058/;Sankt-Peterburg;sale;flat;4;7;5;255.3;507427;129546219;2022;121.0;27.0;+78122132259;Petrogradskij;Petrovskij;Krestovskij ostrov;Petrovskaja Dominanta
+Группа Эталон;developer;https://spb.cian.ru/sale/flat/283802064/;Sankt-Peterburg;sale;flat;2;7;5;264.3;422748;111732515;2022;121.0;28.0;+78122132259;Petrogradskij;Petrovskij;Krestovskij ostrov;Petrovskaja Dominanta
+МАСТЕР-ГРУПП Реал Эстейт;representative_developer;https://spb.cian.ru/sale/flat/284847976/;Sankt-Peterburg;sale;flat;8;8;5;160.99;1000000;160990000;2023;-1;-1;+78122181224;Petrogradskij;Aptekarskij ostrov;Petrogradskaja;Klubnyj dom MELTZER HALL
+Альфа Фаберже;developer;https://spb.cian.ru/sale/flat/280459357/;Sankt-Peterburg;sale;flat;8;8;5;178.1;800000;142480000;2023;-1;-1;+78122136050;Petrogradskij;Aptekarskij ostrov;Petrogradskaja;Klubnyj dom MELTZER HALL
+Группа Эталон;developer;https://spb.cian.ru/sale/flat/283802062/;Sankt-Peterburg;sale;flat;2;7;5;260.3;417196;108596146;2022;121.0;28.0;+78122132259;Petrogradskij;Petrovskij;Krestovskij ostrov;Petrovskaja Dominanta
+Группа Эталон;developer;https://spb.cian.ru/sale/flat/283802254/;Sankt-Peterburg;sale;flat;6;9;5;139.4;384916;53657391;2022;82.0;14.0;+78122132259;Petrogradskij;Petrovskij;Krestovskij ostrov;Petrovskaja Dominanta
+Группа Эталон;developer;https://spb.cian.ru/sale/flat/283802147/;Sankt-Peterburg;sale;flat;2;9;5;185.9;417313;77578498;2022;94.0;38.0;+78122132259;Petrogradskij;Petrovskij;Krestovskij ostrov;Petrovskaja Dominanta
+Диана Коноплёва;realtor;https://spb.cian.ru/sale/flat/281056323/;Sankt-Peterburg;sale;flat;1;3;5;239.2;208612;49900000;2002;-1;14.0;+79679911058;Primorskij;Juntolovo;Komendantskij prospekt;
+Дмитрий Гоглев;realtor;https://spb.cian.ru/sale/flat/256046107/;Sankt-Peterburg;sale;flat;4;5;5;200.0;160000;32000000;1958;71.0;51.0;+79816892667;Moskovskij;Altajskaja;Moskovskaja;
+Виктория Пахолкова;realtor;https://spb.cian.ru/sale/flat/279806813/;Sankt-Peterburg;sale;flat;3;6;5;257.0;202334;52000000;1912;190.0;8.0;+79811790986;Petrogradskij;Aptekarskij ostrov;Petrogradskaja;
+Екатерина Королева;realtor;https://spb.cian.ru/sale/flat/279283634/;Sankt-Peterburg;sale;flat;1;9;5;71.0;130985;9300000;1969;54.0;6.0;+79681958493;Kirovskij;Ul'janka;Prospekt Veteranov;
+ID 77073935;homeowner;https://spb.cian.ru/sale/flat/278529033/;Sankt-Peterburg;sale;flat;7;9;5;101.6;169192;17190000;1987;62.0;15.0;+79052265697;Kalininskij;Prometej;Grazhdanskij prospekt;
+ID 16520260;homeowner;https://spb.cian.ru/sale/flat/280975036/;Sankt-Peterburg;sale;flat;5;5;5;161.0;309938;49900089;1845;100.0;-1;+79819160821;Tsentral'nyj;Majakovskogo;Chernyshevskaja;
+ID 101410696;homeowner;https://spb.cian.ru/sale/flat/285752418/;Sankt-Peterburg;sale;flat;2;6;5;134.3;418999;56271700;1911;-1;-1;+79052115379;Tsentral'nyj;Smol'ninskoe;Chernyshevskaja;
+ID 40138531;homeowner;https://spb.cian.ru/sale/flat/265530265/;Sankt-Peterburg;sale;flat;3;3;5;138.7;180245;25000000;2005;83.0;15.0;+79818595467;Vyborgskij;Shuvalovo-Ozerki;Ozerki;
+ID 5963152;homeowner;https://spb.cian.ru/sale/flat/284092266/;Sankt-Peterburg;sale;flat;2;5;5;142.0;285211;40500000;1774;-1;-1;+79675367055;Admiraltejskij;Kolomna;Sadovaja;
+ID 100569718;homeowner;https://spb.cian.ru/sale/flat/285610807/;Sankt-Peterburg;sale;flat;4;4;5;117.6;140306;16500000;1861;88.0;15.0;+79819690030;Petrogradskij;Zverinskaja;Sportivnaja;
+ID 97231482;homeowner;https://spb.cian.ru/sale/flat/280083108/;Sankt-Peterburg;sale;flat;6;7;5;116.3;139294;16200000;1916;75.0;11.0;+79817207152;Tsentral'nyj;Starorusskaja;Ploschad' Aleksandra Nevskogo;
+ID 73435717;homeowner;https://spb.cian.ru/sale/flat/257283781/;Sankt-Peterburg;sale;flat;5;5;5;155.9;153944;24000000;1911;109.0;16.0;+79692040438;Petrogradskij;Blohina;Sportivnaja;
+ID 15191110;homeowner;https://spb.cian.ru/sale/flat/284156138/;Sankt-Peterburg;sale;flat;5;6;5;136.0;169117;23000000;1902;95.0;15.0;+79675378829;Petrogradskij;Lenina;Petrogradskaja;
+ID 16980848;homeowner;https://spb.cian.ru/sale/flat/269051857/;Sankt-Peterburg;sale;flat;14;15;5;109.9;141037;15500000;1976;64.0;12.0;+79117269616;Primorskij;Komendantskij aerodrom;Pionerskaja;
+ID 96965940;homeowner;https://spb.cian.ru/sale/flat/279738023/;Sankt-Peterburg;sale;flat;1;5;5;68.0;183823;12500000;1966;45.0;7.0;+79817896554;Kirovskij;Tankista Hrustitskogo;Prospekt Veteranov;
+ID 96512339;homeowner;https://spb.cian.ru/sale/flat/279127892/;Sankt-Peterburg;sale;flat;1;5;5;226.0;469026;106000000;2020;-1;-1;+79692028922;Petrogradskij;Chkalovskoe;Krestovskij ostrov;Klubnyj dom Krestovskij IV
+ID 64826025;homeowner;https://spb.cian.ru/sale/flat/264734751/;Sankt-Peterburg;sale;flat;4;5;5;205.3;163175;33500000;1956;-1;30.0;+79675376078;Krasnogvardejskij;Bol'shaja Ohta;Novocherkasskaja;
+ID 12587674;homeowner;https://spb.cian.ru/sale/flat/285468958/;Sankt-Peterburg;sale;flat;25;26;5;132.0;238636;31500000;2012;-1;-1;+79118419894;Nevskij;Nevskij;Prospekt Bol'shevikov;Bol'shevikov pr. 7 k.3
+ID 68672936;homeowner;https://spb.cian.ru/sale/flat/285526655/;Sankt-Peterburg;sale;flat;17;24;5;124.0;108870;13500000;2012;99.0;14.0;+79111804173;Krasnosel'skij;Marshala Kazakova;;
+ID 69526702;homeowner;https://spb.cian.ru/sale/flat/266015414/;Sankt-Peterburg;sale;flat;4;4;5;144.8;279696;40500000;1916;-1;-1;+79117216468;Petrogradskij;Chkalovskoe;Krestovskij ostrov;
+ID 81723382;homeowner;https://spb.cian.ru/sale/flat/276224448/;Sankt-Peterburg;sale;flat;1;10;5;102.1;145935;14900000;1987;75.0;15.0;+79052133016;Primorskij;Ozero Dolgoe;Komendantskij prospekt;
+ID 101427780;homeowner;https://spb.cian.ru/sale/flat/285533151/;Sankt-Peterburg;sale;flat;4;4;5;157.9;224825;35500000;1830;-1;30.0;+79112524526;Admiraltejskij;Bol'shaja Morskaja;Admiraltejskaja;
+ID 64772494;homeowner;https://spb.cian.ru/sale/flat/280883899/;Sankt-Peterburg;sale;flat;1;5;5;118.0;135593;16000000;1916;78.0;9.0;+79819216983;Tsentral'nyj;Kolomenskaja;Ligovskij prospekt;
+ID 87441625;homeowner;https://spb.cian.ru/sale/flat/274545243/;Sankt-Peterburg;sale;flat;1;6;5;150.5;365448;55000000;-1;105.0;21.0;+79681876972;Petrogradskij;Petrovskij;Sportivnaja;"Elitnyj kompleks ""ROYAL PARK"""
+ID 24004312;unknown;https://spb.cian.ru/sale/flat/273595608/;Sankt-Peterburg;sale;flat;3;4;5;130.2;131259;17090000;1932;95.0;13.0;+79681886736;Petrogradskij;Kujbysheva;Gor'kovskaja;
+ID 63923168;unknown;https://spb.cian.ru/sale/flat/266302757/;Sankt-Peterburg;sale;flat;6;6;5;162.5;160000;26000000;1900;102.0;14.0;+79117502507;Tsentral'nyj;Kirochnaja;Chernyshevskaja;
+ID 52271670;realtor;https://spb.cian.ru/sale/flat/268231983/;Sankt-Peterburg;sale;flat;4;6;5;208.0;191000;39728000;2004;127.0;26.0;+79817323292;Primorskij;1-ja Utinaja;Udel'naja;
+ID 101222937;homeowner;https://spb.cian.ru/sale/flat/285272917/;Sankt-Peterburg;sale;flat;2;16;5;130.4;188650;24600000;1982;57.0;39.0;+79819692392;Vyborgskij;Asaf'eva;Prospekt Prosveschenija;
+ID 89885002;homeowner;https://spb.cian.ru/sale/flat/278800108/;Sankt-Peterburg;sale;flat;1;3;5;184.4;189804;35000000;1817;140.0;18.0;+79110119872;Vasileostrovskij;7-ja Vasil'evskogo ostrova linija;Vasileostrovskaja;
+ID 66270501;homeowner;https://spb.cian.ru/sale/flat/284373660/;Sankt-Peterburg;sale;flat;2;5;5;139.0;187050;26000000;1917;97.0;15.0;+79681922816;Admiraltejskij;Semenovskij;Zvenigorodskaja;
+ID 79035085;unknown;https://spb.cian.ru/sale/flat/282979305/;Sankt-Peterburg;sale;flat;5;6;5;143.0;135664;19400000;1913;119.0;8.0;+79110118515;Petrogradskij;Bol'shaja Zelenina;Chkalovskaja;
+ID 47740519;homeowner;https://spb.cian.ru/sale/flat/279740452/;Sankt-Peterburg;sale;flat;1;2;5;87.2;215022;18750000;1949;67.0;6.0;+79819161037;Primorskij;Shkol'naja;Staraja Derevnja;
+ID 13122505;realtor;https://spb.cian.ru/sale/flat/283533585/;Sankt-Peterburg;sale;flat;10;11;5;186.5;171045;31900000;1999;105.0;19.0;+79812324646;Kirovskij;Tankista Hrustitskogo;Prospekt Veteranov;
+ID 101411781;homeowner;https://spb.cian.ru/sale/flat/285516561/;Sankt-Peterburg;sale;flat;12;26;5;118.3;99746;11800000;2018;73.0;13.0;+79812268850;Pushkinskij;prospekt Novgorodskij;Kupchino;Shushary
+ID 94509217;homeowner;https://spb.cian.ru/sale/flat/280310911/;Sankt-Peterburg;sale;flat;4;14;5;119.6;133779;16000000;2020;-1;-1;+79811305876;Vyborgskij;Tihookeanskaja;Ozerki;v Pargolovo
+ID 76352586;unknown;https://spb.cian.ru/sale/flat/283929986/;Sankt-Peterburg;sale;flat;3;5;5;253.0;472332;119500000;1828;160.0;26.0;+79679912037;Tsentral'nyj;Dvortsovyj;Gostinyj dvor;
+ID 7155538;unknown;https://spb.cian.ru/sale/flat/278636542/;Sankt-Peterburg;sale;flat;1;7;5;120.2;183028;22000000;1912;75.0;11.0;+79117604064;Petrogradskij;Krasnogo Kursanta;Sportivnaja;
+ID 48934188;unknown;https://spb.cian.ru/sale/flat/226486315/;Sankt-Peterburg;sale;flat;18;18;5;132.0;123484;16300000;2017;-1;16.0;+79062002117;Vyborgskij;Tihookeanskaja;;v Pargolovo
+ID 8362480;unknown;https://spb.cian.ru/sale/flat/257018033/;Sankt-Peterburg;sale;flat;4;6;5;196.0;288265;56500000;1911;102.0;20.0;+79818220803;Petrogradskij;Posadskij;Gor'kovskaja;
+Лариса Мустафина;realtor;https://spb.cian.ru/sale/flat/269356096/;Sankt-Peterburg;sale;flat;5;5;5;135.2;188979;25550000;1893;92.0;21.0;+79679911355;Tsentral'nyj;Smol'ninskoe;Novocherkasskaja;
+ID 12838564;unknown;https://spb.cian.ru/sale/flat/277498147/;Sankt-Peterburg;sale;flat;3;4;5;286.0;346153;99000000;1902;-1;80.0;+79681885479;Tsentral'nyj;Furshtatskaja;Chernyshevskaja;
+ID 57642575;unknown;https://spb.cian.ru/sale/flat/285535918/;Sankt-Peterburg;sale;flat;6;6;5;147.3;122199;18000000;1917;86.0;17.0;+79112253417;Vasileostrovskij;Vasil'evskij;Vasileostrovskaja;
+ID 52717281;unknown;https://spb.cian.ru/sale/flat/279752154/;Sankt-Peterburg;sale;flat;5;9;5;128.6;124409;15999000;1989;85.0;23.0;+79099989487;Primorskij;Juntolovo;Komendantskij prospekt;
+ID 81926459;unknown;https://spb.cian.ru/sale/flat/281666004/;Sankt-Peterburg;sale;flat;3;3;5;141.0;141134;19900000;1900;104.0;16.0;+79819217210;Tsentral'nyj;Smol'ninskoe;Ploschad' Vosstanija;
+ID 100051950;homeowner;https://spb.cian.ru/sale/flat/285037685/;Sankt-Peterburg;sale;flat;1;4;5;164.0;151219;24800000;2007;-1;20.0;+79117267792;Kurortnyj;Nikolaja Sokolova;Begovaja;Peterburgskoe Sadovoe kol'tso
+ID 87362712;realtor;https://spb.cian.ru/sale/flat/282714025/;Sankt-Peterburg;sale;flat;9;13;5;320.0;415625;133000000;2017;-1;-1;+79819904061;Petrogradskij;Zhdanovskaja;Chkalovskaja;Leont'evskij mys
+ID 222019;realtor;https://spb.cian.ru/sale/flat/272244710/;Sankt-Peterburg;sale;flat;2;5;5;180.0;286111;51500000;-1;113.0;18.0;+79111875578;Tsentral'nyj;Smol'ninskoe;Ploschad' Vosstanija;
+ID 16953680;realtor;https://spb.cian.ru/sale/flat/282646193/;Sankt-Peterburg;sale;flat;7;8;5;198.3;640443;127000000;2008;-1;-1;+79818610607;Petrogradskij;Chkalovskoe;Krestovskij ostrov;Morskoj 33
+ID 79554837;homeowner;https://spb.cian.ru/sale/flat/276628265/;Sankt-Peterburg;sale;flat;2;6;5;108.6;244014;26500000;1912;75.0;11.0;+79119346680;Admiraltejskij;Izmajlovskoe;Tehnologicheskij institut;
+ID 70072076;unknown;https://spb.cian.ru/sale/flat/285550236/;Sankt-Peterburg;sale;flat;3;4;5;88.5;152542;13500000;1958;64.0;9.0;+79675370308;Kronshtadtskij;Grazhdanskaja;Begovaja;
+ID 329253;unknown;https://spb.cian.ru/sale/flat/228723025/;Sankt-Peterburg;sale;flat;4;5;5;127.0;213385;27100000;1917;92.0;11.0;+79111088163;Kalininskij;Politehnicheskaja;Politehnicheskaja;
+ID 366302;realtor;https://spb.cian.ru/sale/flat/238266796/;Sankt-Peterburg;sale;flat;5;6;5;172.0;209302;36000000;1873;111.0;13.0;+79052323044;Tsentral'nyj;Litejnyj;Chernyshevskaja;
+ID 12832380;realtor;https://spb.cian.ru/sale/flat/282720460/;Sankt-Peterburg;sale;flat;3;9;5;71.4;145658;10400000;1969;54.0;6.0;+79675382595;Frunzenskij;Turku;Mezhdunarodnaja;
+ID 62568616;unknown;https://spb.cian.ru/sale/flat/279385191/;Sankt-Peterburg;sale;flat;3;12;5;129.0;201550;26000000;1984;65.0;30.0;+79117415594;Vasileostrovskij;Gavan';Primorskaja;
+ID 13702442;unknown;https://spb.cian.ru/sale/flat/262484308/;Sankt-Peterburg;sale;flat;4;6;5;147.0;197278;29000000;1910;99.0;19.0;+79052049912;Tsentral'nyj;10-ja Sovetskaja;Ploschad' Vosstanija;
+ID 12920436;unknown;https://spb.cian.ru/sale/flat/283947386/;Sankt-Peterburg;sale;flat;14;16;5;141.0;180851;25500000;1996;86.0;20.0;+79112795972;Vasileostrovskij;Ostrov Dekabristov;Primorskaja;
+ID 12860286;homeowner;https://spb.cian.ru/sale/flat/280057811/;Sankt-Peterburg;sale;flat;3;5;5;180.0;222222;40000000;1917;150.0;25.0;+79819681400;Admiraltejskij;Semenovskij;Tehnologicheskij institut;
+ID 85596864;unknown;https://spb.cian.ru/sale/flat/284171427/;Sankt-Peterburg;sale;flat;3;7;5;137.0;153211;20990000;1827;83.0;16.0;+79811629923;Tsentral'nyj;Chajkovskogo;Chernyshevskaja;
+ID 67014755;unknown;https://spb.cian.ru/sale/flat/279804434/;Sankt-Peterburg;sale;flat;5;5;5;101.0;178207;17999000;1977;-1;11.0;+79117269473;Pushkinskij;Generala Hazova;;
+ID 26158211;unknown;https://spb.cian.ru/sale/flat/261381100/;Sankt-Peterburg;sale;flat;3;5;5;139.0;179856;25000000;1909;94.0;9.0;+79660601932;Petrogradskij;Voskova;Gor'kovskaja;
+ID 13393409;realtor;https://spb.cian.ru/sale/flat/284086160/;Sankt-Peterburg;sale;flat;19;25;5;212.0;424528;90000000;2014;-1;32.0;+79819216830;Moskovskij;Zvezdnoe;Zvezdnaja;Grand Familija
+ID 61263978;homeowner;https://spb.cian.ru/sale/flat/280428314/;Sankt-Peterburg;sale;flat;1;5;5;111.4;106822;11900000;2011;78.0;11.0;+79819378392;Pushkinskij;Galitskaja;Shushary;
+ID 58765604;homeowner;https://spb.cian.ru/sale/flat/272568569/;Sankt-Peterburg;sale;flat;4;5;5;128.0;218750;28000000;2009;-1;32.0;+79119924293;Pushkinskij;Glinki;;
+ID 6602812;realtor;https://spb.cian.ru/sale/flat/283185870/;Sankt-Peterburg;sale;flat;1;5;5;67.0;109701;7350000;1967;40.0;7.0;+79111088276;Krasnosel'skij;Pogranichnika Gar'kavogo;;
+ID 46873104;realtor;https://spb.cian.ru/sale/flat/284630757/;Sankt-Peterburg;sale;flat;4;7;5;175.9;426378;75000000;2012;105.0;26.0;+79819113285;Tsentral'nyj;Stremjannaja;Majakovskaja;Dvortsovaja sloboda
+ID 38451743;realtor;https://spb.cian.ru/sale/flat/273229763/;Sankt-Peterburg;sale;flat;4;6;5;106.5;209389;22300000;1878;72.0;12.0;+79052891320;Tsentral'nyj;Pushkinskaja;Ploschad' Vosstanija;
+ID 12421612;unknown;https://spb.cian.ru/sale/flat/284932364/;Sankt-Peterburg;sale;flat;1;5;5;66.5;127819;8500000;1965;50.0;7.0;+79681887831;Kirovskij;Podvodnika Kuz'mina;Prospekt Veteranov;
+ID 85210436;homeowner;https://spb.cian.ru/sale/flat/278854008/;Sankt-Peterburg;sale;flat;19;20;5;117.4;130323;15300000;2012;76.0;10.0;+79818614187;Krasnosel'skij;Marshala Kazakova;Leninskij prospekt;
+ID 98970645;homeowner;https://spb.cian.ru/sale/flat/285205741/;Sankt-Peterburg;sale;flat;2;5;5;90.0;177777;16000000;1932;74.0;7.0;+79118233540;Vyborgskij;Sampsonievskoe;Lesnaja;
+ID 56607129;homeowner;https://spb.cian.ru/sale/flat/273566581/;Sankt-Peterburg;sale;flat;3;5;5;135.0;140370;18950000;1880;-1;19.0;+79819217052;Tsentral'nyj;2-ja Sovetskaja;Ploschad' Vosstanija;
+ID 49156649;unknown;https://spb.cian.ru/sale/flat/271318091/;Sankt-Peterburg;sale;flat;3;3;5;164.1;124923;20500000;1846;108.0;11.0;+79117421425;Admiraltejskij;Sennoj;Sadovaja;
+ID 58026238;homeowner;https://spb.cian.ru/sale/flat/285057273/;Sankt-Peterburg;sale;flat;16;25;5;120.0;170833;20500000;1998;80.0;11.0;+79681874043;Primorskij;Savushkina;Begovaja;
+ID 76818807;homeowner;https://spb.cian.ru/sale/flat/284454600/;Sankt-Peterburg;sale;flat;3;3;5;131.0;160305;21000000;1852;103.0;13.0;+79052164013;Tsentral'nyj;Smol'ninskoe;Ploschad' Aleksandra Nevskogo;
+ID 90530651;homeowner;https://spb.cian.ru/sale/flat/273102988/;Sankt-Peterburg;sale;flat;1;14;5;107.0;200934;21500000;1988;68.0;9.0;+79817629915;Vasileostrovskij;Morskoj;Primorskaja;
+ID 12605314;unknown;https://spb.cian.ru/sale/flat/281050753/;Sankt-Peterburg;sale;flat;4;6;5;153.1;163285;24999000;1913;102.0;11.0;+79818492110;Petrogradskij;Shamsheva;Chkalovskaja;
+ID 15877413;realtor;https://spb.cian.ru/sale/flat/285071108/;Sankt-Peterburg;sale;flat;4;4;5;150.0;175333;26300000;1898;-1;11.0;+79118411290;Petrogradskij;Petrovskij;Sportivnaja;
+ID 3975052;unknown;https://spb.cian.ru/sale/flat/282217538/;Sankt-Peterburg;sale;flat;2;3;5;140.0;228571;32000000;2022;85.0;13.0;+79817725547;Pushkinskij;Gospital'naja;;
+ID 69769975;homeowner;https://spb.cian.ru/sale/flat/276352592/;Sankt-Peterburg;sale;flat;12;17;5;177.0;197740;35000000;1993;-1;-1;+79819159727;Vasileostrovskij;Kapitanskaja;Primorskaja;
+ID 88720977;homeowner;https://spb.cian.ru/sale/flat/271382545/;Sankt-Peterburg;sale;flat;1;2;5;155.0;232258;36000000;2000;-1;14.0;+79692025887;Primorskij;Rjabinovaja;Udel'naja;
+ID 11045044;unknown;https://spb.cian.ru/sale/flat/273862227/;Sankt-Peterburg;sale;flat;3;6;5;140.0;257142;36000000;1906;95.0;12.0;+79052201628;Vasileostrovskij;9-ja Vasil'evskogo ostrova linija;Vasileostrovskaja;
+ID 74958715;unknown;https://spb.cian.ru/sale/flat/259184113/;Sankt-Peterburg;sale;flat;25;25;5;205.0;219512;45000000;2009;175.0;21.0;+79679911766;Kirovskij;Krasnen'kaja rechka;;
+ID 3113974;unknown;https://spb.cian.ru/sale/flat/275479881/;Sankt-Peterburg;sale;flat;4;8;5;133.0;417669;55550000;2011;60.0;50.0;+79681870271;Petrogradskij;Chkalovskoe;Krestovskij ostrov;Kristally Krestovskogo
+ID 96418959;homeowner;https://spb.cian.ru/sale/flat/284943113/;Sankt-Peterburg;sale;flat;4;4;5;103.0;132038;13600000;1852;63.0;9.0;+79675374722;Tsentral'nyj;Litejnyj;Chernyshevskaja;
+ID 101033132;homeowner;https://spb.cian.ru/sale/flat/284990088/;Sankt-Peterburg;sale;flat;1;5;5;110.8;126353;14000000;2000;71.0;12.0;+79110966533;Krasnosel'skij;Sosnovaja poljana;Prospekt Veteranov;
+ID 12919241;homeowner;https://spb.cian.ru/sale/flat/283151074/;Sankt-Peterburg;sale;flat;8;10;5;224.0;290178;65000000;1998;126.0;25.0;+79819168749;Vyborgskij;Orbeli;Ploschad' Muzhestva;
+ID 56039018;homeowner;https://spb.cian.ru/sale/flat/268174162/;Sankt-Peterburg;sale;flat;9;9;5;101.0;178217;18000000;1989;65.0;17.0;+79107617861;Primorskij;Juntolovo;Komendantskij prospekt;
+ID 97330895;homeowner;https://spb.cian.ru/sale/flat/280314631/;Sankt-Peterburg;sale;flat;3;4;5;95.6;115062;11000000;1939;72.0;8.0;+79681885036;Petrodvortsovyj;Krasnogo Flota;;
