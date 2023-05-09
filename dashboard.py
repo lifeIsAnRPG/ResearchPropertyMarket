@@ -5,6 +5,8 @@ import pandas as pd
 import numpy as np
 import plotly.express as px
 import dash_mantine_components as dmc
+#from dash_iconify import DashIconify
+
 link = 'https://docs.google.com/spreadsheets/d/e/' \
        '2PACX-1vQxxmZm6YG54VucQ9yRgWFQXtOI-RFJ5-sOLT93LpaYGYc-vabL9LOzzkRXX' \
        '-LmSROTA7hOL1C327nZ/pub?gid=213261502&single=true&output=csv'
@@ -20,6 +22,25 @@ def create_text(label):
         size="xl",
         color="gray",
     )
+def create_select(id,label, data):
+    return dmc.Select(
+        id=f"select_{id}",
+        label=label,
+        searchable=True,
+        clearable=True,
+        style={"width": 200},
+        data=[{"value": item, "label": item} for item in data]
+        )
+def create_number_input(id, label):
+    return dmc.NumberInput(
+        id = f"number_{id}",
+        label=label,
+        description="Укажите или удерживайте",
+        stepHoldDelay=500,
+        stepHoldInterval=100,
+        value=0,
+        style={"width": 200}
+)
 
 # App layout
 app.layout = dmc.Container([
@@ -62,65 +83,9 @@ app.layout = dmc.Container([
             align="flex-start", #flex-start
             grow =False,
             children=[
-                        dmc.Select(
-                        id="select_1",
-                        searchable=True,
-                        clearable=True,
-                        style={"width": 200},
-                        data=[{"value":"ПИК", "label":"ПИК"}, {"value":"GloraX","label":"GloraX"}]
-                        ),
-                        dmc.Select(
-                            id="select_2",
-                            searchable=True,
-                            clearable=True,
-                            style={"width": 200},
-                            data=[{"value": 'Moskva', "label": 'Moskva'},
-                                  {"value": 'Sankt-Peterburg', "label": 'Sankt-Peterburg'}],
-                        ),
-                        dmc.Select(
-                        id="select_3",
-                        searchable=True,
-                        clearable=True,
-                        style={"width": 200},
-                        data=[{"value":"ПИК", "label":"ПИК"}, {"value":"GloraX","label":"GloraX"}]
-                        ),
-                        dmc.Select(
-                            id="select_4",
-                            searchable=True,
-                            clearable=True,
-                            style={"width": 200},
-                            data=[{"value": 'Moskva', "label": 'Moskva'},
-                                  {"value": 'Sankt-Peterburg', "label": 'Sankt-Peterburg'}],
-                        ),
-                        dmc.Select(
-                        id="select_5",
-                        searchable=True,
-                        clearable=True,
-                        style={"width": 200},
-                        data=[{"value":"ПИК", "label":"ПИК"}, {"value":"GloraX","label":"GloraX"}]
-                        ),
-                        dmc.Select(
-                            id="select_6",
-                            searchable=True,
-                            clearable=True,
-                            style={"width": 200},
-                            data=[{"value": 'Moskva', "label": 'Moskva'},
-                                  {"value": 'Sankt-Peterburg', "label": 'Sankt-Peterburg'}],
-                        ),dmc.Select(
-                        id="select_7",
-                        searchable=True,
-                        clearable=True,
-                        style={"width": 200},
-                        data=[{"value":"ПИК", "label":"ПИК"}, {"value":"GloraX","label":"GloraX"}]
-                        ),
-                        dmc.Select(
-                            id="select_8",
-                            searchable=True,
-                            clearable=True,
-                            style={"width": 200},
-                            data=[{"value": 'Moskva', "label": 'Moskva'},
-                                  {"value": 'Sankt-Peterburg', "label": 'Sankt-Peterburg'}],
-                        )
+                        create_select(1,'Застройщик/Продавец', np.array(["ПИК","GloraX"])),
+                        create_select(2,'Город', np.array(['Moskva','Sankt-Peterburg'])),
+                        create_number_input(3,"Этаж")
                     ],
                 ),
         dmc.Text(id="prediction", mt=20)]),
@@ -140,6 +105,13 @@ app.layout = dmc.Container([
                                         dcc.Graph(figure={}, id='graph-placeholder')
                                     ]
                                 )
+                             ], shadow="xs", p="xs", radius="lg",withBorder = True)], span=6),
+                dmc.Col([
+                    dmc.Paper(
+                        children=[
+                            dmc.Container(
+                                children=[]
+                                )
                              ], shadow="xs", p="xs", radius="lg",withBorder = True)], span=6)
             ]),
     ], fluid=True)
@@ -158,10 +130,11 @@ def update_graph(col_chosen):
 @callback(
     Output(component_id="prediction", component_property="children"),
     [Input(component_id="select_1", component_property="value"),
-    Input(component_id="select_2", component_property="value")]
+    Input(component_id="select_2", component_property="value"),
+    Input(component_id="number_3", component_property="value")]
 )
-def new_item(author,city):
-    return f'Примерная стоимость: ...'
+def new_item(author,city,floor):
+    return f'Примерная стоимость: ...{author,city,floor}'
 
 if __name__ == '__main__':
     app.run_server(debug=True)
