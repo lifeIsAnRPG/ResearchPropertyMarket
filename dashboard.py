@@ -13,20 +13,137 @@ df = pd.read_csv(link)
 external_stylesheets = [dmc.theme.DEFAULT_COLORS]
 app = Dash(__name__, external_stylesheets=external_stylesheets)
 
+
+def create_text(label):
+    return dmc.Text(
+        label,
+        size="xl",
+        color="gray",
+    )
+
 # App layout
 app.layout = dmc.Container([
-    dmc.Title('Dashboard', color="black", size="h3"),
-    dmc.RadioGroup(
-        [dmc.Radio(i, value=i) for i in  ['Moskva', 'Sankt-Peterburg']],
-        id='my-dmc-radio-item',
-        value='Moskva',
-        size="sm"),
-    dmc.Grid([
-        dmc.Col([
-            dcc.Graph(figure={}, id='graph-placeholder')
-            ], span=6),
-        ]),
-], fluid=True)
+    dmc.Header(
+        height=50,
+        children=[dmc.Container(
+                    fluid=True,
+                    style={"paddingRight": 12, "paddingLeft": 12},
+                    children=dmc.Group(
+                        position="apart",
+                        align="flex-start",
+                        children=[
+                            dmc.Center(
+                                dcc.Link(
+                                    [
+                                        dmc.MediaQuery(
+                                            create_text("Research Property Market"),
+                                            smallerThan="sm",
+                                            styles={"display": "none"},
+                                        ),
+                                        dmc.MediaQuery(
+                                            create_text("RPM"),
+                                            largerThan="sm",
+                                            styles={"display": "none"},
+                                        ),
+                                    ],
+                                    href="/",
+                                    style={"paddingTop": 3, "textDecoration": "none"},
+                                ),
+                            ),
+                        ],
+                    ),
+                )
+            ],
+        ),
+    dmc.Space(h=40),
+    html.Div([
+        dmc.Group(
+            position="apart",
+            align="flex-start", #flex-start
+            grow =False,
+            children=[
+                        dmc.Select(
+                        id="select_1",
+                        searchable=True,
+                        clearable=True,
+                        style={"width": 200},
+                        data=[{"value":"ПИК", "label":"ПИК"}, {"value":"GloraX","label":"GloraX"}]
+                        ),
+                        dmc.Select(
+                            id="select_2",
+                            searchable=True,
+                            clearable=True,
+                            style={"width": 200},
+                            data=[{"value": 'Moskva', "label": 'Moskva'},
+                                  {"value": 'Sankt-Peterburg', "label": 'Sankt-Peterburg'}],
+                        ),
+                        dmc.Select(
+                        id="select_3",
+                        searchable=True,
+                        clearable=True,
+                        style={"width": 200},
+                        data=[{"value":"ПИК", "label":"ПИК"}, {"value":"GloraX","label":"GloraX"}]
+                        ),
+                        dmc.Select(
+                            id="select_4",
+                            searchable=True,
+                            clearable=True,
+                            style={"width": 200},
+                            data=[{"value": 'Moskva', "label": 'Moskva'},
+                                  {"value": 'Sankt-Peterburg', "label": 'Sankt-Peterburg'}],
+                        ),
+                        dmc.Select(
+                        id="select_5",
+                        searchable=True,
+                        clearable=True,
+                        style={"width": 200},
+                        data=[{"value":"ПИК", "label":"ПИК"}, {"value":"GloraX","label":"GloraX"}]
+                        ),
+                        dmc.Select(
+                            id="select_6",
+                            searchable=True,
+                            clearable=True,
+                            style={"width": 200},
+                            data=[{"value": 'Moskva', "label": 'Moskva'},
+                                  {"value": 'Sankt-Peterburg', "label": 'Sankt-Peterburg'}],
+                        ),dmc.Select(
+                        id="select_7",
+                        searchable=True,
+                        clearable=True,
+                        style={"width": 200},
+                        data=[{"value":"ПИК", "label":"ПИК"}, {"value":"GloraX","label":"GloraX"}]
+                        ),
+                        dmc.Select(
+                            id="select_8",
+                            searchable=True,
+                            clearable=True,
+                            style={"width": 200},
+                            data=[{"value": 'Moskva', "label": 'Moskva'},
+                                  {"value": 'Sankt-Peterburg', "label": 'Sankt-Peterburg'}],
+                        )
+                    ],
+                ),
+        dmc.Text(id="prediction", mt=20)]),
+        dmc.Stack(
+            children=[dmc.Space(h=10),dmc.Divider(variant="solid"),dmc.Space(h=10)]
+            ),
+            dmc.Grid([
+                dmc.Col([
+                    dmc.Paper(
+                        children=[
+                            dmc.Container(
+                                children=[dmc.RadioGroup([
+                                        dmc.Radio(i, value=i) for i in ['Moskva', 'Sankt-Peterburg']],
+                                         id='my-dmc-radio-item',
+                                         value='Moskva',
+                                         size="sm"),
+                                        dcc.Graph(figure={}, id='graph-placeholder')
+                                    ]
+                                )
+                             ], shadow="xs", p="xs", radius="lg",withBorder = True)], span=6)
+            ]),
+    ], fluid=True)
+
 @callback(
     Output(component_id='graph-placeholder', component_property='figure'),
     Input(component_id='my-dmc-radio-item', component_property='value')
@@ -38,7 +155,13 @@ def update_graph(col_chosen):
         labels = {'x': 'Застройщик','proportion':'% на рынке'}
         fig = px.histogram(top10_devs, x=x,y='proportion',text_auto ='.2f',labels=labels, title = 'Топ-10 застройщиков')
         return fig
-
+@callback(
+    Output(component_id="prediction", component_property="children"),
+    [Input(component_id="select_1", component_property="value"),
+    Input(component_id="select_2", component_property="value")]
+)
+def new_item(author,city):
+    return f'Примерная стоимость: ...'
 
 if __name__ == '__main__':
     app.run_server(debug=True)
