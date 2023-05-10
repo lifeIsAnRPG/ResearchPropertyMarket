@@ -1,12 +1,12 @@
-from dash import Dash, html, dash_table, dcc, callback, Output, Input
-#Dash Core Components. Этот модуль включает компонент Graph с именем dcc.Graph, который используется для отображения
-# интерактивных графиков.
+from dash import Dash, html, dash_table, dcc, callback, Output, Input,clientside_callback
 import pandas as pd
 import numpy as np
 import plotly.express as px
 import dash_mantine_components as dmc
 from ml_model import predict_cost
-#from dash_iconify import DashIconify
+from dash_iconify import DashIconify
+import uuid
+from time import sleep
 
 link = 'https://docs.google.com/spreadsheets/d/e/' \
        '2PACX-1vQxxmZm6YG54VucQ9yRgWFQXtOI-RFJ5-sOLT93LpaYGYc-vabL9LOzzkRXX' \
@@ -82,25 +82,35 @@ app.layout = dmc.Container([
     html.Div([
         dmc.Group(
             position="apart",
-            align="flex-start", #flex-start
+            align='initial', #flex-start
             grow =False,
             spacing ='xs',
             children=[
-                        create_select(1,'Застройщик/Агенство', np.array(["ПИК","GloraX"])),
-                        create_select(2,'Город', np.array(['Moskva','Sankt-Peterburg'])),
-                        create_number_input(3,"Этаж"),
-                        create_number_input(4, "Этажей в доме"),
-                        create_number_input(5, "Кол-во комнат"),
-                        create_number_input(6, "Общая площадь"),
-                        create_number_input(7, "Год постройки"),
-                        create_number_input(8, "Жилая площадь"),
-                        create_number_input(9, "Площадь кухни"),
+                        create_number_input(1,"Этаж"),
+                        create_number_input(2, "Этажей в доме"),
+                        create_number_input(3, "Кол-во комнат"),
+                        create_number_input(4, "Общая площадь"),
+                        create_number_input(5, "Год постройки"),
+                        create_number_input(6, "Жилая площадь"),
+                        create_number_input(7, "Площадь кухни"),
+                        create_select(8,'Застройщик/Агенство', np.array(["ПИК","GloraX"])),
+                        create_select(9,'Город', np.array(['Moskva','Sankt-Peterburg'])),
                         create_select(10,'Район', np.array(['Moskva','Sankt-Peterburg'])),
                         create_select(11,'Улица', np.array(['Moskva','Sankt-Peterburg'])),
                         create_select(12,'Ближайшее метро', np.array(['Moskva','Sankt-Peterburg'])),
                     ],
                 ),
-        dmc.Text(id="prediction", mt=20)]),
+        dmc.Text(id="prediction", mt=20),
+        html.Div(
+                    [
+                        dmc.Button(
+                            "Узнать стоимость",
+                            id="loading-button-pred",
+                            leftIcon=DashIconify(icon="ph:currency-rub-fill"),
+                        ),
+                    ]
+                )
+    ]),
         dmc.Stack(
             children=[dmc.Space(h=10),dmc.Divider(variant="solid"),dmc.Space(h=10)]
             ),
@@ -125,6 +135,13 @@ app.layout = dmc.Container([
                             dmc.Container(
                                 children=[]
                                 )
+                             ], shadow="xs", p="xs", radius="lg",withBorder = True)], span=6),
+                dmc.Col([
+                    dmc.Paper(
+                        children=[
+                            dmc.Container(
+                                children=[]
+                                )
                              ], shadow="xs", p="xs", radius="lg",withBorder = True)], span=6)
             ]),
     ], fluid=True)
@@ -141,23 +158,42 @@ def update_graph(col_chosen):
         fig = px.histogram(top10_devs, x=x,y='proportion',text_auto ='.2f',labels=labels, title = 'Топ-10 '
                                                                                                   'застройщиков/агенств')
         return fig
-@callback(
+@callback(# синтаксис колбэк-функций должен быть именно таким
+    Output("loading-button-pred", "loading"),
     Output(component_id="prediction", component_property="children"),
-    [Input(component_id="select_1", component_property="value"),
-    Input(component_id="select_2", component_property="value"),
+    [Input(component_id="number_1", component_property="value"),
+    Input(component_id="number_2", component_property="value"),
     Input(component_id="number_3", component_property="value"),
     Input(component_id="number_4", component_property="value"),
     Input(component_id="number_5", component_property="value"),
     Input(component_id="number_6", component_property="value"),
     Input(component_id="number_7", component_property="value"),
-    Input(component_id="number_8", component_property="value"),
-    Input(component_id="number_9", component_property="value"),
+    Input(component_id="select_8", component_property="value"),
+    Input(component_id="select_9", component_property="value"),
     Input(component_id="select_10", component_property="value"),
     Input(component_id="select_11", component_property="value"),
-    Input(component_id="select_12", component_property="value")]
+    Input(component_id="select_12", component_property="value")],
+    Input("loading-button-pred", "n_clicks"),
+    prevent_initial_call=True,
 )
-def new_item(author,city,floor,):
-    return f'Примерная стоимость: ...{author,city,floor}'
+def new_item(floor,floors_count, rooms,
+             total_meters, year, living_meters,
+             kitchen_meters, author,city,
+             disctrict,street,underground,n_clicks):
+    sleep(2)
+    return  False, f'Примерная стоимость: ...{author,city,floor}'
+
+clientside_callback(# функция JS, будет выполнена на стороне клиента
+    """
+    function updateLoadingState(n_clicks) {
+        return true
+    }
+    """,
+    Output("loading-button-pred", "loading", allow_duplicate=True),
+    Input("loading-button-pred", "n_clicks"),
+    prevent_initial_call=True,
+)
+
 
 if __name__ == '__main__':
     app.run_server(debug=True)
