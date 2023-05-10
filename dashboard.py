@@ -5,6 +5,7 @@ import pandas as pd
 import numpy as np
 import plotly.express as px
 import dash_mantine_components as dmc
+from ml_model import predict_cost
 #from dash_iconify import DashIconify
 
 link = 'https://docs.google.com/spreadsheets/d/e/' \
@@ -26,6 +27,7 @@ def create_select(id,label, data):
     return dmc.Select(
         id=f"select_{id}",
         label=label,
+        description="Выбрать(есть поиск)",
         searchable=True,
         clearable=True,
         style={"width": 200},
@@ -35,7 +37,7 @@ def create_number_input(id, label):
     return dmc.NumberInput(
         id = f"number_{id}",
         label=label,
-        description="Укажите или удерживайте",
+        description="Указать или удерживать стрелку",
         stepHoldDelay=500,
         stepHoldInterval=100,
         value=0,
@@ -82,10 +84,20 @@ app.layout = dmc.Container([
             position="apart",
             align="flex-start", #flex-start
             grow =False,
+            spacing ='xs',
             children=[
-                        create_select(1,'Застройщик/Продавец', np.array(["ПИК","GloraX"])),
+                        create_select(1,'Застройщик/Агенство', np.array(["ПИК","GloraX"])),
                         create_select(2,'Город', np.array(['Moskva','Sankt-Peterburg'])),
-                        create_number_input(3,"Этаж")
+                        create_number_input(3,"Этаж"),
+                        create_number_input(4, "Этажей в доме"),
+                        create_number_input(5, "Кол-во комнат"),
+                        create_number_input(6, "Общая площадь"),
+                        create_number_input(7, "Год постройки"),
+                        create_number_input(8, "Жилая площадь"),
+                        create_number_input(9, "Площадь кухни"),
+                        create_select(10,'Район', np.array(['Moskva','Sankt-Peterburg'])),
+                        create_select(11,'Улица', np.array(['Moskva','Sankt-Peterburg'])),
+                        create_select(12,'Ближайшее метро', np.array(['Moskva','Sankt-Peterburg'])),
                     ],
                 ),
         dmc.Text(id="prediction", mt=20)]),
@@ -98,7 +110,8 @@ app.layout = dmc.Container([
                         children=[
                             dmc.Container(
                                 children=[dmc.RadioGroup([
-                                        dmc.Radio(i, value=i) for i in ['Moskva', 'Sankt-Peterburg']],
+                                        dmc.Radio(i, value=k) for i,k in [['Москва','Moskva'],['Санкт-Петербург',
+                                                                                               'Sankt-Peterburg']]],
                                          id='my-dmc-radio-item',
                                          value='Moskva',
                                          size="sm"),
@@ -124,16 +137,26 @@ def update_graph(col_chosen):
         top10_devs = (df.query('city == @col_chosen').author.value_counts(normalize=True) * 100).to_frame().reset_index()[:10]
         x = top10_devs.author.str.slice(stop=12)
         x = x.where(x.str.len() != 12,x.str.cat(['..'] * len(top10_devs)))
-        labels = {'x': 'Застройщик','proportion':'% на рынке'}
-        fig = px.histogram(top10_devs, x=x,y='proportion',text_auto ='.2f',labels=labels, title = 'Топ-10 застройщиков')
+        labels = {'x': 'Субъект','proportion':'% на рынке'}
+        fig = px.histogram(top10_devs, x=x,y='proportion',text_auto ='.2f',labels=labels, title = 'Топ-10 '
+                                                                                                  'застройщиков/агенств')
         return fig
 @callback(
     Output(component_id="prediction", component_property="children"),
     [Input(component_id="select_1", component_property="value"),
     Input(component_id="select_2", component_property="value"),
-    Input(component_id="number_3", component_property="value")]
+    Input(component_id="number_3", component_property="value"),
+    Input(component_id="number_4", component_property="value"),
+    Input(component_id="number_5", component_property="value"),
+    Input(component_id="number_6", component_property="value"),
+    Input(component_id="number_7", component_property="value"),
+    Input(component_id="number_8", component_property="value"),
+    Input(component_id="number_9", component_property="value"),
+    Input(component_id="select_10", component_property="value"),
+    Input(component_id="select_11", component_property="value"),
+    Input(component_id="select_12", component_property="value")]
 )
-def new_item(author,city,floor):
+def new_item(author,city,floor,):
     return f'Примерная стоимость: ...{author,city,floor}'
 
 if __name__ == '__main__':
