@@ -1,4 +1,4 @@
-from dash import Dash, html, dash_table, dcc, callback, Output, Input,clientside_callback
+from dash import Dash, html, dash_table, dcc, callback, Output, Input, State, clientside_callback
 import pandas as pd
 import numpy as np
 import plotly.express as px
@@ -8,10 +8,14 @@ from dash_iconify import DashIconify
 import uuid
 from time import sleep
 
-link = 'https://docs.google.com/spreadsheets/d/e/' \
+link_main = 'https://docs.google.com/spreadsheets/d/e/' \
        '2PACX-1vQxxmZm6YG54VucQ9yRgWFQXtOI-RFJ5-sOLT93LpaYGYc-vabL9LOzzkRXX' \
        '-LmSROTA7hOL1C327nZ/pub?gid=213261502&single=true&output=csv'
-df = pd.read_csv(link)
+link_selectors = 'https://docs.google.com/spreadsheets/d/e/' \
+                 '2PACX-1vRyT9LKa2_b3-92CiZxG5w1NDYQUWWo8HipsB7DRTjUZxItCaem' \
+                 'm2yL56oSXgjapti7_pUTEjUoNUPq/pub?gid=853725322&single=true&output=csv'
+selectors_data = pd.read_csv(link_selectors)
+df = pd.read_csv(link_main)
 
 external_stylesheets = [dmc.theme.DEFAULT_COLORS]
 app = Dash(__name__, external_stylesheets=external_stylesheets)
@@ -93,11 +97,11 @@ app.layout = dmc.Container([
                         create_number_input(5, "Год постройки"),
                         create_number_input(6, "Жилая площадь"),
                         create_number_input(7, "Площадь кухни"),
-                        create_select(8,'Застройщик/Агенство', np.array(["ПИК","GloraX"])),
+                        create_select(8,'Застройщик/Агенство', selectors_data['author'].unique()),
                         create_select(9,'Город', np.array(['Moskva','Sankt-Peterburg'])),
-                        create_select(10,'Район', np.array(['Moskva','Sankt-Peterburg'])),
-                        create_select(11,'Улица', np.array(['Moskva','Sankt-Peterburg'])),
-                        create_select(12,'Ближайшее метро', np.array(['Moskva','Sankt-Peterburg'])),
+                        create_select(10,'Район', selectors_data['district'].unique()),
+                        create_select(11,'Улица', selectors_data['street'].unique()),
+                        create_select(12,'Ближайшее метро', selectors_data['underground'].unique()),
                     ],
                 ),
         dmc.Text(id="prediction", mt=20),
@@ -159,29 +163,33 @@ def update_graph(col_chosen):
                                                                                                   'застройщиков/агенств')
         return fig
 @callback(# синтаксис колбэк-функций должен быть именно таким
-    Output("loading-button-pred", "loading"),
-    Output(component_id="prediction", component_property="children"),
-    [Input(component_id="number_1", component_property="value"),
-    Input(component_id="number_2", component_property="value"),
-    Input(component_id="number_3", component_property="value"),
-    Input(component_id="number_4", component_property="value"),
-    Input(component_id="number_5", component_property="value"),
-    Input(component_id="number_6", component_property="value"),
-    Input(component_id="number_7", component_property="value"),
-    Input(component_id="select_8", component_property="value"),
-    Input(component_id="select_9", component_property="value"),
-    Input(component_id="select_10", component_property="value"),
-    Input(component_id="select_11", component_property="value"),
-    Input(component_id="select_12", component_property="value")],
-    Input("loading-button-pred", "n_clicks"),
+    [Output(component_id="loading-button-pred", component_property="loading"),
+    Output(component_id="prediction", component_property="children")],
+    [Input(component_id="loading-button-pred", component_property="n_clicks")],
+    [State(component_id="number_1", component_property="value"),
+    State(component_id="number_2", component_property="value"),
+    State(component_id="number_3", component_property="value"),
+    State(component_id="number_4", component_property="value"),
+    State(component_id="number_5", component_property="value"),
+    State(component_id="number_6", component_property="value"),
+    State(component_id="number_7", component_property="value"),
+    State(component_id="select_8", component_property="value"),
+    State(component_id="select_9", component_property="value"),
+    State(component_id="select_10", component_property="value"),
+    State(component_id="select_11", component_property="value"),
+    State(component_id="select_12", component_property="value")],
     prevent_initial_call=True,
 )
-def new_item(floor,floors_count, rooms,
-             total_meters, year, living_meters,
-             kitchen_meters, author,city,
-             disctrict,street,underground,n_clicks):
-    sleep(2)
-    return  False, f'Примерная стоимость: ...{author,city,floor}'
+def predict(n_clicks,floor, floors_count, rooms,
+            total_meters, year, living_meters,
+            kitchen_meters, author, city,
+            district, street, underground):
+    if n_clicks is not None:
+        sleep(2)
+        y_pred = predict_cost(np.array([author, city, floor, floors_count, rooms,
+        total_meters, year, living_meters,
+        kitchen_meters, district, street, underground]))
+        return False, f'Примерная стоимость: {y_pred}'
 
 clientside_callback(# функция JS, будет выполнена на стороне клиента
     """
@@ -197,3 +205,10 @@ clientside_callback(# функция JS, будет выполнена на ст
 
 if __name__ == '__main__':
     app.run_server(debug=True)
+# y_pred = predict_cost(np.array([author,city, floor, floors_count, rooms,
+        # total_meters, year, living_meters,
+        # kitchen_meters, district, street, underground]))
+# floor, floors_count, rooms,
+#             total_meters, year, living_meters,
+#             kitchen_meters, author, city,
+#             district, street, underground
