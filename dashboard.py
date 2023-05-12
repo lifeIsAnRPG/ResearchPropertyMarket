@@ -49,106 +49,152 @@ def create_number_input(id, label):
 )
 
 # App layout
-app.layout = dmc.Container([
-    dmc.Header(
-        height=50,
-        children=[dmc.Container(
-                    fluid=True,
-                    style={"paddingRight": 12, "paddingLeft": 12},
-                    children=dmc.Group(
-                        position="apart",
-                        align="flex-start",
-                        children=[
-                            dmc.Center(
-                                dcc.Link(
-                                    [
-                                        dmc.MediaQuery(
-                                            create_text("Research Property Market"),
-                                            smallerThan="sm",
-                                            styles={"display": "none"},
-                                        ),
-                                        dmc.MediaQuery(
-                                            create_text("RPM"),
-                                            largerThan="sm",
-                                            styles={"display": "none"},
-                                        ),
-                                    ],
-                                    href="/",
-                                    style={"paddingTop": 3, "textDecoration": "none"},
+def create_content():
+    return dmc.Container([
+        dmc.Header(
+            height=70,
+            fixed=True,
+            p="md",
+            children=[dmc.Container(
+                        fluid=True,
+                        style={"paddingRight": 12, "paddingLeft": 12},
+                        children=dmc.Group(
+                            position="apart",
+                            align="flex-start",
+                            children=[
+                                dmc.Center(
+                                    dcc.Link(
+                                        [
+                                            dmc.MediaQuery(
+                                                create_text("Research Property Market"),
+                                                smallerThan="sm",
+                                                styles={"display": "none"},
+                                            ),
+                                            dmc.MediaQuery(
+                                                create_text("RPM"),
+                                                largerThan="sm",
+                                                styles={"display": "none"},
+                                            ),
+                                        ],
+                                        href="/",
+                                        style={"paddingTop": 3, "textDecoration": "none"},
+                                    ),
                                 ),
-                            ),
-                        ],
-                    ),
-                )
-            ],
-        ),
-    dmc.Space(h=40),
-    html.Div([
-        dmc.Group(
-            position="apart",
-            align='initial', #flex-start
-            grow =False,
-            spacing ='xs',
-            children=[
-                        create_number_input(1,"Этаж"),
-                        create_number_input(2, "Этажей в доме"),
-                        create_number_input(3, "Кол-во комнат"),
-                        create_number_input(4, "Общая площадь"),
-                        create_number_input(5, "Год постройки"),
-                        create_number_input(6, "Жилая площадь"),
-                        create_number_input(7, "Площадь кухни"),
-                        create_select(8,'Застройщик/Агенство', selectors_data['author'].unique()),
-                        create_select(9,'Город', np.array(['Moskva','Sankt-Peterburg'])),
-                        create_select(10,'Район', selectors_data['district'].unique()),
-                        create_select(11,'Улица', selectors_data['street'].unique()),
-                        create_select(12,'Ближайшее метро', selectors_data['underground'].unique()),
-                    ],
-                ),
-        dmc.Text(id="prediction", mt=20),
-        html.Div(
-                    [
-                        dmc.Button(
-                            "Узнать стоимость",
-                            id="loading-button-pred",
-                            leftIcon=DashIconify(icon="ph:currency-rub-fill"),
+                                dmc.Group(
+                                    position="right",
+                                    align="center",
+                                    children=[
+                                    html.A(
+                                        dmc.Tooltip(
+                                            dmc.Avatar(
+                                                src="https://avatars.githubusercontent.com/u/97909195?v=4",
+                                                size="sm",
+                                                radius="xl",
+                                            ),
+                                            label="Github",
+                                            position="bottom",
+                                        ),
+                                        href="https://github.com/HinkevichRoadToDs/QualificationWork",
+                                        target = "_blank"
+                                    ),
+                                    dmc.Switch(
+                                        id='theme_switcher',
+                                        offLabel=DashIconify(icon="radix-icons:sun", width=20),
+                                        onLabel=DashIconify(icon="radix-icons:moon", width=20),
+                                        size="xl",
+                                    )
+                                ])
+                            ]),
                         ),
-                    ]
-                )
-    ]),
+                    ]),
+        dmc.Space(h=70),
+        dmc.Grid([
+                dmc.Col(
+                    dmc.Container([
+                        dmc.SimpleGrid(
+                        cols=4,
+                        spacing="xs",
+                        breakpoints=[
+                                {"maxWidth": 980, "cols": 3, "spacing": "xs"},
+                                {"maxWidth": 755, "cols": 2, "spacing": "xs"},
+                                {"maxWidth": 600, "cols": 1, "spacing": "xs"},
+                            ],
+                            children=[
+                                        create_number_input(1,"Этаж"),
+                                        create_number_input(2, "Этажей в доме"),
+                                        create_number_input(3, "Кол-во комнат"),
+                                        create_number_input(4, "Общая площадь"),
+                                        create_number_input(5, "Год постройки"),
+                                        create_number_input(6, "Жилая площадь"),
+                                        create_number_input(7, "Площадь кухни"),
+                                        create_select(8,'Застройщик/Агенство', selectors_data['author'].unique()),
+                                        create_select(9,'Город', np.array(['Moskva','Sankt-Peterburg'])),
+                                        create_select(10,'Район', selectors_data['district'].unique()),
+                                        create_select(11,'Улица', selectors_data['street'].unique()),
+                                        create_select(12,'Ближайшее метро', selectors_data['underground'].unique()),
+                                ])
+                            ],size=940)
+                        ),
+                dmc.Col(dmc.Container([
+                    dmc.Text(id="prediction", mt=20),
+                    html.Div(
+                                [
+                                    dmc.Button(
+                                        "Узнать стоимость",
+                                        id="loading-button-pred",
+                                        leftIcon=DashIconify(icon="ph:currency-rub-fill"),
+                                    ),
+                                ]
+                            )
+                        ],size=940)
+                    )
+                ], gutter = 'xs', justify="center",align="center"),
         dmc.Stack(
             children=[dmc.Space(h=10),dmc.Divider(variant="solid"),dmc.Space(h=10)]
             ),
-            dmc.Grid([
-                dmc.Col([
-                    dmc.Paper(
-                        children=[
-                            dmc.Container(
-                                children=[dmc.RadioGroup([
-                                        dmc.Radio(i, value=k) for i,k in [['Москва','Moskva'],['Санкт-Петербург',
-                                                                                               'Sankt-Peterburg']]],
-                                         id='my-dmc-radio-item',
-                                         value='Moskva',
-                                         size="sm"),
-                                        dcc.Graph(figure={}, id='graph-placeholder')
-                                    ]
-                                )
-                             ], shadow="xs", p="xs", radius="lg",withBorder = True)], span=6),
-                dmc.Col([
-                    dmc.Paper(
-                        children=[
-                            dmc.Container(
-                                children=[]
-                                )
-                             ], shadow="xs", p="xs", radius="lg",withBorder = True)], span=6),
-                dmc.Col([
-                    dmc.Paper(
-                        children=[
-                            dmc.Container(
-                                children=[]
-                                )
-                             ], shadow="xs", p="xs", radius="lg",withBorder = True)], span=6)
-            ]),
+        dmc.Grid([
+            dmc.Col([
+                dmc.Paper(
+                    children=[
+                        dmc.Container(
+                            children=[dmc.RadioGroup([
+                                    dmc.Radio(i, value=k) for i,k in [['Москва','Moskva'],['Санкт-Петербург',
+                                                                                           'Sankt-Peterburg']]],
+                                     id='my-dmc-radio-item',
+                                     value='Moskva',
+                                     size="sm"),
+                                    dcc.Graph(figure={}, id='graph-placeholder')
+                                ]
+                            )
+                         ], shadow="xs", p="xs", radius="lg",withBorder = True)], span=6),
+            dmc.Col([
+                dmc.Paper(
+                    children=[
+                        dmc.Container(
+                            children=[]
+                            )
+                         ], shadow="xs", p="xs", radius="lg",withBorder = True)], span=6),
+            dmc.Col([
+                dmc.Paper(
+                    children=[
+                        dmc.Container(
+                            children=[]
+                            )
+                         ], shadow="xs", p="xs", radius="lg",withBorder = True)], span=6)
+        ]),
     ], fluid=True)
+
+app.layout = dmc.MantineProvider(
+    id="theme-provider",
+    theme={
+        "colorScheme": "dark",
+        "fontFamily": "'Inter', sans-serif",
+        "primaryColor": "green",
+    },
+    withGlobalStyles=True,
+    withNormalizeCSS=True,
+    children=[create_content()]
+)
 
 @callback(
     Output(component_id='graph-placeholder', component_property='figure'),
@@ -190,6 +236,25 @@ def predict(n_clicks,floor, floors_count, rooms,
         total_meters, year, living_meters,
         kitchen_meters, district, street, underground]))
         return False, f'Примерная стоимость: {y_pred}'
+
+@callback(
+    Output(component_id="theme-provider", component_property='theme'),
+    Input(component_id="theme_switcher", component_property='checked'),
+    prevent_initial_call=True,
+)
+def change_theme(checked):
+    if checked:
+        return {
+            "colorScheme": 'light',
+            "fontFamily": "'Inter', sans-serif",
+            "primaryColor": "green",
+        }
+    else:
+        return {
+            "colorScheme": 'dark',
+            "fontFamily": "'Inter', sans-serif",
+            "primaryColor": "green",
+        }
 
 clientside_callback(# функция JS, будет выполнена на стороне клиента
     """
