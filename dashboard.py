@@ -5,7 +5,7 @@ import plotly.express as px
 import dash_mantine_components as dmc
 from ml_model import predict_cost
 from dash_iconify import DashIconify
-import uuid
+import plotly.colors as colors
 from time import sleep
 
 link_main = 'https://docs.google.com/spreadsheets/d/e/' \
@@ -171,9 +171,11 @@ def create_content():
                 dmc.Paper(
                     children=[
                         dmc.Container(
-                            children=[]
+                            children=[
+
+                                ]
                             )
-                         ], shadow="xs", p="xs", radius="lg",withBorder = True)], span=6),
+                        ], shadow="xs", p="xs", radius="lg",withBorder = True)], span=6),
             dmc.Col([
                 dmc.Paper(
                     children=[
