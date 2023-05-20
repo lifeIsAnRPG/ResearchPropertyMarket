@@ -7,6 +7,7 @@ from ml_model import predict_cost
 from dash_iconify import DashIconify
 import plotly.colors as colors
 from time import sleep
+import json
 
 link_main = 'https://docs.google.com/spreadsheets/d/e/' \
        '2PACX-1vQxxmZm6YG54VucQ9yRgWFQXtOI-RFJ5-sOLT93LpaYGYc-vabL9LOzzkRXX' \
@@ -14,8 +15,15 @@ link_main = 'https://docs.google.com/spreadsheets/d/e/' \
 link_selectors = 'https://docs.google.com/spreadsheets/d/e/' \
                  '2PACX-1vRyT9LKa2_b3-92CiZxG5w1NDYQUWWo8HipsB7DRTjUZxItCaem' \
                  'm2yL56oSXgjapti7_pUTEjUoNUPq/pub?gid=853725322&single=true&output=csv'
-selectors_data = pd.read_csv(link_selectors)
+link_geodata_msk = 'https://docs.google.com/spreadsheets/d/e/' \
+                   '2PACX-1vSPfEe4M6P2lpaEdDL87E7GtIDfWFctAGbMjrAbj6U9rFKn8f2' \
+                   '-G5X0FK_hw1xFqx1Qq80CdU9C5kU5/pub?gid=1057824050&single=true&output=csv'
+
 df = pd.read_csv(link_main)
+selectors_data = pd.read_csv(link_selectors)
+geodata_msk = pd.read_csv(link_geodata_msk)
+with open('mo.geojson', 'r', encoding ='UTF-8') as f:
+    msk_geojson = json.load(f)
 
 external_stylesheets = [dmc.theme.DEFAULT_COLORS]
 app = Dash(__name__, external_stylesheets=external_stylesheets)
@@ -48,7 +56,7 @@ def create_number_input(id, label):
         style={"width": 200}
 )
 
-# App layout
+
 def create_content():
     return dmc.Container([
         dmc.Header(
@@ -172,7 +180,22 @@ def create_content():
                     children=[
                         dmc.Container(
                             children=[
-
+                                    dcc.Graph(figure=px.choropleth_mapbox(geodata_msk,
+                                                             geojson=msk_geojson,
+                                                             locations='OKATO',
+                                                             color='Цена за м2',
+                                                             color_continuous_scale=colors.sequential.Plasma,
+                                                             featureidkey='properties.OKATO',
+                                                             mapbox_style="carto-positron",
+                                                             zoom=8.5,
+                                                             center={"lat": 55.75, "lon": 37.61},
+                                                             opacity=0.2,
+                                                             range_color=(
+                                                             geodata_msk['Цена за м2'].min(), geodata_msk['Цена за м2'].max()),
+                                                             labels={'Цена за м2': 'Цена за м2'}
+                                                            )
+                                                      , id='map-placeholder'
+                                              )
                                 ]
                             )
                         ], shadow="xs", p="xs", radius="lg",withBorder = True)], span=6),
@@ -185,7 +208,7 @@ def create_content():
                          ], shadow="xs", p="xs", radius="lg",withBorder = True)], span=6)
         ]),
     ], fluid=True)
-
+# App layout
 app.layout = dmc.MantineProvider(
     id="theme-provider",
     theme={
@@ -272,10 +295,3 @@ clientside_callback(# функция JS, будет выполнена на ст
 
 if __name__ == '__main__':
     app.run_server(debug=True)
-# y_pred = predict_cost(np.array([author,city, floor, floors_count, rooms,
-        # total_meters, year, living_meters,
-        # kitchen_meters, district, street, underground]))
-# floor, floors_count, rooms,
-#             total_meters, year, living_meters,
-#             kitchen_meters, author, city,
-#             district, street, underground
