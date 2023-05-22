@@ -9,7 +9,7 @@ import plotly.colors as colors
 from time import sleep
 import json
 
-link_main = 'https://docs.google.com/spreadsheets/d/e/' \
+link_data_hist = 'https://docs.google.com/spreadsheets/d/e/' \
        '2PACX-1vQxxmZm6YG54VucQ9yRgWFQXtOI-RFJ5-sOLT93LpaYGYc-vabL9LOzzkRXX' \
        '-LmSROTA7hOL1C327nZ/pub?gid=213261502&single=true&output=csv'
 link_selectors = 'https://docs.google.com/spreadsheets/d/e/' \
@@ -18,10 +18,13 @@ link_selectors = 'https://docs.google.com/spreadsheets/d/e/' \
 link_geodata_msk = 'https://docs.google.com/spreadsheets/d/e/' \
                    '2PACX-1vSPfEe4M6P2lpaEdDL87E7GtIDfWFctAGbMjrAbj6U9rFKn8f2' \
                    '-G5X0FK_hw1xFqx1Qq80CdU9C5kU5/pub?gid=1057824050&single=true&output=csv'
-
-df = pd.read_csv(link_main)
+link_data_bubbles = 'https://docs.google.com/spreadsheets/d/e/' \
+                    '2PACX-1vTQk2hwcxS74FiRZaXHcqnXZ4pqt9S7tbPXuuAtNpqes4AmQdu' \
+                    'EBsFVB-O0zTx6t6wHOe8y8OBdN_qr/pub?gid=1962707013&single=true&output=csv'
+df = pd.read_csv(link_data_hist)
 selectors_data = pd.read_csv(link_selectors)
 geodata_msk = pd.read_csv(link_geodata_msk)
+data_bubbles = pd.read_csv(link_data_bubbles)
 with open('mo.geojson', 'r', encoding ='UTF-8') as f:
     msk_geojson = json.load(f)
 
@@ -203,7 +206,24 @@ def create_content():
                 dmc.Paper(
                     children=[
                         dmc.Container(
-                            children=[]
+                            children=[
+                                dmc.SimpleGrid(
+                                    cols=2,
+                                    children=[
+                                        dmc.RangeSlider(
+                                            id="rng-slider-bubble_graph",
+                                            min = data_bubbles['total_meters'].min(),
+                                            max = data_bubbles['total_meters'].max(),
+                                            value=[data_bubbles['total_meters'].min(), data_bubbles['total_meters'].max()],
+                                            marks=[
+                                                {"value": data_bubbles['total_meters'].max() * 0.5, "label": "50%"},
+                                            ],
+
+                                        ),
+
+                                    ]
+                                )
+                            ]
                             )
                          ], shadow="xs", p="xs", radius="lg",withBorder = True)], span=6)
         ]),
@@ -280,6 +300,14 @@ def change_theme(checked):
             "fontFamily": "'Inter', sans-serif",
             "primaryColor": "green",
         }
+
+# @callback(
+#     Output("bubbles_graph", "figure"),
+#     Input("rng-slider-bubble_graph", "value")
+# )
+# def update_bubbles_graph(value):
+#     return f"You have selected: [{value[0]}, {value[1]}]"
+
 
 clientside_callback(# функция JS, будет выполнена на стороне клиента
     """
