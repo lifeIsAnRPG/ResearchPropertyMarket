@@ -8,6 +8,7 @@ from ml_model import predict_cost
 from dash_iconify import DashIconify
 import plotly.colors as colors
 from time import sleep
+import scipy
 import json
 
 link_data_hist = 'https://docs.google.com/spreadsheets/d/e/' \
@@ -224,6 +225,7 @@ def create_content():
                                                 children=[
                                                     dmc.Space(h=15),
                                                     dmc.MultiSelect(
+                                                        id = 'authors-multi-selector',
                                                         data=pd.Series(data_bubbles['author'].unique()).dropna(),
                                                         searchable=True,
                                                         nothingFound="Не найдено",
@@ -282,11 +284,11 @@ app.layout = dmc.MantineProvider(
 def update_graph(col_chosen):
         top10_devs = (df.query('city == @col_chosen').author.value_counts(normalize=True) * 100).to_frame().reset_index()[:10]
         x = top10_devs.author.str.slice(stop=12)
-        x = x.where(x.str.len() != 12,x.str.cat(['..'] * len(top10_devs)))
-        labels = {'x': 'Субъект','proportion':'% на рынке'}
-        fig = px.histogram(top10_devs, x=x,y='proportion',text_auto ='.2f',labels=labels, title = 'Топ-10 '
+        x = x.where(x.str.len() != 12, x.str.cat(['..'] * len(top10_devs)))
+        labels = {'x': 'Субъект', 'proportion':'% на рынке'}
+        hist_fig = px.histogram(top10_devs, x=x, y='proportion', text_auto ='.2f',labels=labels, title = 'Топ-10 '
                                                                                                   'застройщиков/агенств')
-        return fig
+        return hist_fig
 @callback(# синтаксис колбэк-функций должен быть именно таким
     [Output(component_id="loading-button-pred", component_property="loading"),
     Output(component_id="prediction", component_property="children")],
@@ -317,30 +319,110 @@ def predict(n_clicks,floor, floors_count, rooms,
         return False, f'Примерная стоимость: {y_pred}'
 
 @callback(
-    Output(component_id="theme-provider", component_property='theme'),
+    [Output(component_id="theme-provider", component_property='theme'),
+     Output(component_id="graph-placeholder", component_property='figure', allow_duplicate=True)],
     Input(component_id="theme_switcher", component_property='checked'),
+    State(component_id="graph-placeholder", component_property='figure'),
     prevent_initial_call=True,
 )
-def change_theme(checked):
+def change_theme(checked, hist_fig):
     if checked:
+        hist_fig['paper_bgcolor'] = 'rgb(255, 255, 255)'
+        hist_fig['plot_bgcolor'] = 'rgb(255, 255, 255)'
         return {
             "colorScheme": 'light',
             "fontFamily": "'Inter', sans-serif",
             "primaryColor": "green",
-        }
+        }, hist_fig
     else:
+        hist_fig['paper_bgcolor'] = 'rgb(51, 51, 51)'
+        hist_fig['plot_bgcolor'] = 'rgb(51, 51, 51)'
         return {
             "colorScheme": 'dark',
             "fontFamily": "'Inter', sans-serif",
             "primaryColor": "green",
-        }
+        }, hist_fig
 
-# @callback(
-#     Output("bubbles_graph", "figure"),
-#     Input("rng-slider-bubble_graph", "value")
-# )
-# def update_bubbles_graph(value):
-#     return f"You have selected: [{value[0]}, {value[1]}]"
+@callback(
+    Output("bubble-placeholder", "figure"),
+    [Input("authors-multi-selector", "value"),
+     Input("rng-slider-bubble_graph", "value")]
+)
+def update_bubbles_graph(authors_arr, tmeters_range):
+    tmeters_left = tmeters_range[0]
+    tmeters_right = tmeters_range[1]
+    def mode_func(arr):
+        return scipy.stats.mode(arr, keepdims=False)[0]
+
+    temp_data_bubble = data_bubbles.query("author in @authors_arr & \
+                             total_meters >= @tmeters_left & total_meters <= @tmeters_right")
+    temp_data_bubble = temp_data_bubble.groupby(['author_type', 'author']).agg({'price_per_m2': 'mean',
+                                                                      'price': 'mean',
+                                                                      'floors_count': mode_func,
+                                                                      'total_meters': 'mean'}) \
+        .reset_index(level=1, drop=False).reset_index()
+    temp_data_bubble.rename(columns={'price_per_m2': 'mean_price_m2',
+                                'price': 'mean_price',
+                                'floors_count': 'floors_mode',
+                                'total_meters': 'total_meters_mean'}, inplace=True)
+    temp_data_bubble = temp_data_bubble.sort_values(['author_type', 'author'])
+
+    hover_text = []
+    bubble_size = []
+
+    for index, row in temp_data_bubble.iterrows():
+        hover_text.append(('Продавец: {author}<br>' +
+                           'Средняя цена за м2: {mean_price_m2}<br>' +
+                           'Средняя цена предложения: {mean_price}<br>' +
+                           'Самое частое кол-во этажей в доме: {floors_mode}<br>' +
+                           'Средний метраж квартиры: {total_meters_mean}').format(author=row['author'],
+                                                                                  mean_price_m2=row['mean_price_m2'],
+                                                                                  mean_price=row['mean_price'],
+                                                                                  floors_mode=row['floors_mode'],
+                                                                                  total_meters_mean=row[
+                                                                                      'total_meters_mean']))
+        bubble_size.append(np.sqrt(row['mean_price']))
+
+    temp_data_bubble['hover_text'] = hover_text
+    temp_data_bubble['bubble_size'] = bubble_size
+    sizeref = 2 * temp_data_bubble['bubble_size'].max() / (100 ** 2)
+
+    # Словарь с данными для каждого типа продавца
+    types_names = temp_data_bubble['author_type'].unique()
+    types_data = {author_type: temp_data_bubble.query("author_type == '%s'" % author_type)
+                  for author_type in types_names}
+
+    # Create figure
+    bubbles_fig = go.Figure()
+
+    for author_type, filtered_df in types_data.items():
+        bubbles_fig.add_trace(go.Scatter(
+            x=filtered_df['mean_price'], y=filtered_df['total_meters_mean'],
+            name=author_type, text=filtered_df['hover_text'],
+            marker_size=filtered_df['bubble_size'],
+        ))
+
+    # Tune marker appearance and layout
+    bubbles_fig.update_traces(mode='markers', marker=dict(sizemode='area',
+                                                  sizeref=sizeref, line_width=2))
+
+    bubbles_fig.update_layout(
+        title='Средний метраж жилья/Средняя цена предложения',
+        xaxis=dict(
+            title='Средняя цена предложения',
+            gridcolor='white',
+            type='log',
+            gridwidth=2,
+        ),
+        yaxis=dict(
+            title='Средний метраж жилья',
+            gridcolor='white',
+            gridwidth=2,
+        ),
+        paper_bgcolor='rgb(243, 243, 243)',
+        plot_bgcolor='rgb(243, 243, 243)',
+    )
+    return bubbles_fig
 
 
 clientside_callback(# функция JS, будет выполнена на стороне клиента
