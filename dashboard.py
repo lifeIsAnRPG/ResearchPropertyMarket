@@ -2,6 +2,7 @@ from dash import Dash, html, dash_table, dcc, callback, Output, Input, State, cl
 import pandas as pd
 import numpy as np
 import plotly.express as px
+import plotly.graph_objects as go
 import dash_mantine_components as dmc
 from ml_model import predict_cost
 from dash_iconify import DashIconify
@@ -207,22 +208,55 @@ def create_content():
                     children=[
                         dmc.Container(
                             children=[
-                                dmc.SimpleGrid(
-                                    cols=2,
-                                    children=[
-                                        dmc.RangeSlider(
-                                            id="rng-slider-bubble_graph",
-                                            min = data_bubbles['total_meters'].min(),
-                                            max = data_bubbles['total_meters'].max(),
-                                            value=[data_bubbles['total_meters'].min(), data_bubbles['total_meters'].max()],
-                                            marks=[
-                                                {"value": data_bubbles['total_meters'].max() * 0.5, "label": "50%"},
-                                            ],
-
+                                dmc.Tabs(
+                                    [
+                                        dmc.TabsList(
+                                            [
+                                                dmc.Tab('Продавцы', value="authors"),
+                                                dmc.Tab("Средняя общая площадь", value="total_meters"),
+                                                dmc.Tab("Messages", value="messages"),
+                                                dmc.Tab("Settings", value="settings"),
+                                            ]
                                         ),
-
-                                    ]
-                                )
+                                        dmc.TabsPanel(
+                                            dmc.Container(
+                                                style={"height": 110, "width": "95%"},
+                                                children=[
+                                                    dmc.Space(h=15),
+                                                    dmc.MultiSelect(
+                                                        data=pd.Series(data_bubbles['author'].unique()).dropna(),
+                                                        searchable=True,
+                                                        nothingFound="Не найдено",
+                                                        style={"width": '100%'},
+                                                        value=['Homeapp', 'Физическое лицо','ANT Development']
+                                                        )
+                                                    ]
+                                                ), value="authors"
+                                            ),
+                                        dmc.TabsPanel(
+                                            dmc.Container(
+                                                style={"height": 60, "width": "75%"},
+                                                children=[
+                                                    dmc.Space(h=15),
+                                                    dmc.RangeSlider(
+                                                        id="rng-slider-bubble_graph",
+                                                        min = data_bubbles['total_meters'].min(),
+                                                        max = data_bubbles['total_meters'].max(),
+                                                        value=[data_bubbles['total_meters'].min(), data_bubbles['total_meters'].max()],
+                                                        marks=[
+                                                            {"value": data_bubbles['total_meters'].max() * 0.5, "label": "50%"},
+                                                        ],
+                                                    )
+                                                ]
+                                            ), value="total_meters"),
+                                        dmc.TabsPanel("Messages tab content", value="messages"),
+                                        dmc.TabsPanel("Settings tab content", value="settings"),
+                                    ],
+                                    color="blue",
+                                    orientation="horizontal",
+                                    value = "authors",
+                                ),
+                                dcc.Graph(figure={},id = 'bubble-placeholder')
                             ]
                             )
                          ], shadow="xs", p="xs", radius="lg",withBorder = True)], span=6)
