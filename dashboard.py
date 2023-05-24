@@ -92,6 +92,39 @@ def create_hist_fig(col_chosen):
     )
     return hist_fig
 
+def create_map():
+    global theme_status
+    if theme_status == 'dark':
+        paper_bgcolor = 'rgb(51, 51, 51)'
+        plot_bgcolor = 'rgb(51, 51, 51)'
+        title_font_color = 'white'
+        font_color = "white"
+    else:
+        paper_bgcolor = 'rgb(255, 255, 255)'
+        plot_bgcolor = 'rgb(255, 255, 255)'
+        title_font_color = 'black'
+        font_color = "black"
+    map_fig = px.choropleth_mapbox(geodata_msk,
+                         geojson=msk_geojson,
+                         locations='OKATO',
+                         color='Цена за м2',
+                         color_continuous_scale=colors.sequential.Plasma,
+                         featureidkey='properties.OKATO',
+                         mapbox_style="carto-positron",
+                         zoom=8.5,
+                         center={"lat": 55.75, "lon": 37.61},
+                         opacity=0.2,
+                         range_color=(
+                             geodata_msk['Цена за м2'].min(), geodata_msk['Цена за м2'].max()),
+                         labels={'Цена за м2': 'Цена за м2'}
+                         )
+    map_fig.update_layout(
+        paper_bgcolor=paper_bgcolor,
+        plot_bgcolor=plot_bgcolor,
+        title_font_color=title_font_color,
+        font_color=font_color
+    )
+    return map_fig
 def create_content():
     return dmc.Container([
         dmc.Header(
@@ -215,21 +248,7 @@ def create_content():
                     children=[
                         dmc.Container(
                             children=[
-                                    dcc.Graph(figure=px.choropleth_mapbox(geodata_msk,
-                                                             geojson=msk_geojson,
-                                                             locations='OKATO',
-                                                             color='Цена за м2',
-                                                             color_continuous_scale=colors.sequential.Plasma,
-                                                             featureidkey='properties.OKATO',
-                                                             mapbox_style="carto-positron",
-                                                             zoom=8.5,
-                                                             center={"lat": 55.75, "lon": 37.61},
-                                                             opacity=0.2,
-                                                             range_color=(
-                                                             geodata_msk['Цена за м2'].min(), geodata_msk['Цена за м2'].max()),
-                                                             labels={'Цена за м2': 'Цена за м2'}
-                                                            )
-                                                      , id='map-placeholder'
+                                    dcc.Graph(figure=create_map(), id='map-placeholder'
                                               )
                                 ],  style={"marginTop": 15, "marginBottom": 15}
                             )
@@ -355,7 +374,8 @@ def predict(n_clicks,floor, floors_count, rooms,
 
 @callback(
     [Output(component_id="theme-provider", component_property='theme'),
-     Output(component_id='graph-placeholder', component_property='figure', allow_duplicate=True)],
+     Output(component_id='graph-placeholder', component_property='figure', allow_duplicate=True),
+     Output(component_id='map-placeholder', component_property='figure')],
     Input(component_id="theme_switcher", component_property='checked'),
     State(component_id='my-dmc-radio-item', component_property='value'),
     prevent_initial_call=True
@@ -365,19 +385,21 @@ def change_theme(checked, col_chosen):
     if checked:
         theme_status = 'light'
         hist_fig = create_hist_fig(col_chosen)
+        map_fig = create_map()
         return {
             "colorScheme": 'light',
             "fontFamily": "'Inter', sans-serif",
             "primaryColor": "green",
-        }, hist_fig
+        }, hist_fig, map_fig
     else:
         theme_status = 'dark'
         hist_fig = create_hist_fig(col_chosen)
+        map_fig = create_map()
         return {
             "colorScheme": 'dark',
             "fontFamily": "'Inter', sans-serif",
             "primaryColor": "green",
-        }, hist_fig
+        }, hist_fig, map_fig
 
 @callback(
     Output("bubble-placeholder", "figure"),
