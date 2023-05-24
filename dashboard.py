@@ -32,7 +32,7 @@ with open('mo.geojson', 'r', encoding ='UTF-8') as f:
 
 external_stylesheets = [dmc.theme.DEFAULT_COLORS]
 app = Dash(__name__, external_stylesheets=external_stylesheets)
-
+theme_status = 'dark'
 
 def create_text(label):
     return dmc.Text(
@@ -60,7 +60,37 @@ def create_number_input(id, label):
         value=0,
         style={"width": 200}
 )
-
+def create_hist_fig(col_chosen):
+    top10_devs = (df.query('city == @col_chosen').author.value_counts(normalize=True) * 100).to_frame().reset_index()[:10]
+    x = top10_devs.author.str.slice(stop=12)
+    x = x.where(x.str.len() != 12, x.str.cat(['..'] * len(top10_devs)))
+    labels = {'x': 'Субъект', 'proportion': '% на рынке'}
+    global theme_status
+    if theme_status == 'dark':
+        paper_bgcolor = 'rgb(51, 51, 51)'
+        plot_bgcolor = 'rgb(51, 51, 51)'
+        title_font_color = 'white'
+        font_color = "white"
+    else:
+        paper_bgcolor = 'rgb(255, 255, 255)'
+        plot_bgcolor = 'rgb(255, 255, 255)'
+        title_font_color = 'black'
+        font_color = "black"
+    hist_fig = px.histogram(top10_devs,
+                            x=x,
+                            y='proportion',
+                            labels=labels,
+                            text_auto='.2f',
+                            title='Топ-10 застройщиков/агенств')
+    hist_fig.update_layout(
+        paper_bgcolor=paper_bgcolor,
+        plot_bgcolor=plot_bgcolor,
+        xaxis_title='Продавцы',
+        yaxis_title='% на рынке',
+        title_font_color=title_font_color,
+        font_color=font_color
+    )
+    return hist_fig
 
 def create_content():
     return dmc.Container([
@@ -201,9 +231,9 @@ def create_content():
                                                             )
                                                       , id='map-placeholder'
                                               )
-                                ]
+                                ],  style={"marginTop": 15, "marginBottom": 15}
                             )
-                        ], shadow="xs", p="xs", radius="lg",withBorder = True)], span=6),
+                        ], shadow="xs", p="xs", radius="lg", withBorder=True)], span=6),
             dmc.Col([
                 dmc.Paper(
                     children=[
@@ -261,8 +291,18 @@ def create_content():
                                 dcc.Graph(figure={},id = 'bubble-placeholder')
                             ]
                             )
-                         ], shadow="xs", p="xs", radius="lg",withBorder = True)], span=6)
-        ]),
+                         ], shadow="xs", p="xs", radius="lg", withBorder=True)], span=6),
+            dmc.Col([
+                dmc.Paper(
+                    children=[
+                        dmc.Container(
+                            children=[
+
+                            ]
+                        )
+                    ], shadow="xs", p="xs", radius="lg", withBorder=True)], span=6)
+            ]
+        ),
     ], fluid=True)
 # App layout
 app.layout = dmc.MantineProvider(
@@ -282,13 +322,8 @@ app.layout = dmc.MantineProvider(
     Input(component_id='my-dmc-radio-item', component_property='value')
 )
 def update_graph(col_chosen):
-        top10_devs = (df.query('city == @col_chosen').author.value_counts(normalize=True) * 100).to_frame().reset_index()[:10]
-        x = top10_devs.author.str.slice(stop=12)
-        x = x.where(x.str.len() != 12, x.str.cat(['..'] * len(top10_devs)))
-        labels = {'x': 'Субъект', 'proportion':'% на рынке'}
-        hist_fig = px.histogram(top10_devs, x=x, y='proportion', text_auto ='.2f',labels=labels, title = 'Топ-10 '
-                                                                                                  'застройщиков/агенств')
-        return hist_fig
+    hist_fig = create_hist_fig(col_chosen)
+    return hist_fig
 @callback(# синтаксис колбэк-функций должен быть именно таким
     [Output(component_id="loading-button-pred", component_property="loading"),
     Output(component_id="prediction", component_property="children")],
@@ -320,23 +355,24 @@ def predict(n_clicks,floor, floors_count, rooms,
 
 @callback(
     [Output(component_id="theme-provider", component_property='theme'),
-     Output(component_id="graph-placeholder", component_property='figure', allow_duplicate=True)],
+     Output(component_id='graph-placeholder', component_property='figure', allow_duplicate=True)],
     Input(component_id="theme_switcher", component_property='checked'),
-    State(component_id="graph-placeholder", component_property='figure'),
-    prevent_initial_call=True,
+    State(component_id='my-dmc-radio-item', component_property='value'),
+    prevent_initial_call=True
 )
-def change_theme(checked, hist_fig):
+def change_theme(checked, col_chosen):
+    global theme_status
     if checked:
-        hist_fig['paper_bgcolor'] = 'rgb(255, 255, 255)'
-        hist_fig['plot_bgcolor'] = 'rgb(255, 255, 255)'
+        theme_status = 'light'
+        hist_fig = create_hist_fig(col_chosen)
         return {
             "colorScheme": 'light',
             "fontFamily": "'Inter', sans-serif",
             "primaryColor": "green",
         }, hist_fig
     else:
-        hist_fig['paper_bgcolor'] = 'rgb(51, 51, 51)'
-        hist_fig['plot_bgcolor'] = 'rgb(51, 51, 51)'
+        theme_status = 'dark'
+        hist_fig = create_hist_fig(col_chosen)
         return {
             "colorScheme": 'dark',
             "fontFamily": "'Inter', sans-serif",
