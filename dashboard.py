@@ -10,6 +10,7 @@ import plotly.colors as colors
 from time import sleep
 import scipy
 import json
+from create_graphics import create_line_fig
 
 link_data_hist = 'https://docs.google.com/spreadsheets/d/e/' \
        '2PACX-1vQxxmZm6YG54VucQ9yRgWFQXtOI-RFJ5-sOLT93LpaYGYc-vabL9LOzzkRXX' \
@@ -125,6 +126,8 @@ def create_map():
         font_color=font_color
     )
     return map_fig
+
+lines_fig = create_line_fig()
 def create_content():
     return dmc.Container([
         dmc.Header(
@@ -264,8 +267,6 @@ def create_content():
                                             [
                                                 dmc.Tab('Продавцы', value="authors"),
                                                 dmc.Tab("Средняя общая площадь", value="total_meters"),
-                                                dmc.Tab("Messages", value="messages"),
-                                                dmc.Tab("Settings", value="settings"),
                                             ]
                                         ),
                                         dmc.TabsPanel(
@@ -286,7 +287,7 @@ def create_content():
                                             ),
                                         dmc.TabsPanel(
                                             dmc.Container(
-                                                style={"height": 60, "width": "75%"},
+                                                style={"height": 110, "width": "75%"},
                                                 children=[
                                                     dmc.Space(h=15),
                                                     dmc.RangeSlider(
@@ -297,11 +298,10 @@ def create_content():
                                                         marks=[
                                                             {"value": data_bubbles['total_meters'].max() * 0.5, "label": "50%"},
                                                         ],
+                                                        style={"marginTop": 25, "marginBottom": 35}
                                                     )
                                                 ]
                                             ), value="total_meters"),
-                                        dmc.TabsPanel("Messages tab content", value="messages"),
-                                        dmc.TabsPanel("Settings tab content", value="settings"),
                                     ],
                                     color="blue",
                                     orientation="horizontal",
@@ -316,7 +316,17 @@ def create_content():
                     children=[
                         dmc.Container(
                             children=[
-
+                                dmc.SegmentedControl(
+                                    id="lines-segmented",
+                                    value="Moskva",
+                                    data=[
+                                        {"value": "Moskva", "label": "Москва"},
+                                        {"value": 'Sankt-Peterburg', "label": 'Санкт-Петербург'}
+                                    ],
+                                    mt=10,
+                                    style={"marginTop": 15, "marginBottom": 15}
+                                ),
+                                dcc.Graph(figure=lines_fig, id='lines-placeholder')
                             ]
                         )
                     ], shadow="xs", p="xs", radius="lg", withBorder=True)], span=6)
