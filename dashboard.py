@@ -15,8 +15,8 @@ link_data_hist = 'https://docs.google.com/spreadsheets/d/e/' \
        '2PACX-1vQxxmZm6YG54VucQ9yRgWFQXtOI-RFJ5-sOLT93LpaYGYc-vabL9LOzzkRXX' \
        '-LmSROTA7hOL1C327nZ/pub?gid=213261502&single=true&output=csv'
 link_selectors = 'https://docs.google.com/spreadsheets/d/e/' \
-                 '2PACX-1vRyT9LKa2_b3-92CiZxG5w1NDYQUWWo8HipsB7DRTjUZxItCaem' \
-                 'm2yL56oSXgjapti7_pUTEjUoNUPq/pub?gid=853725322&single=true&output=csv'
+                 '2PACX-1vTbiTqW6HaKWKeK4TpujjktkIEa8qw9zBdgFzVerM-TLF9G8ww' \
+                 'RCjZoTuE_dnDCl9DbMdcYc39bg5IN/pub?gid=2117269470&single=true&output=csv'
 link_geodata_msk = 'https://docs.google.com/spreadsheets/d/e/' \
                    '2PACX-1vSPfEe4M6P2lpaEdDL87E7GtIDfWFctAGbMjrAbj6U9rFKn8f2' \
                    '-G5X0FK_hw1xFqx1Qq80CdU9C5kU5/pub?gid=1057824050&single=true&output=csv'
