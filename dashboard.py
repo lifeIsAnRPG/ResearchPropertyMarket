@@ -33,6 +33,7 @@ with open('mo.geojson', 'r', encoding ='UTF-8') as f:
 
 external_stylesheets = [dmc.theme.DEFAULT_COLORS]
 app = Dash(__name__, external_stylesheets=external_stylesheets)
+server = app.server
 theme_status = 'dark'
 
 def create_text(label):
