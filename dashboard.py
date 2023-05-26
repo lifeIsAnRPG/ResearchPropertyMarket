@@ -127,7 +127,7 @@ def create_map():
     )
     return map_fig
 
-lines_fig = create_line_fig()
+lines_fig = create_line_fig("Moskva", theme_status)
 def create_content():
     return dmc.Container([
         dmc.Header(
@@ -241,7 +241,8 @@ def create_content():
                                                                                            'Sankt-Peterburg']]],
                                      id='my-dmc-radio-item',
                                      value='Moskva',
-                                     size="sm"),
+                                     size="sm",
+                                     style={"marginTop": 15, "marginBottom": 15}),
                                     dcc.Graph(figure={}, id='graph-placeholder')
                                 ]
                             )
@@ -253,7 +254,7 @@ def create_content():
                             children=[
                                     dcc.Graph(figure=create_map(), id='map-placeholder'
                                               )
-                                ],  style={"marginTop": 15, "marginBottom": 15}
+                                ],  style={"marginTop": 30, "marginBottom": 30}
                             )
                         ], shadow="xs", p="xs", radius="lg", withBorder=True)], span=6),
             dmc.Col([
@@ -324,7 +325,7 @@ def create_content():
                                         {"value": 'Sankt-Peterburg', "label": 'Санкт-Петербург'}
                                     ],
                                     mt=10,
-                                    style={"marginTop": 15, "marginBottom": 15}
+                                    style={"marginTop": 50, "marginBottom": 56}
                                 ),
                                 dcc.Graph(figure=lines_fig, id='lines-placeholder')
                             ]
@@ -385,31 +386,45 @@ def predict(n_clicks,floor, floors_count, rooms,
 @callback(
     [Output(component_id="theme-provider", component_property='theme'),
      Output(component_id='graph-placeholder', component_property='figure', allow_duplicate=True),
-     Output(component_id='map-placeholder', component_property='figure')],
+     Output(component_id='map-placeholder', component_property='figure'),
+     Output(component_id='lines-placeholder', component_property="figure",allow_duplicate=True),],
     Input(component_id="theme_switcher", component_property='checked'),
     State(component_id='my-dmc-radio-item', component_property='value'),
     prevent_initial_call=True
 )
 def change_theme(checked, col_chosen):
     global theme_status
+    global lines_fig
     if checked:
         theme_status = 'light'
         hist_fig = create_hist_fig(col_chosen)
         map_fig = create_map()
+        lines_fig.update_layout(
+            paper_bgcolor='rgb(255, 255, 255)',
+            plot_bgcolor='rgb(255, 255, 255)',
+            title_font_color='black',
+            font_color="black"
+            )
         return {
             "colorScheme": 'light',
             "fontFamily": "'Inter', sans-serif",
             "primaryColor": "green",
-        }, hist_fig, map_fig
+        }, hist_fig, map_fig, lines_fig
     else:
         theme_status = 'dark'
         hist_fig = create_hist_fig(col_chosen)
         map_fig = create_map()
+        lines_fig.update_layout(
+            paper_bgcolor='rgb(51, 51, 51)',
+            plot_bgcolor='rgb(51, 51, 51)',
+            title_font_color='white',
+            font_color="white"
+        )
         return {
             "colorScheme": 'dark',
             "fontFamily": "'Inter', sans-serif",
             "primaryColor": "green",
-        }, hist_fig, map_fig
+        }, hist_fig, map_fig, lines_fig
 
 @callback(
     Output("bubble-placeholder", "figure"),
@@ -492,6 +507,15 @@ def update_bubbles_graph(authors_arr, tmeters_range):
     )
     return bubbles_fig
 
+@callback(
+    Output('lines-placeholder', "figure"),
+    Input("lines-segmented", "value"),
+    prevent_initial_call=True
+)
+def update_lines_graph(chosen_segment):
+    global lines_fig
+    lines_fig = create_line_fig(chosen_segment,theme_status)
+    return lines_fig
 
 clientside_callback(# функция JS, будет выполнена на стороне клиента
     """
