@@ -434,6 +434,7 @@ def change_theme(checked, col_chosen):
 def update_bubbles_graph(authors_arr, tmeters_range):
     tmeters_left = tmeters_range[0]
     tmeters_right = tmeters_range[1]
+    global theme_status
     def mode_func(arr):
         return scipy.stats.mode(arr, keepdims=False)[0]
 
@@ -487,23 +488,34 @@ def update_bubbles_graph(authors_arr, tmeters_range):
 
     # Tune marker appearance and layout
     bubbles_fig.update_traces(mode='markers', marker=dict(sizemode='area',
-                                                  sizeref=sizeref, line_width=2))
-
+                                                  sizeref=sizeref, line_width=1.5))
+    if theme_status == 'dark':
+        paper_bgcolor = 'rgb(51, 51, 51)'
+        plot_bgcolor = 'rgb(51, 51, 51)'
+        title_font_color = 'white'
+        font_color = "white"
+    else:
+        paper_bgcolor = 'rgb(255, 255, 255)'
+        plot_bgcolor = 'rgb(255, 255, 255)'
+        title_font_color = 'black'
+        font_color = "black"
     bubbles_fig.update_layout(
         title='Средний метраж жилья/Средняя цена предложения',
         xaxis=dict(
             title='Средняя цена предложения',
             gridcolor='white',
             type='log',
-            gridwidth=2,
+            gridwidth=1,
         ),
         yaxis=dict(
             title='Средний метраж жилья',
             gridcolor='white',
-            gridwidth=2,
+            gridwidth=1,
         ),
-        paper_bgcolor='rgb(243, 243, 243)',
-        plot_bgcolor='rgb(243, 243, 243)',
+        paper_bgcolor=paper_bgcolor,
+        plot_bgcolor=plot_bgcolor,
+        title_font_color=title_font_color,
+        font_color=font_color
     )
     return bubbles_fig
 
