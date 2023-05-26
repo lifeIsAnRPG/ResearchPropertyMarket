@@ -344,7 +344,24 @@ app.layout = dmc.MantineProvider(
     },
     withGlobalStyles=True,
     withNormalizeCSS=True,
-    children=[create_content()]
+    children=[
+        dcc.Interval(
+                id='interval-component',
+                interval=1*1000,
+                n_intervals=0,
+                max_intervals=1
+            ),
+        dmc.NotificationsProvider(
+            children=[
+                html.Div(
+                        [
+                            html.Div(id="notifications-container"),
+                        ]
+                    ),
+                create_content()
+            ]
+        )
+    ]
 )
 
 @callback(
@@ -529,6 +546,20 @@ def update_lines_graph(chosen_segment):
     lines_fig = create_line_fig(chosen_segment,theme_status)
     return lines_fig
 
+@callback(
+    Output("notifications-container", "children"),
+    Input('interval-component', 'n_intervals')
+)
+def show(n_intervals):
+    return dmc.Notification(
+        title="Доброго времени суток!",
+        id="simple-notify",
+        action="show",
+        autoClose = False,
+        message="Дэшборд еще будет дорабатываться, прошу не обращать внимания на мелкие баги.",
+        icon=DashIconify(icon="ic:round-celebration"),
+    )
+
 clientside_callback(# функция JS, будет выполнена на стороне клиента
     """
     function updateLoadingState(n_clicks) {
@@ -539,7 +570,8 @@ clientside_callback(# функция JS, будет выполнена на ст
     Input("loading-button-pred", "n_clicks"),
     prevent_initial_call=True,
 )
-
+def start_engine():
+    app.run_server(debug=False)
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    start_engine()
