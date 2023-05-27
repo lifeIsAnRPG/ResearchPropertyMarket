@@ -8,4 +8,4 @@ build:
 run:
   command: gunicorn --workers=1 app:server
   persistenceMount: /data
-  containerPort: 80
+  containerPort: 8050
