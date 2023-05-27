@@ -572,7 +572,7 @@ clientside_callback(# функция JS, будет выполнена на ст
     prevent_initial_call=True,
 )
 def start_engine():
-    app.run_server(debug=False)
+    app.run_server(debug=False, port=5000)
 
 if __name__ == '__main__':
     start_engine()

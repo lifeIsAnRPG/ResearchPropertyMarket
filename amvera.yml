@@ -2,10 +2,10 @@ meta:
   environment: python
   toolchain:
     name: pip
-    version: 3.8
+    version: 3.10
 build:
   requirementsPath: requirements.txt
 run:
-  command: gunicorn --workers=1 app:server
+  command: gunicorn --bind 0.0.0.0:5000 app:server
   persistenceMount: /data
-  containerPort: 8050
+  containerPort: 5000

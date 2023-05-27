@@ -1,9 +1,9 @@
-FROM python:3.8
-
-WORKDIR /app
-
-COPY ./requirements.txt /app/requirements.txt
-
-RUN pip install -r requirements.txt
-
-CMD ["gunicorn","--workers=1", "app:server"]
+# FROM python:3.8
+#
+# WORKDIR /app
+#
+# COPY ./requirements.txt /app/requirements.txt
+#
+# RUN pip install -r requirements.txt
+#
+# CMD ["gunicorn","--workers=1", "app:server"]
