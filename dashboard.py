@@ -40,7 +40,8 @@ def create_text(label):
     return dmc.Text(
         label,
         size="xl",
-        color="gray",
+        variant="gradient",
+        gradient={"from": "blue", "to": "green", "deg": 45}
     )
 def create_select(id,label, data):
     return dmc.Select(
@@ -62,12 +63,11 @@ def create_number_input(id, label):
         value=0,
         style={"width": 200}
 )
-def create_hist_fig(col_chosen):
+def create_hist_fig(col_chosen, theme_status):
     top10_devs = (df.query('city == @col_chosen').author.value_counts(normalize=True) * 100).to_frame().reset_index()[:10]
     x = top10_devs.author.str.slice(stop=12)
     x = x.where(x.str.len() != 12, x.str.cat(['..'] * len(top10_devs)))
     labels = {'x': 'Субъект', 'proportion': '% на рынке'}
-    global theme_status
     if theme_status == 'dark':
         paper_bgcolor = 'rgb(51, 51, 51)'
         plot_bgcolor = 'rgb(51, 51, 51)'
@@ -83,7 +83,7 @@ def create_hist_fig(col_chosen):
                             y='proportion',
                             labels=labels,
                             text_auto='.2f',
-                            title='Топ-10 застройщиков/агенств')
+                            title='Топ-10 застройщиков/агенств на рынке жилья по количеству предложений')
     hist_fig.update_layout(
         paper_bgcolor=paper_bgcolor,
         plot_bgcolor=plot_bgcolor,
@@ -94,8 +94,7 @@ def create_hist_fig(col_chosen):
     )
     return hist_fig
 
-def create_map():
-    global theme_status
+def create_map(theme_status):
     if theme_status == 'dark':
         paper_bgcolor = 'rgb(51, 51, 51)'
         plot_bgcolor = 'rgb(51, 51, 51)'
@@ -253,7 +252,7 @@ def create_content():
                     children=[
                         dmc.Container(
                             children=[
-                                    dcc.Graph(figure=create_map(), id='map-placeholder'
+                                    dcc.Graph(figure={}, id='map-placeholder'
                                               )
                                 ],  style={"marginTop": 30, "marginBottom": 30}
                             )
@@ -346,6 +345,7 @@ app.layout = dmc.MantineProvider(
     withGlobalStyles=True,
     withNormalizeCSS=True,
     children=[
+        dmc.Text(children='dark', id='hidden-theme-holder', style={'display': 'none'}),
         dcc.Interval(
                 id='interval-component',
                 interval=1*1000,
@@ -367,11 +367,21 @@ app.layout = dmc.MantineProvider(
 
 @callback(
     Output(component_id='graph-placeholder', component_property='figure'),
-    Input(component_id='my-dmc-radio-item', component_property='value')
+    [Input(component_id='my-dmc-radio-item', component_property='value'),
+     Input(component_id='hidden-theme-holder', component_property='children')]
 )
-def update_graph(col_chosen):
-    hist_fig = create_hist_fig(col_chosen)
+def update_graph(col_chosen, theme_status):
+    hist_fig = create_hist_fig(col_chosen, theme_status)
     return hist_fig
+
+@callback(
+    Output(component_id='map-placeholder', component_property='figure'),
+    Input(component_id='hidden-theme-holder', component_property='children')
+)
+def update_map(theme_status):
+    map_fig=create_map(theme_status)
+    return map_fig
+
 @callback(# синтаксис колбэк-функций должен быть именно таким
     [Output(component_id="loading-button-pred", component_property="loading"),
     Output(component_id="prediction", component_property="children")],
@@ -404,19 +414,19 @@ def predict(n_clicks,floor, floors_count, rooms,
 @callback(
     [Output(component_id="theme-provider", component_property='theme'),
      Output(component_id='graph-placeholder', component_property='figure', allow_duplicate=True),
-     Output(component_id='map-placeholder', component_property='figure'),
-     Output(component_id='lines-placeholder', component_property="figure",allow_duplicate=True),],
+     Output(component_id='map-placeholder', component_property='figure', allow_duplicate=True),
+     Output(component_id='lines-placeholder', component_property="figure",allow_duplicate=True),
+     Output(component_id="hidden-theme-holder", component_property="children")],
     Input(component_id="theme_switcher", component_property='checked'),
     State(component_id='my-dmc-radio-item', component_property='value'),
     prevent_initial_call=True
 )
 def change_theme(checked, col_chosen):
-    global theme_status
     global lines_fig
     if checked:
         theme_status = 'light'
-        hist_fig = create_hist_fig(col_chosen)
-        map_fig = create_map()
+        hist_fig = create_hist_fig(col_chosen, theme_status)
+        map_fig = create_map(theme_status)
         lines_fig.update_layout(
             paper_bgcolor='rgb(255, 255, 255)',
             plot_bgcolor='rgb(255, 255, 255)',
@@ -427,11 +437,11 @@ def change_theme(checked, col_chosen):
             "colorScheme": 'light',
             "fontFamily": "'Inter', sans-serif",
             "primaryColor": "green",
-        }, hist_fig, map_fig, lines_fig
+        }, hist_fig, map_fig, lines_fig, theme_status
     else:
         theme_status = 'dark'
-        hist_fig = create_hist_fig(col_chosen)
-        map_fig = create_map()
+        hist_fig = create_hist_fig(col_chosen, theme_status)
+        map_fig = create_map(theme_status)
         lines_fig.update_layout(
             paper_bgcolor='rgb(51, 51, 51)',
             plot_bgcolor='rgb(51, 51, 51)',
@@ -442,7 +452,7 @@ def change_theme(checked, col_chosen):
             "colorScheme": 'dark',
             "fontFamily": "'Inter', sans-serif",
             "primaryColor": "green",
-        }, hist_fig, map_fig, lines_fig
+        }, hist_fig, map_fig, lines_fig, theme_status
 
 @callback(
     Output("bubble-placeholder", "figure"),
@@ -538,13 +548,14 @@ def update_bubbles_graph(authors_arr, tmeters_range):
     return bubbles_fig
 
 @callback(
-    Output('lines-placeholder', "figure"),
-    Input("lines-segmented", "value"),
+    Output('lines-placeholder', "figure"),#Output('hidden-div', "children"),
+    [Input("lines-segmented", "value"),
+     Input("hidden-theme-holder", "children")],
     prevent_initial_call=True
 )
-def update_lines_graph(chosen_segment):
+def update_lines_graph(chosen_segment, theme_status):
     global lines_fig
-    lines_fig = create_line_fig(chosen_segment,theme_status)
+    lines_fig = create_line_fig(chosen_segment, theme_status)
     return lines_fig
 
 @callback(
@@ -557,7 +568,7 @@ def show(n_intervals):
         id="simple-notify",
         action="show",
         autoClose = False,
-        message="Дэшборд еще будет дорабатываться, прошу не обращать внимания на мелкие баги.",
+        message="Дэшборд в режиме бета-тестирования.",
         icon=DashIconify(icon="ic:round-celebration"),
     )
 
@@ -575,4 +586,4 @@ def start_engine():
     app.run_server(debug=False, port=80)
 
 if __name__ == '__main__':
-    start_engine()
+    app.run_server(debug=True)
