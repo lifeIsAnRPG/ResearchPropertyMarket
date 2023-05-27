@@ -6,6 +6,6 @@ meta:
 build:
   requirementsPath: requirements.txt
 run:
-  command: gunicorn --bind 0.0.0.0:5000 app:server
+  command: gunicorn --bind 0.0.0.0:80 app:server
   persistenceMount: /data
-  containerPort: 5000
+  containerPort: 80
