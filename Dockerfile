@@ -6,4 +6,4 @@ COPY ./requirements.txt /app/requirements.txt
 
 RUN pip install -r requirements.txt
 
-CMD ["gunicorn","--workers=4", "app:server"]
+CMD ["gunicorn","--workers=1", "app:server"]
