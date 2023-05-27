@@ -418,15 +418,17 @@ def predict(n_clicks,floor, floors_count, rooms,
      Output(component_id='lines-placeholder', component_property="figure",allow_duplicate=True),
      Output(component_id="hidden-theme-holder", component_property="children")],
     Input(component_id="theme_switcher", component_property='checked'),
-    State(component_id='my-dmc-radio-item', component_property='value'),
+    [State(component_id='my-dmc-radio-item', component_property='value'),
+     State(component_id='lines-placeholder', component_property='figure')],#'lines-placeholder'
     prevent_initial_call=True
 )
-def change_theme(checked, col_chosen):
-    global lines_fig
+def change_theme(checked, col_chosen, lines_fig):
+    #global lines_fig
     if checked:
         theme_status = 'light'
         hist_fig = create_hist_fig(col_chosen, theme_status)
         map_fig = create_map(theme_status)
+        lines_fig = go.Figure(lines_fig)
         lines_fig.update_layout(
             paper_bgcolor='rgb(255, 255, 255)',
             plot_bgcolor='rgb(255, 255, 255)',
@@ -442,6 +444,7 @@ def change_theme(checked, col_chosen):
         theme_status = 'dark'
         hist_fig = create_hist_fig(col_chosen, theme_status)
         map_fig = create_map(theme_status)
+        lines_fig = go.Figure(lines_fig)
         lines_fig.update_layout(
             paper_bgcolor='rgb(51, 51, 51)',
             plot_bgcolor='rgb(51, 51, 51)',
