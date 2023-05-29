@@ -8,7 +8,7 @@ from ml_model import predict_cost
 from dash_iconify import DashIconify
 import plotly.colors as colors
 from time import sleep
-import scipy
+import os
 import json
 from create_graphics import create_line_fig, create__bubbles_graph, data_bubbles
 
@@ -81,7 +81,7 @@ def create_hist_fig(col_chosen, theme_status):
                             y='proportion',
                             labels=labels,
                             text_auto='.2f',
-                            title='Топ-10 застройщиков/агенств на рынке жилья по количеству предложений')
+                            title='Топ-10 застройщиков/агенств на рынке по кол-ву предложений')
     hist_fig.update_layout(
         paper_bgcolor=paper_bgcolor,
         plot_bgcolor=plot_bgcolor,
@@ -129,6 +129,7 @@ lines_fig = create_line_fig("Moskva", theme_status)
 bubbles_fig = create__bubbles_graph(('Homeapp', 'Физическое лицо', 'ANT Development'),
                                     (data_bubbles['total_meters'].min(), data_bubbles['total_meters'].max()),
                                     theme_status)
+
 def create_content():
     return dmc.Container([
         dmc.Header(
@@ -143,22 +144,27 @@ def create_content():
                             align="flex-start",
                             children=[
                                 dmc.Center(
-                                    dcc.Link(
-                                        [
-                                            dmc.MediaQuery(
-                                                create_text("Research Property Market"),
-                                                smallerThan="sm",
-                                                styles={"display": "none"},
-                                            ),
-                                            dmc.MediaQuery(
-                                                create_text("RPM"),
-                                                largerThan="sm",
-                                                styles={"display": "none"},
-                                            ),
-                                        ],
-                                        href="/",
-                                        style={"paddingTop": 3, "textDecoration": "none"},
-                                    ),
+                                    children=[
+                                        html.Img(
+                                            src="/assets/logo.png", height=35, width=35, style={'margin-right': '10px'}
+                                        ),
+                                        dcc.Link(
+                                            [
+                                                dmc.MediaQuery(
+                                                    create_text("Research Property Market"),
+                                                    smallerThan="sm",
+                                                    styles={"display": "none"},
+                                                ),
+                                                dmc.MediaQuery(
+                                                    create_text("RPM"),
+                                                    largerThan="sm",
+                                                    styles={"display": "none"},
+                                                ),
+                                            ],
+                                            href="/",
+                                            style={"paddingTop": 3, "textDecoration": "none"},
+                                        )
+                                    ],
                                 ),
                                 dmc.Group(
                                     position="right",
@@ -506,7 +512,7 @@ def show(n_intervals):
         id="simple-notify",
         action="show",
         autoClose = False,
-        message="Дэшборд в виде Early Access.",
+        message="Дэшборд в доработке. Чтобы получить стоимость жилья, введите все данные.",
         icon=DashIconify(icon="svg-spinners:blocks-wave"),
     )
 
