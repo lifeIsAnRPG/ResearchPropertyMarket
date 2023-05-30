@@ -146,7 +146,7 @@ def create_content():
                                 dmc.Center(
                                     children=[
                                         html.Img(
-                                            src="/assets/logo.png", height=35, width=35, style={'margin-right': '10px'}
+                                            src="/assets/logo2.png", height=35, width=35, style={'margin-right': '10px'}
                                         ),
                                         dcc.Link(
                                             [
