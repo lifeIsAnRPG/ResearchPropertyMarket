@@ -417,7 +417,7 @@ def predict(n_clicks,floor, floors_count, rooms,
         y_pred = predict_cost(np.array([author, city, floor, floors_count, rooms,
         total_meters, year, living_meters,
         kitchen_meters, district, street, underground]))
-        return False, f'Примерная стоимость: {y_pred}'
+        return False, f'Интервал примерной стоимости: {y_pred-1_700_000} - {y_pred+1_700_000}'
 
 @callback(
     [Output(component_id="theme-provider", component_property='theme'),
